@@ -1,6 +1,6 @@
-package org.patterns.gof.creational.factorymethod.kindsimpleobject;
+package org.patterns.gof.creational.factorymethod.object.kindsimpleobject;
 
-import org.patterns.gof.creational.factorymethod.simpleobject.SimpleObject;
+import org.patterns.gof.creational.factorymethod.object.simpleobject.SimpleObject;
 
 public class DaughterSimpleObject implements SimpleObject {
 
