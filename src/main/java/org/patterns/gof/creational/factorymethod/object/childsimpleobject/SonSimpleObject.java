@@ -1,4 +1,4 @@
-package org.patterns.gof.creational.factorymethod.object.kindsimpleobject;
+package org.patterns.gof.creational.factorymethod.object.childsimpleobject;
 
 import org.patterns.gof.creational.factorymethod.object.simpleobject.SimpleObject;
 
