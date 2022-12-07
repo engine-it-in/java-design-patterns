@@ -4,13 +4,23 @@ import org.patterns.gof.creational.factorymethod.object.simpleobject.SimpleObjec
 
 public class Supplier {
 
-    public SimpleObject create() {
+    public SimpleObject createObject() {
         return new SimpleObject() {
             @Override
             public void open() {
-                System.out.println();
+                System.out.printf("I was created in %s", this.getClass().getSimpleName());
             }
         };
+    }
+
+    public SimpleObject install() {
+        SimpleObject simpleObject = createObject();
+        onInstall(simpleObject);
+        System.out.printf("%s was added", simpleObject);
+        return simpleObject;
+    }
+
+    protected void onInstall(SimpleObject simpleObject) {
     }
 
 }
