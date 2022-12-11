@@ -7,8 +7,12 @@ public class Supplier {
     public SimpleObject createObject() {
         return new SimpleObject() {
             @Override
+            public String toString() {
+                return "Object";
+            }
+            @Override
             public void open() {
-                System.out.printf("I was created in %s", this.getClass().getSimpleName());
+                System.out.println("Open object");
             }
         };
     }
