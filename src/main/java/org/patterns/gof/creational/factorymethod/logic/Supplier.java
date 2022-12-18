@@ -1,5 +1,6 @@
 package org.patterns.gof.creational.factorymethod.logic;
 
+import org.patterns.gof.creational.factorymethod.main.Program;
 import org.patterns.gof.creational.factorymethod.object.simpleobject.SimpleObject;
 
 public class Supplier {
@@ -20,11 +21,12 @@ public class Supplier {
     public SimpleObject install() {
         SimpleObject simpleObject = createObject();
         onInstall(simpleObject);
-        System.out.printf("%s was added", simpleObject);
+        System.out.printf("%s was added ", simpleObject);
         return simpleObject;
     }
 
     protected void onInstall(SimpleObject simpleObject) {
+        Program.objects.add(simpleObject);
     }
 
 }

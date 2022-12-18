@@ -6,7 +6,7 @@ public class DaughterSimpleObject implements SimpleObject {
 
     @Override
     public void open() {
-        System.out.printf("Open %s", this.getClass().getCanonicalName());
+        System.out.println(String.format("Open %s", this.getClass().getCanonicalName()));
     }
 
     @Override

@@ -10,19 +10,20 @@ import java.util.List;
 
 public class Program {
 
-    static List<SimpleObject> objects = new ArrayList<>();
+    public static List<SimpleObject> objects = new ArrayList<>();
 
     public static void main(String[] args) {
         Supplier[] creators = new Supplier[] {
                 new Supplier(),
-                new FamilyA(),
-                new FamilyB(),
+                new FamilyDaughter(),
+                new FamilySon(),
                 new GenericSupplier(ParentSimpleObject.class)};
 
         for (Supplier sr: creators)
             sr.install().open();
 
         System.out.println("Objects: ");
+
         for (SimpleObject so: objects)
             System.out.println(so);
 

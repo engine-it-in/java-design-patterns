@@ -4,7 +4,7 @@ import org.patterns.gof.creational.factorymethod.logic.Supplier;
 import org.patterns.gof.creational.factorymethod.object.childsimpleobject.SonSimpleObject;
 import org.patterns.gof.creational.factorymethod.object.simpleobject.SimpleObject;
 
-public class FamilyB extends Supplier {
+public class FamilySon extends Supplier {
 
     @Override
     public SimpleObject createObject() {
