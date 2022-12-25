@@ -1,7 +1,10 @@
 package org.patterns.gof.creational.factorymethod.main;
 
-import org.patterns.gof.creational.factorymethod.logic.GenericSupplier;
-import org.patterns.gof.creational.factorymethod.logic.Supplier;
+import org.patterns.gof.creational.factorymethod.logic.collect.GenericSupplier;
+import org.patterns.gof.creational.factorymethod.logic.collect.Supplier;
+import org.patterns.gof.creational.factorymethod.logic.create.FamilyDaughter;
+import org.patterns.gof.creational.factorymethod.logic.create.FamilySon;
+import org.patterns.gof.creational.factorymethod.logic.create.GrandFamily;
 import org.patterns.gof.creational.factorymethod.object.parentsimpleobject.ParentSimpleObject;
 import org.patterns.gof.creational.factorymethod.object.simpleobject.SimpleObject;
 
@@ -17,6 +20,7 @@ public class Program {
                 new Supplier(),
                 new FamilyDaughter(),
                 new FamilySon(),
+                new GrandFamily(),
                 new GenericSupplier(ParentSimpleObject.class)};
 
         for (Supplier sr: creators)

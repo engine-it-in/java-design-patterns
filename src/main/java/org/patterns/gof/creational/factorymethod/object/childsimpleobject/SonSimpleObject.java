@@ -2,21 +2,25 @@ package org.patterns.gof.creational.factorymethod.object.childsimpleobject;
 
 import org.patterns.gof.creational.factorymethod.object.simpleobject.SimpleObject;
 
-/*
-* Simple object Son without constructor
-* */
+/**
+ * Simple object Son
+ * Realized open/closed principle (sOlid)
+ */
 public class SonSimpleObject implements SimpleObject {
 
-    /** Implemented method from interface */
-    @Override
-    public void open() {
-        System.out.println(String.format("Open %s", this.getClass().getCanonicalName()));
+    /**
+     * Get name of an object
+     */
+    public String getSimpleName() {
+        return this.getClass().getSimpleName();
     }
 
-    /** Implemented method from Base interface */
+    /**
+     * Do some open and print simple name
+     */
     @Override
-    public String toString() {
-        return this.getClass().getSimpleName();
+    public void open() {
+        System.out.println(String.format("Open %s", getSimpleName()));
     }
 
 }

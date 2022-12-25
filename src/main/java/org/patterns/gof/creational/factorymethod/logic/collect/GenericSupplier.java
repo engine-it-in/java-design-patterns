@@ -1,15 +1,25 @@
-package org.patterns.gof.creational.factorymethod.logic;
+package org.patterns.gof.creational.factorymethod.logic.collect;
 
 import org.patterns.gof.creational.factorymethod.object.simpleobject.SimpleObject;
 
-public class GenericSupplier extends Supplier{
+/**
+ * Collect all instance objects */
+public class GenericSupplier extends Supplier {
 
-    private Class<? extends SimpleObject> simpleObjectType;
+    /**
+     * @see SimpleObject
+     * */
+    private final Class<? extends SimpleObject> simpleObjectType;
 
+    /**
+     * Container for all types of objects*/
     public GenericSupplier(Class<? extends SimpleObject> simpleObjectType) {
         this.simpleObjectType = simpleObjectType;
     }
 
+    /**
+     * Create objects - factory method
+     * Realized dependency inversion (soliD)*/
     @Override
     public SimpleObject createObject() {
         try {
