@@ -5,19 +5,19 @@ import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
 import org.patterns.gof.creational.factorymethod.object.parentsimpleobject.ParentSimpleObject;
-import org.patterns.gof.creational.factorymethod.object.simpleobject.SimpleObject;
 import util.TestBuilder;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.mockito.Mockito.*;
 
 @ExtendWith(MockitoExtension.class)
-class ParentSimpleObjectTest implements SimpleObject {
+class ParentSimpleObjectTest {
 
     @Mock
     private ParentSimpleObject parentSimpleObjectMock;
 
-    private ParentSimpleObject parentSimpleObject = TestBuilder.prepareTestData();
+    private final ParentSimpleObject parentSimpleObject = (ParentSimpleObject)
+            new TestBuilder().fabricPrepareObject(new ParentSimpleObject());
 
     @Test
     void should_getTypeNameTest() {
@@ -31,8 +31,15 @@ class ParentSimpleObjectTest implements SimpleObject {
     void should_getSimpleName() {
         when(parentSimpleObjectMock.getSimpleName()).thenReturn(parentSimpleObject.getSimpleName());
         assertEquals(parentSimpleObjectMock.getSimpleName(), parentSimpleObject.getSimpleName());
-        verify(parentSimpleObjectMock, times(1)).getTypeName();
+        verify(parentSimpleObjectMock, times(1)).getSimpleName();
         verifyNoMoreInteractions(parentSimpleObjectMock);
+    }
+
+    @Test
+    void should_open() {
+        doCallRealMethod().when(parentSimpleObjectMock).open();
+        parentSimpleObjectMock.open();
+        verify(parentSimpleObjectMock, times(1)).open();
     }
 
 }
