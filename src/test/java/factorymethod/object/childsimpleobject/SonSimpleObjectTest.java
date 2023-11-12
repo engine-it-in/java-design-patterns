@@ -4,7 +4,7 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.patterns.gof.creational.factorymethod.object.childsimpleobject.SonSimpleObject;
+import org.patterns.gof.behavior.factorymethod.object.childsimpleobject.SonSimpleObject;
 import util.TestBuilder;
 
 import static org.junit.jupiter.api.Assertions.assertEquals;

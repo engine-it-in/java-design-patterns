@@ -4,8 +4,8 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.Mock;
 import org.mockito.junit.jupiter.MockitoExtension;
-import org.patterns.gof.creational.factorymethod.logic.create.GrandFamily;
-import org.patterns.gof.creational.factorymethod.object.parentsimpleobject.ParentSimpleObject;
+import org.patterns.gof.behavior.factorymethod.logic.create.GrandFamily;
+import org.patterns.gof.behavior.factorymethod.object.parentsimpleobject.ParentSimpleObject;
 import util.TestBuilder;
 
 import static org.mockito.Mockito.*;

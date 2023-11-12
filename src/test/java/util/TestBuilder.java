@@ -1,13 +1,13 @@
 package util;
 
-import org.patterns.gof.creational.factorymethod.logic.collect.Supplier;
-import org.patterns.gof.creational.factorymethod.logic.create.FamilyDaughter;
-import org.patterns.gof.creational.factorymethod.logic.create.FamilySon;
-import org.patterns.gof.creational.factorymethod.logic.create.GrandFamily;
-import org.patterns.gof.creational.factorymethod.object.childsimpleobject.DaughterSimpleObject;
-import org.patterns.gof.creational.factorymethod.object.childsimpleobject.SonSimpleObject;
-import org.patterns.gof.creational.factorymethod.object.parentsimpleobject.ParentSimpleObject;
-import org.patterns.gof.creational.factorymethod.object.simpleobject.SimpleObject;
+import org.patterns.gof.behavior.factorymethod.logic.collect.Supplier;
+import org.patterns.gof.behavior.factorymethod.logic.create.FamilyDaughter;
+import org.patterns.gof.behavior.factorymethod.logic.create.FamilySon;
+import org.patterns.gof.behavior.factorymethod.logic.create.GrandFamily;
+import org.patterns.gof.behavior.factorymethod.object.childsimpleobject.DaughterSimpleObject;
+import org.patterns.gof.behavior.factorymethod.object.childsimpleobject.SonSimpleObject;
+import org.patterns.gof.behavior.factorymethod.object.parentsimpleobject.ParentSimpleObject;
+import org.patterns.gof.behavior.factorymethod.object.simpleobject.SimpleObject;
 
 public class TestBuilder {
 
