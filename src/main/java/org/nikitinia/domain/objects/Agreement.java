@@ -1,7 +1,8 @@
-package org.nikitinia.domain;
+package org.nikitinia.domain.objects;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
+import org.nikitinia.domain.dictionarys.Type;
 
 import java.math.BigDecimal;
 import java.util.Date;

@@ -1,7 +1,7 @@
 package org.nikitinia.patterns.behavior.TemplateMethod.logic.creators;
 
-import org.nikitinia.domain.Bill;
-import org.nikitinia.domain.Document;
+import org.nikitinia.domain.objects.Bill;
+import org.nikitinia.domain.objects.Document;
 
 public class BillCreator extends DocumentCreator {
 

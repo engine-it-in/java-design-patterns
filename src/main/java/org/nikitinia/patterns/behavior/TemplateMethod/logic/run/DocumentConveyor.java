@@ -1,9 +1,9 @@
 package org.nikitinia.patterns.behavior.TemplateMethod.logic.run;
 
-import org.nikitinia.domain.Agreement;
-import org.nikitinia.domain.Bill;
-import org.nikitinia.domain.Document;
-import org.nikitinia.domain.Invoice;
+import org.nikitinia.domain.objects.Agreement;
+import org.nikitinia.domain.objects.Bill;
+import org.nikitinia.domain.objects.Document;
+import org.nikitinia.domain.objects.Invoice;
 import org.nikitinia.patterns.behavior.TemplateMethod.logic.creators.AgreementCreator;
 import org.nikitinia.patterns.behavior.TemplateMethod.logic.creators.BillCreator;
 import org.nikitinia.patterns.behavior.TemplateMethod.logic.creators.DocumentCreator;

@@ -1,4 +1,4 @@
-package org.nikitinia.domain;
+package org.nikitinia.domain.objects;
 
 import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;

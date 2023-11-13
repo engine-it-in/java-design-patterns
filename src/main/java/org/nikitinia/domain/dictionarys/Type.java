@@ -1,4 +1,4 @@
-package org.nikitinia.domain;
+package org.nikitinia.domain.dictionarys;
 
 public enum Type {
 
