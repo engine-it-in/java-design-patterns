@@ -1,14 +1,15 @@
-package org.patterns.behavior.TemplateMethod.logic;
+package behavior.TemplateMethod.logic;
 
-import org.patterns.behavior.TemplateMethod.domain.Document;
-import org.patterns.behavior.TemplateMethod.logic.creators.AgreementCreator;
-import org.patterns.behavior.TemplateMethod.logic.creators.BillCreator;
-import org.patterns.behavior.TemplateMethod.logic.creators.InvoiceCreator;
+import org.nikitinia.domain.Document;
+import org.nikitinia.patterns.behavior.TemplateMethod.logic.creators.DocumentCreator;
+import org.nikitinia.patterns.behavior.TemplateMethod.logic.creators.AgreementCreator;
+import org.nikitinia.patterns.behavior.TemplateMethod.logic.creators.BillCreator;
+import org.nikitinia.patterns.behavior.TemplateMethod.logic.creators.InvoiceCreator;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class DocumentConveyor {
+public class DocumentConveyorTest {
 
     static List<DocumentCreator> documentCreatorstList = new ArrayList<>();
     static List<Document> documentList= new ArrayList<>();

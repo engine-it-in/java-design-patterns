@@ -1,6 +1,7 @@
-package org.patterns.behavior.TemplateMethod.logic;
+package org.nikitinia.patterns.behavior.TemplateMethod.logic.creators;
 
-import org.patterns.behavior.TemplateMethod.domain.Document;
+import org.nikitinia.domain.Document;
+import org.nikitinia.patterns.behavior.TemplateMethod.logic.action.Creator;
 
 public abstract class DocumentCreator implements Creator {
     private final Document document;

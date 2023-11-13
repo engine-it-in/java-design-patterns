@@ -1,8 +1,13 @@
-package org.patterns.behavior.TemplateMethod.domain;
+package org.nikitinia.domain;
+
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
 
 import java.math.BigDecimal;
 import java.util.Date;
 
+@NoArgsConstructor
+@AllArgsConstructor
 public class Bill extends Document{
     private String number;
 

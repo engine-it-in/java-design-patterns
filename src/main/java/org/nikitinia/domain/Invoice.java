@@ -1,4 +1,4 @@
-package org.patterns.behavior.TemplateMethod.domain;
+package org.nikitinia.domain;
 
 import java.util.Date;
 
