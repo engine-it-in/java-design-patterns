@@ -9,6 +9,6 @@ public class DocumentStart implements DocumentActivity {
 
     @Override
     public void doAction() {
-        System.out.println("Start");
+        System.out.println("start");
     }
 }
