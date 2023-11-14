@@ -1,4 +1,4 @@
-package org.nikitinia.patterns.behavior.TemplateMethod.logic.action;
+package org.nikitinia.patterns.behavior.TemplateMethod.action;
 
 import org.nikitinia.domain.objects.Document;
 

@@ -1,6 +1,7 @@
 package org.nikitinia.patterns.behavior.Observer.actor;
 
 import lombok.AllArgsConstructor;
+import org.nikitinia.domain.objects.Document;
 import org.nikitinia.patterns.behavior.Observer.action.Observer;
 
 import java.util.List;
@@ -14,7 +15,7 @@ public class Subscriber implements Observer {
 
 
     @Override
-    public void eventListener(List<String> documents, String action) {
+    public void eventListener(List<Document> documents, String action) {
         System.out.println(name + " " + documents + " " + action);
     }
 }

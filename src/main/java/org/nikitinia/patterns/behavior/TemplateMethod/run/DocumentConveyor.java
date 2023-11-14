@@ -1,13 +1,13 @@
-package org.nikitinia.patterns.behavior.TemplateMethod.logic.run;
+package org.nikitinia.patterns.behavior.TemplateMethod.run;
 
 import org.nikitinia.domain.objects.Agreement;
 import org.nikitinia.domain.objects.Bill;
 import org.nikitinia.domain.objects.Document;
 import org.nikitinia.domain.objects.Invoice;
-import org.nikitinia.patterns.behavior.TemplateMethod.logic.creators.AgreementCreator;
-import org.nikitinia.patterns.behavior.TemplateMethod.logic.creators.BillCreator;
-import org.nikitinia.patterns.behavior.TemplateMethod.logic.creators.DocumentCreator;
-import org.nikitinia.patterns.behavior.TemplateMethod.logic.creators.InvoiceCreator;
+import org.nikitinia.patterns.behavior.TemplateMethod.creators.AgreementCreator;
+import org.nikitinia.patterns.behavior.TemplateMethod.creators.BillCreator;
+import org.nikitinia.patterns.behavior.TemplateMethod.creators.DocumentCreator;
+import org.nikitinia.patterns.behavior.TemplateMethod.creators.InvoiceCreator;
 
 import java.util.ArrayList;
 import java.util.List;

@@ -1,5 +1,6 @@
 package org.nikitinia.patterns.behavior.Observer.run;
 
+import org.nikitinia.domain.objects.Document;
 import org.nikitinia.patterns.behavior.Observer.actor.Office;
 import org.nikitinia.patterns.behavior.Observer.actor.Subscriber;
 
@@ -14,12 +15,12 @@ public class Program {
         office.addObserver(subscriberFirst);
         office.addObserver(subscriberSecond);
 
-        office.addDocument("FirstDocument");
-        office.addDocument("SecondDocument");
+        office.addDocument(new Document());
+        office.addDocument(new Document());
 
         office.removeObserver(subscriberSecond);
 
-        office.removeDocument("FirstDocument");
+        office.removeDocument(new Document());
 
     }
 

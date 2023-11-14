@@ -1,4 +1,4 @@
-package org.nikitinia.patterns.behavior.TemplateMethod.logic.creators;
+package org.nikitinia.patterns.behavior.TemplateMethod.creators;
 
 import org.nikitinia.domain.objects.Bill;
 import org.nikitinia.domain.objects.Document;

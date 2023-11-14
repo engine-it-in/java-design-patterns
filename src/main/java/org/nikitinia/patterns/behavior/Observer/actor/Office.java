@@ -1,5 +1,6 @@
 package org.nikitinia.patterns.behavior.Observer.actor;
 
+import org.nikitinia.domain.objects.Document;
 import org.nikitinia.patterns.behavior.Observer.action.Observed;
 import org.nikitinia.patterns.behavior.Observer.action.Observer;
 
@@ -8,7 +9,7 @@ import java.util.List;
 
 public class Office implements Observed {
 
-    private final List<String> documents = new ArrayList<>();
+    private final List<Document> documents = new ArrayList<>();
 
     private final List<Observer> subscribes = new ArrayList<>();
 
@@ -29,12 +30,12 @@ public class Office implements Observed {
         }
     }
 
-    public void addDocument(String document) {
+    public void addDocument(Document document) {
         documents.add(document);
         notifyObserver("add");
     }
 
-    public void removeDocument(String document) {
+    public void removeDocument(Document document) {
         documents.remove(document);
         notifyObserver("remove");
     }
