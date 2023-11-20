@@ -1,4 +1,4 @@
-package org.nikitinia.patterns.behavior.command.action;
+package org.nikitinia.patterns.behavior.command.logic;
 
 import lombok.AllArgsConstructor;
 import org.nikitinia.patterns.behavior.command.action.Command;

@@ -1,6 +1,7 @@
-package org.nikitinia.patterns.behavior.memento;
+package org.nikitinia.patterns.behavior.memento.actor;
 
 import lombok.Setter;
+import org.nikitinia.patterns.behavior.memento.actor.Memento;
 
 public class DocumentEditor {
 

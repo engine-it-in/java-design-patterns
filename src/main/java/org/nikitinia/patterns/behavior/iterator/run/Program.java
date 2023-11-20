@@ -1,4 +1,6 @@
-package org.nikitinia.patterns.behavior.iterator;
+package org.nikitinia.patterns.behavior.iterator.run;
+
+import org.nikitinia.patterns.behavior.iterator.logic.DocumentRepository;
 
 public class Program {
 

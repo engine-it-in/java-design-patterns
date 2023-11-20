@@ -1,4 +1,7 @@
-package org.nikitinia.patterns.behavior.memento;
+package org.nikitinia.patterns.behavior.memento.run;
+
+import org.nikitinia.patterns.behavior.memento.actor.DocumentEditor;
+import org.nikitinia.patterns.behavior.memento.actor.Repository;
 
 public class Program {
 

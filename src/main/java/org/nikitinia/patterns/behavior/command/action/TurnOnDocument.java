@@ -1,14 +1,12 @@
-package org.nikitinia.patterns.behavior.command.actor;
+package org.nikitinia.patterns.behavior.command.action;
 
 import lombok.AllArgsConstructor;
-import org.nikitinia.patterns.behavior.command.action.Command;
-import org.nikitinia.patterns.behavior.command.action.DocumentState;
+import org.nikitinia.patterns.behavior.command.logic.DocumentState;
 
 @AllArgsConstructor
 public class TurnOnDocument implements Command {
 
     DocumentState documentState;
-
     @Override
     public void execute() {
         documentState.on();

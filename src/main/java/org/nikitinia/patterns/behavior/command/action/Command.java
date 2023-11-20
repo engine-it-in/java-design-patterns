@@ -1,6 +1,7 @@
 package org.nikitinia.patterns.behavior.command.action;
 
-public interface Command {
+import lombok.AllArgsConstructor;
 
+public interface Command {
     void execute();
 }

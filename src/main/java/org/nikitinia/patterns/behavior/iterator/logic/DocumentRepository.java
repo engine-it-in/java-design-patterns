@@ -1,14 +1,14 @@
-package org.nikitinia.patterns.behavior.iterator;
+package org.nikitinia.patterns.behavior.iterator.logic;
 
-import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.Setter;
-
+import org.nikitinia.patterns.behavior.iterator.action.Collection;
+import org.nikitinia.patterns.behavior.iterator.action.Iterator;
 
 
 @Getter
 @Setter
-public class DocumentRepository implements Collection{
+public class DocumentRepository implements Collection {
 
     private String DocumentName;
 

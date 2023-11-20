@@ -1,4 +1,4 @@
-package org.nikitinia.patterns.behavior.iterator;
+package org.nikitinia.patterns.behavior.iterator.action;
 
 public interface Collection {
 
