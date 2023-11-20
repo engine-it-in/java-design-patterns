@@ -10,4 +10,5 @@ public class Document {
 
     private String number;
     private String signatory;
+    private int listQuantity;
 }
