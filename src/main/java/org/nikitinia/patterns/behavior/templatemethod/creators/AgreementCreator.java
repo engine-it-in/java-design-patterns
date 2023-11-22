@@ -1,7 +1,7 @@
 package org.nikitinia.patterns.behavior.templatemethod.creators;
 
-import org.nikitinia.domain.objects.Agreement;
-import org.nikitinia.domain.objects.Document;
+import org.nikitinia.domain.model.documents.Agreement;
+import org.nikitinia.domain.model.documents.Document;
 
 public class AgreementCreator extends DocumentCreator {
 

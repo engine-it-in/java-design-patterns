@@ -1,7 +1,6 @@
 package org.nikitinia.patterns.behavior.command.logic;
 
-import org.nikitinia.domain.objects.Bill;
-import org.nikitinia.domain.objects.Document;
+import org.nikitinia.domain.model.documents.Document;
 
 import java.util.List;
 

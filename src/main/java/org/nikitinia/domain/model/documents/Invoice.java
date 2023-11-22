@@ -1,4 +1,4 @@
-package org.nikitinia.domain.objects;
+package org.nikitinia.domain.model.documents;
 
 import java.util.Date;
 

@@ -1,6 +1,6 @@
 package org.nikitinia.patterns.behavior.observer.actor;
 
-import org.nikitinia.domain.objects.Document;
+import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.observer.action.Observed;
 import org.nikitinia.patterns.behavior.observer.action.Observer;
 

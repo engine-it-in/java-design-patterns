@@ -1,6 +1,6 @@
 package org.nikitinia.patterns.behavior.observer.run;
 
-import org.nikitinia.domain.objects.Document;
+import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.observer.actor.Office;
 import org.nikitinia.patterns.behavior.observer.actor.Subscriber;
 

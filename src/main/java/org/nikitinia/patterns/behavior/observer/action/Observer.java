@@ -1,6 +1,6 @@
 package org.nikitinia.patterns.behavior.observer.action;
 
-import org.nikitinia.domain.objects.Document;
+import org.nikitinia.domain.model.documents.Document;
 
 import java.util.List;
 
