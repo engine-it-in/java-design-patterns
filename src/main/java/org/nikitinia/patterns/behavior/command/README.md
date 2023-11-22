@@ -1,5 +1,5 @@
 # Команда (Command)
-* [К описанию шаблонов](README.md)
+* [К описанию проекта](https://github.com/engine-it-in/java-design-patterns)
 ## Тип
 * Поведенческий шаблон
 ## Назначение
