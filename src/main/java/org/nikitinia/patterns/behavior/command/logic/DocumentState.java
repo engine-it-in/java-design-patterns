@@ -9,7 +9,6 @@ public class DocumentState {
     List<Document> documentsList;
 
     public void on() {
-
         System.out.println("Document on");
     }
 
