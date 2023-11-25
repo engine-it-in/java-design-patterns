@@ -1,4 +1,4 @@
-package org.nikitinia.patterns.behavior.command.action;
+package org.nikitinia.patterns.behavior.command.documentbuffer.action;
 
 import org.nikitinia.domain.model.documents.Document;
 

@@ -1,9 +1,9 @@
-package org.nikitinia.patterns.behavior.command.logic;
+package org.nikitinia.patterns.behavior.command.documentbuffer.logic;
 
 import org.nikitinia.domain.model.documents.Document;
-import org.nikitinia.patterns.behavior.command.action.Command;
-import org.nikitinia.patterns.behavior.command.action.CopyCommand;
-import org.nikitinia.patterns.behavior.command.action.PasteCommand;
+import org.nikitinia.patterns.behavior.command.documentbuffer.action.Command;
+import org.nikitinia.patterns.behavior.command.documentbuffer.action.CopyCommand;
+import org.nikitinia.patterns.behavior.command.documentbuffer.action.PasteCommand;
 
 public class DocumentWorker {
 

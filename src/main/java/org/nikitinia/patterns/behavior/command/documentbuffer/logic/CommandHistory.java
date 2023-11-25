@@ -1,6 +1,6 @@
-package org.nikitinia.patterns.behavior.command.logic;
+package org.nikitinia.patterns.behavior.command.documentbuffer.logic;
 
-import org.nikitinia.patterns.behavior.command.action.Command;
+import org.nikitinia.patterns.behavior.command.documentbuffer.action.Command;
 
 import java.util.Stack;
 
