@@ -1,4 +1,4 @@
-package org.nikitinia.domain.model.documents;
+package org.nikitinia.domain.model.additional;
 
 import lombok.*;
 

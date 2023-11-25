@@ -1,7 +1,7 @@
 package org.nikitinia.domain.creator;
 
 import org.nikitinia.domain.model.documents.Document;
-import org.nikitinia.domain.model.documents.TextField;
+import org.nikitinia.domain.model.additional.TextField;
 
 public class Creator {
 

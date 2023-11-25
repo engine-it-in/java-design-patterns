@@ -1,6 +1,7 @@
 package org.nikitinia.domain.model.documents;
 
 import lombok.*;
+import org.nikitinia.domain.model.additional.TextField;
 
 
 @NoArgsConstructor
