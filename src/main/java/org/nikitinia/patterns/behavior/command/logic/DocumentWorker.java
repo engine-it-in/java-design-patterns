@@ -7,7 +7,7 @@ import org.nikitinia.patterns.behavior.command.action.PasteCommand;
 
 public class DocumentWorker {
 
-    private CommandHistory commandHistory = new CommandHistory();
+    private final CommandHistory commandHistory = new CommandHistory();
 
     public void start(Document document) {
         System.out.println("*--New Document--*");

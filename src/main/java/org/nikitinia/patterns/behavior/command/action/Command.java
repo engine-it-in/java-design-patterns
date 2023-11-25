@@ -22,6 +22,7 @@ public abstract class Command {
      * Get state object
      * */
     void backUp() {
+
         backUp = document.getTextField().getText();
     }
 
