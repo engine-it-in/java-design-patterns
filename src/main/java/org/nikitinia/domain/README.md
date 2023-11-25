@@ -19,7 +19,7 @@
 * Модели домена, это основные объекты, на которых построена работа в домене.
 * В качестве моделей мы выбрали для себя следующие объекты
 #### Объекты
-* [Документ](/org/nikitinia/domain/model/documents/Document.java)
+* [Документ](https://github.com/engine-it-in/java-design-patterns/blob/develop/src/main/java/org/nikitinia/domain/model/documents/Document.java)
 * Два 
 * Три
 ### За что отвечает?
