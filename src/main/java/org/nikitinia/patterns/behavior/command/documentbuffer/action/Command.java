@@ -2,6 +2,9 @@ package org.nikitinia.patterns.behavior.command.documentbuffer.action;
 
 import org.nikitinia.domain.model.documents.Document;
 
+/*
+* Это сама "команда". Этот абстрактный класс является инкапсулирует корневую логику команды.
+* */
 public abstract class Command {
 
     /*
