@@ -11,17 +11,19 @@ import org.nikitinia.domain.model.additional.TextField;
 @Setter
 public class Document {
 
+    /*Номер документа*/
     private String number;
+    /*Подпись на документе*/
     private String signatory;
-    private int listQuantity;
+    /*Блок с текстовой информацией на документе*/
     private TextField textField;
 
+    /*Переопределенный метод для демонстрации содержимого*/
     @Override
     public String toString() {
         return "Document{" +
                 "number='" + number + '\'' +
-                ", signatory='" + signatory + '\'' +
-                ", listQuantity=" + listQuantity +
+                ", signatory='" + signatory +
                 ", textField=" + textField.toString() +
                 '}';
     }

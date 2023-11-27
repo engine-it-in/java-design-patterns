@@ -3,6 +3,9 @@ package org.nikitinia.patterns.behavior.command.documentsender.data;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
+/*
+* Справочник способов отправки
+* */
 public enum NotificationType {
 
     TELEGRAM ("Телеграмм"),

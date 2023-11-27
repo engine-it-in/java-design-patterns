@@ -3,12 +3,20 @@ package org.nikitinia.patterns.behavior.command.documentbuffer.action;
 import org.nikitinia.domain.model.documents.Document;
 
 /*
-* Это сама "команда". Этот абстрактный класс является инкапсулирует корневую логику команды.
-* */
+ * Что -> Это сама "команда";
+ * Для чего -> Этот абстрактный класс инкапсулирует корневую логику команды;
+ * Реализация -> Создана в виде абстрактного класса, потому что удобно определить основные действия, которые могут не изменяться;
+ * В чем выгода - Уменьшаем копирование и переиспользуем корневую логику;
+ * В чем потенциальные проблемы:
+ *   - потенциальные проблемы могут быть с уже определенными шагами;
+ *   - это уменьшает гибкость и навязывает определенное формат реализации;
+ *   - конкретные реализации могут не укладываться в сделанные реализации;
+ *   - использование абстрактного класса должно быть обосновано контекстом;
+ * */
 public abstract class Command {
 
     /*
-     * Object for command
+     * Объект, над которым мы совершаем действия;
      * */
     public Document document;
 
@@ -17,37 +25,30 @@ public abstract class Command {
     }
 
     /*
-     * For state object
+     * Для фиксации текста, который складываем в буфер;
      * */
     private String backUp;
 
     /*
-     * Get state object
+     * Сохранение теста для передачи в буфер;
      * */
     void backUp() {
-
         backUp = document.getTextField().getText();
     }
 
     /*
-     * Undo for state object
+     * Устанавливаем текстовое поле в состояние бэкапа, то есть, восстанавливаем бэкап значения;
      * */
     public void undo() {
         if (backUp != null) {
-            /*
-             * If backUp not null -> revert state for text
-             * */
             document.getTextField().setText(backUp);
         } else {
-            /*
-             * If backUp null -> clean bufer
-             * */
             document.getTextField().setBuffer(null);
         }
     }
 
     /*
-     * It is we will do with object
+     * Этот метод необходимо переопределить для принятия решения о том, когда выполнять команду;
      * */
     public abstract boolean execute();
 
