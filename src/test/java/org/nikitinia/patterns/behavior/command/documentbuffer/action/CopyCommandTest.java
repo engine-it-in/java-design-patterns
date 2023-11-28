@@ -1,6 +1,5 @@
 package org.nikitinia.patterns.behavior.command.documentbuffer.action;
 
-import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.domain.model.documents.Document;
