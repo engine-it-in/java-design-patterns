@@ -1,5 +1,6 @@
 package org.nikitinia.patterns.behavior.command.documentbuffer.action;
 
+import lombok.Getter;
 import org.nikitinia.domain.model.documents.Document;
 
 /*
@@ -13,6 +14,7 @@ import org.nikitinia.domain.model.documents.Document;
  *   - конкретные реализации могут не укладываться в сделанные реализации;
  *   - использование абстрактного класса должно быть обосновано контекстом;
  * */
+@Getter
 public abstract class Command {
 
     /*

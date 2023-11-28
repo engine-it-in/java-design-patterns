@@ -1,6 +1,5 @@
 package org.nikitinia.patterns.behavior.command.documentsender.logic;
 
-import lombok.extern.slf4j.Slf4j;
 import org.nikitinia.patterns.behavior.command.documentsender.action.EmailNotification;
 import org.nikitinia.patterns.behavior.command.documentsender.action.Notification;
 import org.nikitinia.patterns.behavior.command.documentsender.action.SMSNotification;
