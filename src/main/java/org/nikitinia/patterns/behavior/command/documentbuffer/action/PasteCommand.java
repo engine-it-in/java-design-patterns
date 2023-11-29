@@ -25,7 +25,7 @@ public class PasteCommand extends Command {
     @Override
     public boolean execute() {
 
-        if (document.getTextField().getBuffer().isEmpty()) {
+        if (document.getTextField().getBuffer() == null) {
             return false;
         } else {
             backUp();
