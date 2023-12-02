@@ -1,5 +1,6 @@
 package org.nikitinia.patterns.behavior.command.documentsender.logic;
 
+import lombok.Getter;
 import org.nikitinia.patterns.behavior.command.documentsender.action.EmailNotification;
 import org.nikitinia.patterns.behavior.command.documentsender.action.Notification;
 import org.nikitinia.patterns.behavior.command.documentsender.action.SMSNotification;
@@ -20,6 +21,7 @@ public class NotificationService {
     /*
     * Создаем справочник типов отправки и самих оповещений
     * */
+    @Getter
     private final Map<NotificationType, Notification> notificationMap;
 
     /*В конструкторе регистрируем все доступные нам отправки*/
@@ -29,7 +31,7 @@ public class NotificationService {
     }
 
     /*Список типов отправки*/
-    public List<Notification> registerNotification() {
+    private List<Notification> registerNotification() {
         List<Notification> list = new ArrayList<>();
         list.add(new SMSNotification());
         list.add(new TelegramNotification());

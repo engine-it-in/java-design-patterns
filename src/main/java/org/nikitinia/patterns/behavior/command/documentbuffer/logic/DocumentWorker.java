@@ -1,5 +1,6 @@
 package org.nikitinia.patterns.behavior.command.documentbuffer.logic;
 
+import lombok.Getter;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.command.documentbuffer.action.Command;
 import org.nikitinia.patterns.behavior.command.documentbuffer.action.CopyCommand;
@@ -13,6 +14,7 @@ public class DocumentWorker {
     /*
     * Нам будет нужна история.
     * */
+    @Getter
     private final CommandHistory commandHistory = new CommandHistory();
 
     public void start(Document document) {

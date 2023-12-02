@@ -1,5 +1,6 @@
 package org.nikitinia.patterns.behavior.command.documentbuffer.logic;
 
+import lombok.Getter;
 import org.nikitinia.patterns.behavior.command.documentbuffer.action.Command;
 
 import java.util.Stack;
@@ -11,6 +12,7 @@ import java.util.Stack;
 public class CommandHistory {
 
     /*Сюда будем записывать историю действий*/
+    @Getter
     private Stack<Command> historyCommand = new Stack<>();
 
     /*Положим новую историческую запись*/
