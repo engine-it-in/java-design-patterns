@@ -7,7 +7,7 @@ import org.nikitinia.patterns.behavior.iterator.action.Iterator;
 import java.util.List;
 
 public class DocumentRepository implements Collection {
-    private DocumentIterator documentIterator;
+    private final DocumentIterator documentIterator;
 
     public DocumentRepository(List<Document> documentList) {
         this.documentIterator = new DocumentIterator(documentList);

@@ -7,7 +7,7 @@ import java.util.List;
 
 public class DocumentIterator implements Iterator {
 
-    private List<Document> documentList;
+    private final List<Document> documentList;
     private int position;
 
     public DocumentIterator(List<Document> documentList) {
