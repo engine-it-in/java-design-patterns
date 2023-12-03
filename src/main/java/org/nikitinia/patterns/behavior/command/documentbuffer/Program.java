@@ -1,4 +1,4 @@
-package org.nikitinia.patterns.behavior.command.documentbuffer.run;
+package org.nikitinia.patterns.behavior.command.documentbuffer;
 
 import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.patterns.behavior.command.documentbuffer.logic.DocumentWorker;

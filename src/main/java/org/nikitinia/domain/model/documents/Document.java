@@ -12,7 +12,7 @@ import org.nikitinia.domain.model.additional.TextField;
 public class Document {
 
     /*Номер документа*/
-    private String number;
+    private Double number;
     /*Подпись на документе*/
     private String signatory;
     /*Блок с текстовой информацией на документе*/
