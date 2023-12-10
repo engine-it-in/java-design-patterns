@@ -1,11 +1,14 @@
-package org.nikitinia.patterns.behavior.mediator;
+package org.nikitinia.patterns.behavior.mediator.logic;
 
 import org.nikitinia.domain.model.documents.Document;
+import org.nikitinia.patterns.behavior.mediator.actor.Admin;
+import org.nikitinia.patterns.behavior.mediator.actor.Operator;
+import org.nikitinia.patterns.behavior.mediator.actor.User;
 
 import java.util.ArrayList;
 import java.util.List;
 
-public class AudioCommunicationSystem implements CommunicationSystem {
+public class AudioDocumentSystem implements DocumentSystem {
 
     User admin;
     List<User> users = new ArrayList<>();
@@ -40,7 +43,7 @@ public class AudioCommunicationSystem implements CommunicationSystem {
         }
         if (sender instanceof Operator) {
             for (User user : users) {
-                if (user != sender && sender.isEnabled) {
+                if (user != sender && sender.isEnabled()) {
                     user.visualizeDocument(document);
                 }
             }
