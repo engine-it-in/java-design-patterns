@@ -12,7 +12,7 @@ import org.nikitinia.patterns.behavior.mediator.logic.DocumentSystem;
 public class Admin extends User {
 
     /*
-    * Общая логика инстанциируется через конструтор. Класса
+    * Общая логика инстанциируется через конструтор.
     * */
     public Admin(DocumentSystem documentSystem, String name) {
         super(documentSystem, name);
