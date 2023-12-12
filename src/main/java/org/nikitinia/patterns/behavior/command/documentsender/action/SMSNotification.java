@@ -1,11 +1,12 @@
 package org.nikitinia.patterns.behavior.command.documentsender.action;
 
-import lombok.extern.slf4j.Slf4j;
 import org.nikitinia.patterns.behavior.command.documentsender.data.NotificationType;
 
 /*
-* Тип оповещения - берем из системного справочника, остальное делегировано в интерфейс
-* */
+ * Что -> Конкретный тип оповещения;
+ * Для чего -> Маркер для конкреного типа смс оповещения, который будет направлять логику работы шаблона;
+ * Реализация -> Класс, реализующий интерфейс;
+ * */
 public class SMSNotification implements Notification {
 
     @Override

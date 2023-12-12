@@ -1,14 +1,19 @@
 package org.nikitinia.patterns.behavior.command.documentbuffer.logic;
 
 import lombok.Getter;
+import lombok.extern.slf4j.Slf4j;
+import lombok.extern.slf4j.XSlf4j;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.command.documentbuffer.action.Command;
 import org.nikitinia.patterns.behavior.command.documentbuffer.action.CopyCommand;
 import org.nikitinia.patterns.behavior.command.documentbuffer.action.PasteCommand;
 
 /*
-* Здесь реализуем логику наших действий
-* */
+ * Что -> Демонстрационный класс, который запускает общую логику взаимодействия классов ;
+ * Для чего -> Для запуска логики демонстрации;
+ * Реализация -> По сути, такая логика реализации является демонстрацией шаблона - посредник, о котором мы поговорим позднее;
+ * */
+@Slf4j
 public class DocumentWorker {
 
     /*
@@ -19,19 +24,19 @@ public class DocumentWorker {
 
     public void start(Document document) {
         /*Печатаем содержимое документа*/
-        System.out.println("*--New Document--*");
-        System.out.println(document.getTextField().toString());
+        log.info("*--New Document--*");
+        log.info(document.getTextField().toString());
 
         /*Выполняем копирование вставку и смотрим на документ*/
-        System.out.println("*--Document after put come text in buffer--*");
+        log.info("*--Document after put come text in buffer--*");
         executeCommand(new CopyCommand(document));
         executeCommand(new PasteCommand(document));
-        System.out.println(document.getTextField().toString());
+        log.info(document.getTextField().toString());
 
         /*Откатываем все сделанное над документом*/
         undo();
-        System.out.println("*--Document after revert state--*");
-        System.out.println(document.getTextField().toString());
+        log.info("*--Document after revert state--*");
+        log.info(document.getTextField().toString());
         /*Смотрим на содержимое документа*/
     }
 

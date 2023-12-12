@@ -8,7 +8,7 @@ import org.nikitinia.patterns.behavior.mediator.actor.User;
 import org.nikitinia.patterns.behavior.mediator.logic.AudioDocumentSystem;
 
 public class Program {
-
+    /*Запукаем работу посредника*/
     public static void main(String[] args) {
         AudioDocumentSystem audioCommunicationSystem = new AudioDocumentSystem();
 

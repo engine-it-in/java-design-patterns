@@ -3,8 +3,10 @@ package org.nikitinia.patterns.behavior.command.documentsender.action;
 import org.nikitinia.patterns.behavior.command.documentsender.data.NotificationType;
 
 /*
-* Тип оповещения - берем из системного справочника, остальное делегировано в интерфейс
-* */
+ * Что -> Конкретный тип оповещения;
+ * Для чего -> Маркер для конкреного типа email оповещения, который будет направлять логику работы шаблона;
+ * Реализация -> Класс, реализующий интерфейс;
+ * */
 public class EmailNotification implements Notification{
 
     @Override

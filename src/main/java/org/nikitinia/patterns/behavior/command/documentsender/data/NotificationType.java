@@ -6,10 +6,13 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 
-@AllArgsConstructor
 /*
-* Справочник способов отправки
-* */
+ * Что -> Справочник типов отправки сообщений;
+ * Для чего -> Типы отправки, сосредоточены в одном месте;
+ * Реализация -> Enum, внутренний справочник;
+ * В чем выгода -> Единая точка работы с данными;
+ * */
+@AllArgsConstructor
 public enum NotificationType {
 
     TELEGRAM ("Телеграмм"),

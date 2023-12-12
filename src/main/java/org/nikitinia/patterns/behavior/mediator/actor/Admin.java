@@ -4,12 +4,18 @@ import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.mediator.logic.DocumentSystem;
 
 /*
-* Админ, наследник пользователя. Наследует общую логику и по своему визуализирует представленнфй документю
-* */
+ * Что -> Наследник пользователя. Админ;
+ * Для чего -> Наследует общую логику и по своему визуализирует отправляемый документ;
+ * Реализация -> Конкретный класс, отвечающий за дайствия оператора;
+ * В чем выгода -> Разделение функций с сохранением ответсвенности;
+ * */
 public class Admin extends User {
 
     DocumentSystem documentSystem;
 
+    /*
+    * Общая логика инстанциируется через конструтор. Класса
+    * */
     public Admin(DocumentSystem documentSystem, String name) {
         super(documentSystem, name);
     }
