@@ -60,9 +60,7 @@ class UserTest {
             assertEquals(document, arg);
             return null;
         }).when(user).sendDocument(any(Document.class));
-
         user.sendDocument(document);
-
     }
 
 }
