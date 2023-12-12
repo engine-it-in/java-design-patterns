@@ -10,22 +10,22 @@ import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.nikitinia.patterns.behavior.mediator.util.Constant.TEST_NAME;
 
-class OperatorTest {
+class AdminTest {
 
-    private final AudioDocumentSystem audioDocumentSystem
-            = new AudioDocumentSystem();
+    private final AudioDocumentSystem audioDocumentSystem =
+            new AudioDocumentSystem();
 
-    private final Operator operator
-            = new Operator(audioDocumentSystem, TEST_NAME);
+    private final Admin admin =
+            new Admin(audioDocumentSystem, TEST_NAME);
 
-    private final Document document
-            = DocumentCreator.documentBuild();
+    private final ByteArrayOutputStream outputStream =
+            new ByteArrayOutputStream();
 
-    private ByteArrayOutputStream outputStream
-            = new ByteArrayOutputStream();
+    private final Document document =
+            DocumentCreator.documentBuild();
 
     @BeforeEach
     void setUp() {
@@ -33,21 +33,21 @@ class OperatorTest {
     }
 
     @Test
-    void checkOperator() {
-        assertThat(operator)
+    void checkAdmin() {
+        assertThat(admin)
                 .hasFieldOrPropertyWithValue("documentSystem", audioDocumentSystem)
                 .hasFieldOrPropertyWithValue("name", TEST_NAME);
     }
 
     @Test
-    void visualizeDocument_shouldDoResult() {
-        operator.visualizeDocument(document);
+    void visualizeDocument_shouldDo() {
+        admin.visualizeDocument(document);
 
         assertEquals(
-                "Operator visualize " + document,
+                "Admin visualize " + document,
                 outputStream.toString().trim()
         );
-    }
 
+    }
 
 }

@@ -56,7 +56,6 @@ class UserTest {
 
         doAnswer( invocation -> {
             Object arg = invocation.getArgument(0);
-
             assertEquals(document, arg);
             return null;
         }).when(user).sendDocument(any(Document.class));
