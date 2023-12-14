@@ -1,25 +1,18 @@
 package org.nikitinia.patterns.behavior.memento.actor;
 
 import lombok.Setter;
-import org.nikitinia.patterns.behavior.memento.actor.Memento;
+import org.nikitinia.domain.model.documents.Document;
 
 public class DocumentEditor {
 
     @Setter
-    private String text;
-
-    @Override
-    public String toString() {
-        return "DocumentEditor{" +
-                "text='" + text + '\'' +
-                '}';
-    }
+    private Document document;
 
     public Memento memento() {
-        return new Memento(text);
+        return new Memento(document);
     }
 
     public void load(Memento memento) {
-        memento.getText();
+        memento.getDocument();
     }
 }
