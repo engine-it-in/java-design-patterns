@@ -2,25 +2,19 @@ package org.nikitinia.patterns.behavior.memento.actor;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.nikitinia.domain.model.documents.Document;
-import org.nikitinia.patterns.behavior.memento.actor.Memento;
 
-import java.util.Stack;
 
-@Getter
-@Setter
+/*
+ * Что -> Класс хранитель через который мы работаем со снимком;
+ * Для чего -> Для инкапсуляции снимка в отдельный класс, доступ к которому можно получить только для загрузки/установки снимка;
+ * Реализация -> Класс, с методами доступа/загрузки хранителя;
+ * В чем выгода -> Не нарушаем инкапсуляцию и делегируем ответсвенность по опрозрачиванию самого снимка;
+ * */
 public class Repository {
 
-    Stack<Document> documentHistory;
 
+    @Getter
+    @Setter
     private Memento memento;
-
-    private void addHistory(Document document) {
-        documentHistory.add(document);
-    }
-
-    private Document peekHistory() {
-        return documentHistory.peek();
-    }
 
 }
