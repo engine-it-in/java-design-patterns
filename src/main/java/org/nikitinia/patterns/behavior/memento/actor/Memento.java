@@ -29,6 +29,7 @@ public class Memento {
     }
 
     public Document pollHistory() {
+
         return mementoHistory.poll();
     }
 }
