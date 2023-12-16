@@ -12,7 +12,6 @@ import lombok.Setter;
  * */
 public class Repository {
 
-
     @Getter
     @Setter
     private Memento memento;

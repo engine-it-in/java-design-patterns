@@ -4,7 +4,6 @@ import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.junit.jupiter.params.provider.ValueSource;
 import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.domain.model.documents.Document;
 
@@ -13,7 +12,6 @@ import java.util.Queue;
 import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
 class MementoTest {
 
@@ -50,7 +48,7 @@ class MementoTest {
                 .isEqualTo(doc);
     }
 
-    public static Stream<Arguments> provideNullAndDocument() {
+    private static Stream<Arguments> provideNullAndDocument() {
         return Stream.of(
                 Arguments.of((Object) null),
                 Arguments.of(document)
