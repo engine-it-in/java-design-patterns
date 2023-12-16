@@ -9,10 +9,7 @@ import java.util.List;
 @AllArgsConstructor
 public class Subscriber implements Observer {
 
-    private int id;
-
     private String name;
-
 
     @Override
     public void eventListener(List<Document> documents, String action) {

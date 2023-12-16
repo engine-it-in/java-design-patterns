@@ -30,6 +30,7 @@
 * [Команда](/src/main/java/org/nikitinia/patterns/behavior/command/README.md)
 * [Итератор](/src/main/java/org/nikitinia/patterns/behavior/iterator/README.md)
 * [Посредник](/src/main/java/org/nikitinia/patterns/behavior/mediator/README.md)
+* [Снимок](/src/main/java/org/nikitinia/patterns/behavior/memento/README.md)
 ...
 
 ## Список литературы/проектов для развития
