@@ -7,6 +7,13 @@ import org.nikitinia.patterns.behavior.observer.action.Observer;
 import java.util.ArrayList;
 import java.util.List;
 
+/*
+ * Что -> Издатель;
+ * Для чего -> Работает с документами и подписчиками;
+ * Реализация -> Класс, реализующий управление контентом и работу с подписчиками;
+ * В чем выгода -> Единая точка управления.
+ * Если издателей может быть несколько, то общую логику можно перенести в абстрактуный класс;
+ * */
 public class Office implements Observed {
 
     private final List<Document> documents = new ArrayList<>();
@@ -25,7 +32,7 @@ public class Office implements Observed {
 
     @Override
     public void notifyObserver(String action) {
-        for (Observer observer: subscribes) {
+        for (Observer observer : subscribes) {
             observer.eventListener(documents, action);
         }
     }
