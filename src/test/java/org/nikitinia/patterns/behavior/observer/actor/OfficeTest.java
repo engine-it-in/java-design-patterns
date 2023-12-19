@@ -46,12 +46,10 @@ class OfficeTest {
         office.addObserver(subscriber);
 
         assertThat(office.getSubscribes())
-                .isInstanceOfSatisfying(List.class, list -> {
-
-                    assertThat(list.contains(subscriber))
-                            .isTrue();
-
-                });
+                .isInstanceOfSatisfying(
+                        List.class,
+                        list -> assertThat(list.contains(subscriber))
+                                .isTrue());
     }
 
 

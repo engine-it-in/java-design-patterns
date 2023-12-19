@@ -15,13 +15,12 @@ import java.util.List;
  * В чем выгода -> Единая точка управления.
  * Если издателей может быть несколько, то общую логику можно перенести в абстрактуный класс;
  * */
+@Getter
 public class Office implements Observed {
 
-    @Getter
     private final List<Document> documents
             = new ArrayList<>();
 
-    @Getter
     private final List<Observer> subscribes
             = new ArrayList<>();
 
