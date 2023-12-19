@@ -26,7 +26,6 @@ public class Program {
         office.removeObserver(subscriberSecond);
         /*Уведомление оставшегося подписчика о выполненном действии*/
         office.removeDocument(documentFirst);
-
     }
 
 }
