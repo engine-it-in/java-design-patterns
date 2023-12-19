@@ -9,8 +9,8 @@ public class Program {
     public static void main(String[] args) {
         Office office = new Office();
 
-        Subscriber subscriberFirst = new Subscriber(1, "Dima");
-        Subscriber subscriberSecond = new Subscriber(2, "Vova");
+        Subscriber subscriberFirst = new Subscriber("Dima");
+        Subscriber subscriberSecond = new Subscriber("Vova");
 
         office.addObserver(subscriberFirst);
         office.addObserver(subscriberSecond);
