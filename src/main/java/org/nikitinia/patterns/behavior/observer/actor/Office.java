@@ -47,8 +47,9 @@ public class Office implements Observed {
     }
 
     public void removeDocument(Document document) {
-        documents.remove(document);
         notifyObserver("remove");
+        documents.remove(document);
+
     }
 
 }
