@@ -1,6 +1,7 @@
 package org.nikitinia.domain.model.documents;
 
 import lombok.*;
+import org.nikitinia.domain.dictionarys.Status;
 import org.nikitinia.domain.model.additional.TextField;
 
 
@@ -9,12 +10,14 @@ import org.nikitinia.domain.model.additional.TextField;
 @Builder
 @Getter
 @Setter
-public class Document {
+public class Document implements Comparable<Document> {
 
     /*Номер документа*/
     private Double number;
     /*Подпись на документе*/
     private String signatory;
+    /*Подпись на документе*/
+    private Status status;
     /*Блок с текстовой информацией на документе*/
     private TextField textField;
 
@@ -23,9 +26,14 @@ public class Document {
     public String toString() {
         return "Document{" +
                 "number='" + number + '\'' +
+                ", status='" + status +
                 ", signatory='" + signatory +
                 ", textField=" + textField.toString() +
                 '}';
     }
 
+    @Override
+    public int compareTo(Document document) {
+        return this.getNumber().compareTo(document.getNumber());
+    }
 }

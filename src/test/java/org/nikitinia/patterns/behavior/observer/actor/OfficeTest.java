@@ -87,7 +87,7 @@ class OfficeTest {
 
         assertThat(outputStream.toString().trim())
                 .contains(
-                        "name [Document{number='1.0', signatory='Signatory, " +
+                        "name [Document{number='1.0', status='null, signatory='Signatory, " +
                                 "textField=TextField{line=2', " +
                                 "column=2', quantitySymbolLine=123', " +
                                 "text='someText', buffer='null'}}] add");
@@ -102,7 +102,7 @@ class OfficeTest {
 
         assertThat(outputStream.toString().trim())
                 .isEqualTo(
-                        "name [Document{number='1.0', signatory='Signatory, " +
+                        "name [Document{number='1.0', status='null, signatory='Signatory, " +
                                 "textField=TextField{line=2', " +
                                 "column=2', quantitySymbolLine=123', " +
                                 "text='someText', buffer='null'}}] add");
@@ -120,15 +120,13 @@ class OfficeTest {
 
         assertThat(outputStream.toString().trim())
                 .contains(
-                        "name [Document{number='1.0', signatory='Signatory, " +
+                        "name [Document{number='1.0', status='null, signatory='Signatory, " +
                                 "textField=TextField{line=2', " +
                                 "column=2', quantitySymbolLine=123', " +
                                 "text='someText', buffer='null'}}] remove");
 
 
     }
-
-
 
 
 }

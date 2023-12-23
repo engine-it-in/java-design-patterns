@@ -1,6 +1,11 @@
 package org.nikitinia.patterns.behavior.state.action;
 
-public interface DocumentActivity {
+import org.nikitinia.domain.model.documents.Document;
 
+import java.util.TreeSet;
+
+public interface DocumentActivity {
     void doAction();
+
+    void printHistory();
 }

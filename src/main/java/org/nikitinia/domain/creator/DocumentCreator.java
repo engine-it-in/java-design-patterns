@@ -1,5 +1,6 @@
 package org.nikitinia.domain.creator;
 
+import org.nikitinia.domain.dictionarys.Status;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.domain.model.additional.TextField;
 
@@ -13,6 +14,15 @@ public class DocumentCreator {
         return Document.builder()
                 .number(number)
                 .signatory("Signatory")
+                .textField(textFieldCreator())
+                .build();
+    }
+
+    public static Document documentBuildWithNumberAndStatus(Double number, Status status) {
+        return Document.builder()
+                .number(number)
+                .signatory("Signatory")
+                .status(status)
                 .textField(textFieldCreator())
                 .build();
     }
