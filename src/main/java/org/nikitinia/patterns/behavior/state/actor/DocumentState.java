@@ -23,15 +23,15 @@ public abstract class DocumentState {
                 : registerDocuments;
     }
 
-    public boolean checkDocument(Document document) {
-        return registerDocuments.isEmpty()
+    public boolean checkRegisterDocuments(Document document) {
+        return registerDocuments == null
                 || registerDocuments.contains(document);
     }
 
     public void addDocument() {
         registerDocuments = initRegisterDocument(registerDocuments);
 
-        if (checkDocument(document)) {
+        if (checkRegisterDocuments(document)) {
             registerDocuments.add(document);
         }
     }
