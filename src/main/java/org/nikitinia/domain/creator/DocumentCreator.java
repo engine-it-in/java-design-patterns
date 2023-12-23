@@ -1,11 +1,9 @@
 package org.nikitinia.domain.creator;
 
 import org.nikitinia.domain.dictionarys.Status;
-import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.domain.model.additional.TextField;
+import org.nikitinia.domain.model.documents.Document;
 
-import java.util.Arrays;
-import java.util.Collection;
 import java.util.List;
 
 public class DocumentCreator {

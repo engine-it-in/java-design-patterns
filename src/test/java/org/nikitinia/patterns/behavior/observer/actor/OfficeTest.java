@@ -19,7 +19,7 @@ class OfficeTest {
 
     private final Office office = new Office();
 
-    private ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
+    private final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
     @BeforeEach
     void setUp() {
