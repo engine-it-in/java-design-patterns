@@ -33,28 +33,49 @@ class DocumentStateTest {
 
     @Test
     void initRegisterDocument_shouldReturnNull() {
-        assertThat(documentStart.initRegisterDocument(registerDocuments))
-                .isEqualTo(registerDocuments);
+        assertThat(documentStart.getRegisterDocuments())
+                .isNull();
     }
 
     @Test
     void initRegisterDocument_shouldReturnNonNull() {
-        documentStart.addDocument();
-        assertThat(documentStart.initRegisterDocument(registerDocuments))
-                .isNotNull();
-    }
-
-    @Test
-    void checkRegisterDocuments_shouldReturnFalse() {
-        documentStart.addDocument();
-
-        assertThat(documentStart.checkRegisterDocuments(document))
-                .isFalse();
+        documentStart.initRegisterDocument();
+        assertThat(documentStart.getRegisterDocuments())
+                .isEqualTo(new TreeSet<>());
     }
 
     @Test
     void checkRegisterDocuments_shouldReturnTrue() {
+        documentStart.addDocument();
+
         assertThat(documentStart.checkRegisterDocuments(document))
+                .isTrue();
+    }
+
+    @Test
+    void checkRegisterDocuments_shouldReturnFalse() {
+        Document documentNotExpected = DocumentCreator.documentBuildWithNumber(2.0);
+        documentStart.addDocument();
+
+        assertThat(documentStart.checkRegisterDocuments(documentNotExpected))
+                .isFalse();
+    }
+
+    @Test
+    void addDocument_shouldReturnNotAdd() {
+        documentStart.addDocument();
+        TreeSet<Document> registerDocumentsLocal = new TreeSet<>();
+        registerDocumentsLocal.add(document);
+
+        assertThat(documentStart.getRegisterDocuments())
+                .usingRecursiveComparison()
+                .isEqualTo(registerDocumentsLocal);
+    }
+
+    @Test
+    void addDocument_shouldReturnAdd() {
+        documentStart.addDocument();
+        assertThat(documentStart.getRegisterDocuments().contains(document))
                 .isTrue();
     }
 

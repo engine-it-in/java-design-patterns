@@ -17,19 +17,19 @@ public abstract class DocumentState {
         this.document = document;
     }
 
-    public TreeSet<Document> initRegisterDocument(TreeSet<Document> registerDocuments) {
-        return registerDocuments == null
-                ? new TreeSet<>()
-                : registerDocuments;
+    public void initRegisterDocument() {
+        if (this.registerDocuments == null) {
+            this.registerDocuments = new TreeSet<>();
+        }
     }
 
     public boolean checkRegisterDocuments(Document document) {
-        return registerDocuments == null
+        return registerDocuments.isEmpty()
                 || registerDocuments.contains(document);
     }
 
     public void addDocument() {
-        registerDocuments = initRegisterDocument(registerDocuments);
+        initRegisterDocument();
 
         if (checkRegisterDocuments(document)) {
             registerDocuments.add(document);
