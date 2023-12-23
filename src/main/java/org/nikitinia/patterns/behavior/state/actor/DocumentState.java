@@ -5,10 +5,9 @@ import org.nikitinia.domain.dictionarys.Status;
 import org.nikitinia.domain.model.documents.Document;
 
 import java.util.TreeSet;
-import java.util.function.Predicate;
 
 @Getter
-public abstract class DocumentState implements Predicate<Document> {
+public abstract class DocumentState {
 
     public Document document;
 
@@ -24,7 +23,7 @@ public abstract class DocumentState implements Predicate<Document> {
                 : registerDocuments;
     }
 
-    public boolean test(Document document) {
+    public boolean checkDocument(Document document) {
         return registerDocuments.isEmpty()
                 || registerDocuments.contains(document);
     }
@@ -32,7 +31,7 @@ public abstract class DocumentState implements Predicate<Document> {
     public void addDocument() {
         registerDocuments = initRegisterDocument(registerDocuments);
 
-        if (test(document)) {
+        if (checkDocument(document)) {
             registerDocuments.add(document);
         }
     }

@@ -30,8 +30,7 @@ class OfficeTest {
     void checkOffice() {
         assertThat(office)
                 .hasFieldOrPropertyWithValue("documents", new ArrayList<>())
-                .hasFieldOrPropertyWithValue("subscribes", new ArrayList<>())
-        ;
+                .hasFieldOrPropertyWithValue("subscribes", new ArrayList<>());
     }
 
     @Test
