@@ -7,8 +7,6 @@ import org.nikitinia.patterns.behavior.state.action.DocumentActivity;
 import org.nikitinia.patterns.behavior.state.actor.DocumentStart;
 import org.nikitinia.patterns.behavior.state.context.DocumentContext;
 
-import java.util.logging.Logger;
-
 public class Program {
 
     public static void main(String[] args) {
@@ -18,12 +16,11 @@ public class Program {
         documentContext.setDocumentActivity(documentActivity);
 
         for (int i = 0; i < 10; i++) {
-
             documentContext.doAction();
             documentContext.changeAction();
         }
 
-        documentActivity.printHistory();
+        documentActivity.printRegisterDocumentsHistory();
 
     }
 
