@@ -16,9 +16,6 @@ class DocumentStateTest {
             Mockito.CALLS_REAL_METHODS
     );
 
-    public TreeSet<Document> registerDocuments =
-            new TreeSet<>();
-
     Document document =
             DocumentCreator.documentBuild();
     private final DocumentStart documentStart
