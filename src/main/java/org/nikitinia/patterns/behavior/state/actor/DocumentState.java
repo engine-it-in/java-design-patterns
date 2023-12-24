@@ -36,7 +36,7 @@ public abstract class DocumentState {
         }
     }
 
-    public void modifyStatus(Status status) {
+    public void modifyDocumentStatus(Status status) {
         document.setStatus(status);
     }
 

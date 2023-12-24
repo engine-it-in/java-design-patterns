@@ -17,7 +17,7 @@ public class DocumentStart extends DocumentState implements DocumentActivity {
     @Override
     public void doAction() {
         addDocument();
-        modifyStatus(Status.PRESIGN);
+        modifyDocumentStatus(Status.PRESIGN);
         notifyDocumentStatus();
     }
 

@@ -17,7 +17,7 @@ public class DocumentStop extends DocumentState implements DocumentActivity {
     @Override
     public void doAction() {
         addDocument();
-        modifyStatus(Status.SIGN);
+        modifyDocumentStatus(Status.SIGN);
         notifyDocumentStatus();
     }
 
