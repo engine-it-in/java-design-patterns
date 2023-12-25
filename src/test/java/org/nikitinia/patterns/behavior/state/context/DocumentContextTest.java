@@ -23,7 +23,7 @@ import static org.assertj.core.api.Assertions.assertThat;
 
 class DocumentContextTest {
 
-    private static Document document =
+    private static final Document document =
             DocumentCreator.documentBuildWithNumberAndStatus(1.0, Status.DRAFT);
     private final DocumentContext documentContext =
             new DocumentContext(document);
