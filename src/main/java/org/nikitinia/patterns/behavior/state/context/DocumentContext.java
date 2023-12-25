@@ -7,6 +7,12 @@ import org.nikitinia.patterns.behavior.state.actor.DocumentStart;
 import org.nikitinia.patterns.behavior.state.actor.DocumentStop;
 
 
+/*
+ * Что -> Класс, реализующий работу с ссостояниями объекта через их общий интерфейс.
+ * Для чего -> Посредник, для удобной работы с состояниями;
+ * Реализация -> Класс, агрегирующий интерфейс работы с состояниями;
+ * В чем выгода -> Класс контекст запускает смену состояний;
+ */
 public class DocumentContext {
 
     public Document document;
