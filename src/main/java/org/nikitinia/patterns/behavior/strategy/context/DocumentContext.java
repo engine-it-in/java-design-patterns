@@ -7,7 +7,6 @@ public class DocumentContext {
 
     @Setter
     Strategy strategy;
-
     public void doAction() {
         strategy.doAction();
     }

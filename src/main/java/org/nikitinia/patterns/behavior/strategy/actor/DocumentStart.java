@@ -6,6 +6,7 @@ public class DocumentStart implements Strategy {
 
     @Override
     public void doAction() {
+
         System.out.println("Document Start");
     }
 }
