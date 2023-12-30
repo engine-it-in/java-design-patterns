@@ -2,7 +2,9 @@ package org.nikitinia.patterns.behavior.strategy.action;
 
 import org.nikitinia.domain.model.documents.Document;
 
-public interface Strategy {
+import java.util.List;
 
-    void doAction(Document document);
+public interface Sorting {
+
+    void findDocument(List<Document> documentList);
 }
