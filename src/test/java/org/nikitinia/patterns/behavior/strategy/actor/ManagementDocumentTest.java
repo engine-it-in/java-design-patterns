@@ -14,10 +14,10 @@ import java.util.List;
 import static org.assertj.core.api.Assertions.assertThat;
 import static org.assertj.core.api.Assertions.assertThatThrownBy;
 
-class FinanceDocumentTest {
+class ManagementDocumentTest {
 
-    private final FinanceDocument financeDocument
-            = new FinanceDocument();
+    private final ManagementDocument managementDocument
+            = new ManagementDocument();
 
     private final ByteArrayOutputStream outputStream =
             new ByteArrayOutputStream();
@@ -33,22 +33,21 @@ class FinanceDocumentTest {
             DocumentCreator.documentBuildWithNumberAndStatus(3.0, Status.SIGN)
     );
 
-    List<Document> documentListWithOutSignElement = List.of(
-            DocumentCreator.documentBuildWithNumberAndStatus(1.0, Status.PRESIGN),
-            DocumentCreator.documentBuildWithNumberAndStatus(2.0, Status.DRAFT)
+    List<Document> documentListWithOutDraftElement = List.of(
+            DocumentCreator.documentBuildWithNumberAndStatus(1.0, Status.PRESIGN)
     );
 
     @Test
     void findDocument_shouldReturnResult() {
-        financeDocument.findDocument(documentList);
+        managementDocument.findDocument(documentList);
 
         assertThat(outputStream.toString().trim())
-                .isEqualTo("3.0");
+                .isEqualTo("2.0");
     }
 
     @Test
     void findDocument_shouldThrownException() {
-        assertThatThrownBy(() -> financeDocument.findDocument(documentListWithOutSignElement))
+        assertThatThrownBy(() -> managementDocument.findDocument(documentListWithOutDraftElement))
                 .usingRecursiveComparison()
                 .isEqualTo(new FindException());
     }
