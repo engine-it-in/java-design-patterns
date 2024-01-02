@@ -1,5 +1,6 @@
 package org.nikitinia.patterns.behavior.templatemethod.creators;
 
+import org.nikitinia.domain.dictionarys.Status;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.domain.model.documents.Invoice;
 
@@ -22,7 +23,8 @@ public class InvoiceTemplate extends DocumentTemplate {
 
     @Override
     public void modifyDocument(Document document) {
-        document.setSignatory("Invoice");
+        document.setSignatory(document.getClass().getSimpleName());
+        document.setStatus(Status.PRESIGN);
     }
 
 }

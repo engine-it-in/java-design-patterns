@@ -24,6 +24,7 @@ public class Bill extends Document {
         super(number, signatory, status, textField);
         this.number = number;
         this.signatory = signatory;
+        this.status = status;
         this.sum = sum;
         this.signDate = signDate;
     }

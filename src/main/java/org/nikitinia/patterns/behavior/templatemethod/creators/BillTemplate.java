@@ -1,5 +1,6 @@
 package org.nikitinia.patterns.behavior.templatemethod.creators;
 
+import org.nikitinia.domain.dictionarys.Status;
 import org.nikitinia.domain.model.documents.Bill;
 import org.nikitinia.domain.model.documents.Document;
 
@@ -22,7 +23,8 @@ public class BillTemplate extends DocumentTemplate {
 
     @Override
     public void modifyDocument(Document document) {
-        document.setSignatory("Bill");
+        document.setSignatory(document.getClass().getSimpleName());
+        document.setStatus(Status.SIGN);
     }
 
 }

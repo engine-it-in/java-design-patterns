@@ -21,6 +21,6 @@ public class AgreementTemplate extends DocumentTemplate {
 
     @Override
     public void modifyDocument(Document document) {
-        document.setSignatory("Agreement");
+        document.setSignatory(document.getClass().getSimpleName());
     }
 }
