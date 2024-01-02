@@ -14,7 +14,6 @@ import org.nikitinia.patterns.behavior.templatemethod.creators.DocumentTemplate;
 import org.nikitinia.patterns.behavior.templatemethod.creators.InvoiceTemplate;
 
 import java.util.ArrayList;
-import java.util.HashMap;
 import java.util.List;
 
 public class DocumentConveyor {
@@ -30,9 +29,9 @@ public class DocumentConveyor {
         Bill bill = BillCreator.billBuildWithNumberAndStatus(2.0, Status.DRAFT);
         Invoice invoice = InvoiceCreator.invoiceBuildWithNumberAndStatus(3.0, Status.DRAFT);
 
-        documentCreatorstList.add(new AgreementTemplate(agreement, new HashMap<>()));
-        documentCreatorstList.add(new BillTemplate(bill, new HashMap<>()));
-        documentCreatorstList.add(new InvoiceTemplate(invoice, new HashMap<>()));
+        documentCreatorstList.add(new AgreementTemplate(agreement));
+        documentCreatorstList.add(new BillTemplate(bill));
+        documentCreatorstList.add(new InvoiceTemplate(invoice));
 
         documentCreatorstList
                 .forEach(dc -> documentList.add(dc.createDocument()));

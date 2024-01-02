@@ -9,8 +9,8 @@ import java.util.Map;
 public class InvoiceTemplate extends DocumentTemplate {
 
 
-    public InvoiceTemplate(Invoice invoice, Map<Double, Document> documentDictionary) {
-        super(invoice, documentDictionary);
+    public InvoiceTemplate(Invoice invoice) {
+        super(invoice);
     }
 
     @Override

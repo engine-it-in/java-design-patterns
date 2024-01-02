@@ -6,12 +6,16 @@ import org.nikitinia.patterns.behavior.templatemethod.action.Creator;
 
 import java.util.Map;
 
-@AllArgsConstructor
+
 public abstract class DocumentTemplate implements Creator {
 
     private final Document document;
 
     private Map<Double, Document> documentDictionary;
+
+    public DocumentTemplate(Document document) {
+        this.document = document;
+    }
 
 
     @Override

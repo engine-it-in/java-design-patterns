@@ -8,8 +8,8 @@ import java.util.Map;
 
 public class AgreementTemplate extends DocumentTemplate {
 
-    public AgreementTemplate(Agreement agreement, Map<Double, Document> documentDictionary) {
-        super(agreement, documentDictionary);
+    public AgreementTemplate(Agreement agreement) {
+        super(agreement);
     }
 
     @Override

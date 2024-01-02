@@ -8,9 +8,9 @@ import java.util.Map;
 
 public class BillTemplate extends DocumentTemplate {
 
-    public BillTemplate(Bill bill, Map<Double, Document> documentDictionary) {
+    public BillTemplate(Bill bill) {
 
-        super(bill, documentDictionary);
+        super(bill);
     }
 
     @Override
