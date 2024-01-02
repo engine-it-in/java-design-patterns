@@ -16,15 +16,9 @@ public abstract class DocumentTemplate implements Creator {
 
     @Override
     public Document createDocument() {
-        System.out.println("*");
-        System.out.println("--Start Algorithm--");
-
         modifyDocument(document);
         documentDictionary = addLink(document);
         visualizeDocument(documentDictionary);
-
-        System.out.println("--Finish Algorithm--");
-        System.out.println("*");
         return document;
     }
     public abstract Map<Double, Document> addLink(Document document);
@@ -34,8 +28,8 @@ public abstract class DocumentTemplate implements Creator {
     public void visualizeDocument(Map<Double, Document> documentDictionary) {
         documentDictionary
                 .forEach((key, value) -> System.out.println(
-                        "Number is" + key +
-                                "Signatory is" + value.getSignatory() +
-                                "Status is" + value.getStatus()));
+                        "Number is " + key +
+                                ", Signatory is " + value.getSignatory() +
+                                ", Status is " + value.getStatus()));
     }
 }

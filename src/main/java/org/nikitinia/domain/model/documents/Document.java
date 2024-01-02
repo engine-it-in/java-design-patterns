@@ -1,13 +1,14 @@
 package org.nikitinia.domain.model.documents;
 
 import lombok.*;
+import lombok.experimental.SuperBuilder;
 import org.nikitinia.domain.dictionarys.Status;
 import org.nikitinia.domain.model.additional.TextField;
 
 
 @NoArgsConstructor
 @AllArgsConstructor
-@Builder
+@SuperBuilder
 @Getter
 @Setter
 public class Document implements Comparable<Document> {
