@@ -8,9 +8,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class BillTemplate extends DocumentTemplate {
-
     public BillTemplate(Bill bill) {
-
         super(bill);
     }
 

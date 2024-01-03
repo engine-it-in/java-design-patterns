@@ -9,7 +9,6 @@ import java.util.Map;
 
 public class InvoiceTemplate extends DocumentTemplate {
 
-
     public InvoiceTemplate(Invoice invoice) {
         super(invoice);
     }
