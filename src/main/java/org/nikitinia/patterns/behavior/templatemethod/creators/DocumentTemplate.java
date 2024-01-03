@@ -1,12 +1,14 @@
 package org.nikitinia.patterns.behavior.templatemethod.creators;
 
 import lombok.AllArgsConstructor;
+import lombok.Getter;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.templatemethod.action.Creator;
 
 import java.util.Map;
 
 
+@Getter
 public abstract class DocumentTemplate implements Creator {
 
     private final Document document;
