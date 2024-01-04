@@ -8,6 +8,12 @@ import org.nikitinia.patterns.behavior.strategy.exception.FindException;
 import java.util.Comparator;
 import java.util.List;
 
+/*
+ * Что -> Реализация логики стретгического действия;
+ * Для чего -> Конкретная реализация;
+ * Реализация -> Класс с имплементацией интерфейса стратегии;
+ * В чем выгода -> Конкретная реализация действия;
+ * */
 public class FinanceDocument implements Sorting {
 
     @Override

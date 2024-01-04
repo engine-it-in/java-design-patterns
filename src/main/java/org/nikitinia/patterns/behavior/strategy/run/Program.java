@@ -9,6 +9,7 @@ import org.nikitinia.patterns.behavior.strategy.actor.ManagementDocument;
 
 import java.util.List;
 
+
 public class Program {
 
     public static void main(String[] args) {
