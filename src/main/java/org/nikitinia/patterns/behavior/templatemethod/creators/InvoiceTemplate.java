@@ -7,8 +7,13 @@ import org.nikitinia.domain.model.documents.Invoice;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+ * Что -> Реализация конкретных шагов шаблонного метода;
+ * Для чего -> Реализация конкретного поведения;
+ * Реализация -> Класс, неследованный от общего шаблонного абстрактного класса ;
+ * В чем выгода -> Реализация логики в оамках общего алгоритма, определенного абстрактным классом;
+ * */
 public class InvoiceTemplate extends DocumentTemplate {
-
     public InvoiceTemplate(Invoice invoice) {
         super(invoice);
     }

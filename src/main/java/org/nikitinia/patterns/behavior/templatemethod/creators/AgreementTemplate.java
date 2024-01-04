@@ -6,6 +6,12 @@ import org.nikitinia.domain.model.documents.Document;
 import java.util.HashMap;
 import java.util.Map;
 
+/*
+ * Что -> Реализация конкретных шагов шаблонного метода;
+ * Для чего -> Реализация конкретного поведения;
+ * Реализация -> Класс, неследованный от общего шаблонного абстрактного класса ;
+ * В чем выгода -> Реализация логики в оамках общего алгоритма, определенного абстрактным классом;
+ * */
 public class AgreementTemplate extends DocumentTemplate {
     public AgreementTemplate(Agreement agreement) {
         super(agreement);
