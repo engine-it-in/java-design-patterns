@@ -7,7 +7,6 @@ import lombok.Getter;
 @AllArgsConstructor
 public enum TypeSystem {
 
-
     TELEGRAM("Telegram"),
     EMAIL("Email"),
     SMS("SMS");

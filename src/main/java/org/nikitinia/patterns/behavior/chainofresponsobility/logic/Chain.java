@@ -12,9 +12,9 @@ import org.nikitinia.patterns.behavior.chainofresponsobility.actor.TelegramActiv
 public class Chain {
 
     public static void main(String[] args) {
-        Document documentSign = DocumentCreator.documentBuildWithNumberAndStatus(1.0, Status.SIGN);
-        Document documentPresign = DocumentCreator.documentBuildWithNumberAndStatus(2.0, Status.PRESIGN);
-        Document documentDraft = DocumentCreator.documentBuildWithNumberAndStatus(3.0, Status.DRAFT);
+        Document documentSign = DocumentCreator.documentBuildWithNumber(1.0);
+        Document documentPresign = DocumentCreator.documentBuildWithNumber(2.0);
+        Document documentDraft = DocumentCreator.documentBuildWithNumber(3.0);
 
         Activity activity = new SmsActivity(Priority.CRITICAL);
         Activity activityNext = new TelegramActivity(Priority.VIP);

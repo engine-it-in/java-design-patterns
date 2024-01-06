@@ -1,5 +1,6 @@
 package org.nikitinia.patterns.behavior.chainofresponsobility.actor;
 
+import lombok.Getter;
 import lombok.Setter;
 import org.nikitinia.domain.dictionarys.Priority;
 import org.nikitinia.domain.model.documents.Document;
@@ -7,6 +8,7 @@ import org.nikitinia.patterns.behavior.chainofresponsobility.action.PublicDocume
 import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.TypeSystem;
 
 
+@Getter
 public class EmailActivity extends Activity {
 
     public EmailActivity(Priority priority) {
