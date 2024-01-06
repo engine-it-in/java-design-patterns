@@ -9,13 +9,14 @@ import lombok.Getter;
  * Реализация -> Enum;
  * В чем выгода -> Локализация изменчивыз переменных в едином месте;
  * */
-@Getter
 @AllArgsConstructor
-public enum TypeSystem {
+@Getter
+public enum Priority {
 
-    TELEGRAM("Telegram"),
-    EMAIL("Email"),
-    SMS("SMS");
+    NORMAL (3),
+    VIP (2),
+    CRITICAL (1);
 
-    final String system;
+    final int level;
+
 }

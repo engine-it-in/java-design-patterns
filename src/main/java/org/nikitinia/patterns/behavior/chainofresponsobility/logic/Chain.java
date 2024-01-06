@@ -1,8 +1,7 @@
 package org.nikitinia.patterns.behavior.chainofresponsobility.logic;
 
 import org.nikitinia.domain.creator.DocumentCreator;
-import org.nikitinia.domain.dictionarys.Priority;
-import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.Priority;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.chainofresponsobility.actor.Activity;
 import org.nikitinia.patterns.behavior.chainofresponsobility.actor.EmailActivity;

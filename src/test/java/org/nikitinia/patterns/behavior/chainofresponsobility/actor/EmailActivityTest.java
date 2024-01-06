@@ -3,7 +3,7 @@ package org.nikitinia.patterns.behavior.chainofresponsobility.actor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.nikitinia.domain.creator.DocumentCreator;
-import org.nikitinia.domain.dictionarys.Priority;
+import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.Priority;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.TypeSystem;
 
