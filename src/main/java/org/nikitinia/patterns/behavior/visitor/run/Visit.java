@@ -1,27 +1,56 @@
 package org.nikitinia.patterns.behavior.visitor.run;
 
+import org.nikitinia.domain.creator.DocumentCreator;
+import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.visitor.actor.FinanceDocument;
 import org.nikitinia.patterns.behavior.visitor.actor.ManagementDocument;
-import org.nikitinia.patterns.behavior.visitor.logic.BackOffice;
-import org.nikitinia.patterns.behavior.visitor.logic.Cancelyria;
-import org.nikitinia.patterns.behavior.visitor.visitor.DocumentVisitor;
+import org.nikitinia.patterns.behavior.visitor.actor.PayDocument;
+import org.nikitinia.patterns.behavior.visitor.logic.Register;
+import org.nikitinia.patterns.behavior.visitor.logic.Converter;
+import org.nikitinia.patterns.behavior.visitor.visitor.Acceptor;
 import org.nikitinia.patterns.behavior.visitor.visitor.Visitor;
+
+import java.util.Comparator;
 
 public class Visit {
 
     public static void main(String[] args) {
 
-        DocumentVisitor financeDocument = new FinanceDocument();
-        DocumentVisitor managementDocument = new ManagementDocument();
+        Document documentFin = DocumentCreator.documentBuildWithNumber(1.0);
+        Document documentMan = DocumentCreator.documentBuildWithNumber(2.0);
+        Document documentPay = DocumentCreator.documentBuildWithNumber(3.0);
 
-        Visitor cancelyria = new Cancelyria();
-        Visitor backOffice = new BackOffice();
 
-        financeDocument.accept(cancelyria);
-        managementDocument.accept(cancelyria);
+        Acceptor financeDocument = new FinanceDocument("1111/0000", documentFin);
+        Acceptor managementDocument = new ManagementDocument("2222/1111", documentMan);
+        Acceptor payDocument = new PayDocument("3333/1111", documentPay);
 
-        financeDocument.accept(backOffice);
-        managementDocument.accept(backOffice);
+        Register register = new Register();
+        Converter converter = new Converter();
+
+        financeDocument.accept(register);
+        managementDocument.accept(register);
+        payDocument.accept(register);
+
+        financeDocument.accept(converter);
+        managementDocument.accept(converter);
+        payDocument.accept(converter);
+
+        register.getRegisterMap()
+                .forEach((id, document) -> {
+                    System.out.println("Document id" + " : " + id + "registered" );
+                } );
+
+        converter.getConverterList()
+                .forEach(document -> {
+                    document.setStatus(Status.SIGN);
+                    document.setSignatory("signatory");
+                    System.out.println(document);
+                });
+
+
+
 
     }
 

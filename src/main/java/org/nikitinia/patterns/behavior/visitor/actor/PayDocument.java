@@ -9,7 +9,7 @@ import org.nikitinia.patterns.behavior.visitor.visitor.Visitor;
 
 @AllArgsConstructor
 @Getter
-public class FinanceDocument implements Acceptor {
+public class PayDocument implements Acceptor {
 
     private String id;
     private Document document;

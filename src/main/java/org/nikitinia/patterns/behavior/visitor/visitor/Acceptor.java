@@ -1,7 +1,6 @@
 package org.nikitinia.patterns.behavior.visitor.visitor;
 
-
-public interface DocumentVisitor {
+public interface Acceptor {
 
     void accept(Visitor visitor);
 
