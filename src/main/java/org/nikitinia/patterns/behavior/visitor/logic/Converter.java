@@ -16,7 +16,6 @@ public class Converter implements Visitor {
     private final List<Document> converterList
             = new ArrayList<>();
 
-
     @Override
     public void visit(FinanceDocument financeDocument) {
         System.out.println("FinanceDocument" + " : " + financeDocument.getId() + " convert to regular document");

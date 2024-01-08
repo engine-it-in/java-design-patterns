@@ -6,12 +6,9 @@ import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.visitor.actor.FinanceDocument;
 import org.nikitinia.patterns.behavior.visitor.actor.ManagementDocument;
 import org.nikitinia.patterns.behavior.visitor.actor.PayDocument;
-import org.nikitinia.patterns.behavior.visitor.logic.Register;
 import org.nikitinia.patterns.behavior.visitor.logic.Converter;
+import org.nikitinia.patterns.behavior.visitor.logic.Register;
 import org.nikitinia.patterns.behavior.visitor.visitor.Acceptor;
-import org.nikitinia.patterns.behavior.visitor.visitor.Visitor;
-
-import java.util.Comparator;
 
 public class Visit {
 
@@ -38,9 +35,9 @@ public class Visit {
         payDocument.accept(converter);
 
         register.getRegisterMap()
-                .forEach((id, document) -> {
-                    System.out.println("Document id" + " : " + id + "registered" );
-                } );
+                .forEach((key, value) -> {
+                    System.out.println("Document id" + " : " + key + " registered");
+                });
 
         converter.getConverterList()
                 .forEach(document -> {
@@ -48,10 +45,6 @@ public class Visit {
                     document.setSignatory("signatory");
                     System.out.println(document);
                 });
-
-
-
-
     }
 
 }
