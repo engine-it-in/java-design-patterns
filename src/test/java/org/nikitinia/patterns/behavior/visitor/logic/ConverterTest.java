@@ -14,21 +14,12 @@ import java.io.PrintStream;
 import java.util.ArrayList;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.nikitinia.patterns.behavior.visitor.util.TestBuilder.*;
 
 class ConverterTest {
 
     private final Converter converter
             = new Converter();
-
-    private final Document document
-            = DocumentCreator.documentBuildWithNumber(1.0);
-
-    private final FinanceDocument financeDocument
-            = new FinanceDocument("id", document);
-    private final ManagementDocument managementDocument
-            = new ManagementDocument("id", document);
-    private final PayDocument payDocument
-            = new PayDocument("id", document);
 
     private final ByteArrayOutputStream outputStream =
             new ByteArrayOutputStream();
@@ -47,36 +38,39 @@ class ConverterTest {
 
     @Test
     void visitFinanceDocument_shouldDo() {
-        converter.visit(financeDocument);
+        converter.visit(testFinanceDocument);
 
         assertThat(outputStream.toString().trim())
                 .isEqualTo("FinanceDocument : id convert to regular document");
 
         assertThat(converter.getConverterList())
-                .contains(financeDocument.getDocument());
+                .hasSize(1)
+                .contains(testFinanceDocument.getDocument());
 
     }
 
     @Test
     void visitManagementDocument_shouldDo() {
-        converter.visit(managementDocument);
+        converter.visit(testManagementDocument);
 
         assertThat(outputStream.toString().trim())
                 .isEqualTo("ManagementDocument : id convert to regular document");
 
         assertThat(converter.getConverterList())
-                .contains(managementDocument.getDocument());
+                .hasSize(1)
+                .contains(testManagementDocument.getDocument());
     }
 
     @Test
     void visitPayDocument_shouldDo() {
-        converter.visit(payDocument);
+        converter.visit(testPayDocument);
 
         assertThat(outputStream.toString().trim())
                 .isEqualTo("PayDocument : id convert to regular document");
 
         assertThat(converter.getConverterList())
-                .contains(payDocument.getDocument());
+                .hasSize(1)
+                .contains(testPayDocument.getDocument());
     }
 
 }
