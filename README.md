@@ -54,11 +54,16 @@
 * [Снимок](/src/main/java/org/nikitinia/patterns/behavior/memento/README.md)
 * [Наблюдатель](/src/main/java/org/nikitinia/patterns/behavior/observer/README.md)
 * [Состояние](/src/main/java/org/nikitinia/patterns/behavior/state/README.md)
-* ...
+* [Стратегия](/src/main/java/org/nikitinia/patterns/behavior/strategy/README.md)
+* [Цепочка обязанностей](/src/main/java/org/nikitinia/patterns/behavior/chainofresponsobility/README.md)
+* [Шаблонный метод](/src/main/java/org/nikitinia/patterns/behavior/templatemethod/README.md)
+* [Посетитель](/src/main/java/org/nikitinia/patterns/behavior/visitor/README.md)
 
 ## Список литературы/проектов для развития
 
-| № | Описание источника                                                                                              | Ссылка                                            |
-|---|-----------------------------------------------------------------------------------------------------------------|---------------------------------------------------|
-| 1 | Книга портал по шаблонам проектирования                                                                         | [Ссылка](https://refactoring.guru)                |
-| 2 | ***Джавист***. Канал на youtube, в котором кратко и доходчиво разобраны сложный темы по шаблонам проектирования | [Ссылка](https://www.youtube.com/@javistt/videos) |
+| № | Описание источника                                                                                              | Ссылка                                                     |
+|---|-----------------------------------------------------------------------------------------------------------------|------------------------------------------------------------|
+| 1 | Книга портал по шаблонам проектирования                                                                         | [Ссылка](https://refactoring.guru)                         |
+| 2 | ***Джавист***. Канал на youtube, в котором кратко и доходчиво разобраны сложный темы по шаблонам проектирования | [Ссылка](https://www.youtube.com/@javistt/videos)          |
+| 3 | ***Alexey Pashchenko***. Канал на youtube. Разбор некоторых шаблонов                                            | [Ссылка](https://www.youtube.com/@alexeypashchenko/videos) |
+| 3 | ***Vladimir Vysokomornyi***. Канал на youtube. Разбор некоторых шаблонов                                        | [Ссылка](https://www.youtube.com/@programm4you)            |
