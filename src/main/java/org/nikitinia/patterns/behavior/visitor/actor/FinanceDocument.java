@@ -7,6 +7,17 @@ import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.visitor.visitor.Acceptor;
 import org.nikitinia.patterns.behavior.visitor.visitor.Visitor;
 
+/*
+ * Что -> ;
+ * Для чего -> ;
+ * Реализация -> ;
+ * В чем выгода -> ;
+ * В чем потенциальные проблемы:
+ *   - раз;
+ *   - два;
+ *   - три;
+ *   - четыре;
+ * */
 @AllArgsConstructor
 @Getter
 public class FinanceDocument implements Acceptor {
