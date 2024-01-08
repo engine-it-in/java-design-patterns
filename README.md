@@ -58,6 +58,7 @@
 * [Цепочка обязанностей](/src/main/java/org/nikitinia/patterns/behavior/chainofresponsobility/README.md)
 * [Шаблонный метод](/src/main/java/org/nikitinia/patterns/behavior/templatemethod/README.md)
 * [Посетитель](/src/main/java/org/nikitinia/patterns/behavior/visitor/README.md)
+* [...](...)
 
 ## Список литературы/проектов для развития
 
