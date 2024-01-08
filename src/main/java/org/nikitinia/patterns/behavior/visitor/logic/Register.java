@@ -10,7 +10,6 @@ import org.nikitinia.patterns.behavior.visitor.visitor.Visitor;
 
 import java.util.HashMap;
 
-@NoArgsConstructor
 @Getter
 public class Register implements Visitor {
 

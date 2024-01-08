@@ -30,7 +30,7 @@ public class Converter implements Visitor {
 
     @Override
     public void visit(PayDocument payDocument) {
-        System.out.println("ManagementDocument" + " : " + payDocument.getId() + " convert to regular document");
+        System.out.println("PayDocument" + " : " + payDocument.getId() + " convert to regular document");
         converterList.add(payDocument.getDocument());
     }
 }
