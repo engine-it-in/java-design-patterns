@@ -5,8 +5,8 @@ import org.nikitinia.patterns.behavior.command.documentsender.action.EmailNotifi
 import org.nikitinia.patterns.behavior.command.documentsender.action.Notification;
 import org.nikitinia.patterns.behavior.command.documentsender.action.SMSNotification;
 import org.nikitinia.patterns.behavior.command.documentsender.action.TelegramNotification;
-import org.nikitinia.patterns.behavior.command.documentsender.data.NotificationInfo;
-import org.nikitinia.patterns.behavior.command.documentsender.data.NotificationType;
+import org.nikitinia.patterns.behavior.command.documentsender.actor.NotificationInfo;
+import org.nikitinia.patterns.behavior.command.documentsender.actor.NotificationType;
 
 import java.util.ArrayList;
 import java.util.List;

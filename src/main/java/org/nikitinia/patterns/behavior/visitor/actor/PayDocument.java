@@ -4,8 +4,8 @@ package org.nikitinia.patterns.behavior.visitor.actor;
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import org.nikitinia.domain.model.documents.Document;
-import org.nikitinia.patterns.behavior.visitor.visitor.Acceptor;
-import org.nikitinia.patterns.behavior.visitor.visitor.Visitor;
+import org.nikitinia.patterns.behavior.visitor.action.Acceptor;
+import org.nikitinia.patterns.behavior.visitor.action.Visitor;
 
 /*
  * Что -> Рабочий объект, который реализует действия, через имплементацию интерфейса, в котором визитер обрабатывает в конкретном методе;

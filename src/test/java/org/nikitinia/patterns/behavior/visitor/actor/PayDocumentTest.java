@@ -2,7 +2,7 @@ package org.nikitinia.patterns.behavior.visitor.actor;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.nikitinia.patterns.behavior.visitor.visitor.Acceptor;
+import org.nikitinia.patterns.behavior.visitor.action.Acceptor;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;

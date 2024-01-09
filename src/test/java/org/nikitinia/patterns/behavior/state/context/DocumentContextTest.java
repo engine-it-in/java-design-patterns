@@ -2,15 +2,14 @@ package org.nikitinia.patterns.behavior.state.context;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.extension.ExtendWith;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
-import org.mockito.junit.jupiter.MockitoExtension;
 import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.domain.dictionarys.Status;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.state.action.DocumentActivity;
+import org.nikitinia.patterns.behavior.state.action.DocumentContext;
 import org.nikitinia.patterns.behavior.state.actor.DocumentStart;
 import org.nikitinia.patterns.behavior.state.actor.DocumentStop;
 

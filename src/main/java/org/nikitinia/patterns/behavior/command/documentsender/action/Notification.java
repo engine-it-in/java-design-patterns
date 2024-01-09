@@ -1,7 +1,7 @@
 package org.nikitinia.patterns.behavior.command.documentsender.action;
 
-import org.nikitinia.patterns.behavior.command.documentsender.data.NotificationInfo;
-import org.nikitinia.patterns.behavior.command.documentsender.data.NotificationType;
+import org.nikitinia.patterns.behavior.command.documentsender.actor.NotificationInfo;
+import org.nikitinia.patterns.behavior.command.documentsender.actor.NotificationType;
 
 import static org.nikitinia.patterns.behavior.command.util.Constant.CommandMessage.SEND_MESSAGE_TEXT;
 

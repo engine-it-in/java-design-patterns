@@ -4,8 +4,8 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.domain.model.documents.Document;
-import org.nikitinia.patterns.behavior.command.documentsender.data.NotificationInfo;
-import org.nikitinia.patterns.behavior.command.documentsender.data.NotificationType;
+import org.nikitinia.patterns.behavior.command.documentsender.actor.NotificationInfo;
+import org.nikitinia.patterns.behavior.command.documentsender.actor.NotificationType;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;

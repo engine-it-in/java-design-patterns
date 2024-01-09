@@ -3,12 +3,11 @@ package org.nikitinia.patterns.behavior.iterator.action;
 import org.junit.jupiter.api.Test;
 import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.domain.model.documents.Document;
-import org.nikitinia.patterns.behavior.iterator.logic.DocumentIterator;
+import org.nikitinia.patterns.behavior.iterator.actor.DocumentIterator;
 
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.jupiter.api.Assertions.*;
 
 class IteratorTest {
 

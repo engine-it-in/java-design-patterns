@@ -1,7 +1,6 @@
 package org.nikitinia.patterns.behavior.command.documentsender.logic;
 
 import org.junit.jupiter.api.BeforeEach;
-import org.junit.jupiter.api.Test;
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.EnumSource;
@@ -12,8 +11,8 @@ import org.nikitinia.patterns.behavior.command.documentsender.action.EmailNotifi
 import org.nikitinia.patterns.behavior.command.documentsender.action.Notification;
 import org.nikitinia.patterns.behavior.command.documentsender.action.SMSNotification;
 import org.nikitinia.patterns.behavior.command.documentsender.action.TelegramNotification;
-import org.nikitinia.patterns.behavior.command.documentsender.data.NotificationInfo;
-import org.nikitinia.patterns.behavior.command.documentsender.data.NotificationType;
+import org.nikitinia.patterns.behavior.command.documentsender.actor.NotificationInfo;
+import org.nikitinia.patterns.behavior.command.documentsender.actor.NotificationType;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;

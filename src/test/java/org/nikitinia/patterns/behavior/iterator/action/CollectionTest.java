@@ -3,7 +3,7 @@ package org.nikitinia.patterns.behavior.iterator.action;
 import org.junit.jupiter.api.Test;
 import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.domain.model.documents.Document;
-import org.nikitinia.patterns.behavior.iterator.logic.DocumentRepository;
+import org.nikitinia.patterns.behavior.iterator.actor.DocumentRepository;
 
 import java.util.List;
 

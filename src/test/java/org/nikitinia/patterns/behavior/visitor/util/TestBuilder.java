@@ -6,7 +6,7 @@ import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.visitor.actor.FinanceDocument;
 import org.nikitinia.patterns.behavior.visitor.actor.ManagementDocument;
 import org.nikitinia.patterns.behavior.visitor.actor.PayDocument;
-import org.nikitinia.patterns.behavior.visitor.logic.Converter;
+import org.nikitinia.patterns.behavior.visitor.action.Converter;
 
 import static org.nikitinia.patterns.behavior.visitor.util.TestData.TEST_ID;
 

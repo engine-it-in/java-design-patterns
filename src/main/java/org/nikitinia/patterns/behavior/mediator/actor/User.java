@@ -3,7 +3,7 @@ package org.nikitinia.patterns.behavior.mediator.actor;
 import lombok.Getter;
 import lombok.Setter;
 import org.nikitinia.domain.model.documents.Document;
-import org.nikitinia.patterns.behavior.mediator.logic.DocumentSystem;
+import org.nikitinia.patterns.behavior.mediator.action.DocumentSystem;
 
 /*
  * Что -> Каркас для участников взаимодействия;

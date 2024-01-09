@@ -1,6 +1,6 @@
 package org.nikitinia.patterns.behavior.command.documentsender.action;
 
-import org.nikitinia.patterns.behavior.command.documentsender.data.NotificationType;
+import org.nikitinia.patterns.behavior.command.documentsender.actor.NotificationType;
 
 /*
  * Что -> Конкретный тип оповещения;
