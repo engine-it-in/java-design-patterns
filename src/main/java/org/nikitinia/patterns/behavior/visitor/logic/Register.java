@@ -10,6 +10,12 @@ import org.nikitinia.patterns.behavior.visitor.visitor.Visitor;
 
 import java.util.HashMap;
 
+/*
+ * Что -> Класс, реализующий определенную функцию для каждого из рабочих объектов ;
+ * Для чего -> Инкапсуляция конкретного действия в едином объекте;
+ * Реализация -> Класс с имплементацией интерфейса визитера;
+ * В чем выгода -> Единый компонент обработки добавляемой логики;
+ * */
 @Getter
 public class Register implements Visitor {
 
