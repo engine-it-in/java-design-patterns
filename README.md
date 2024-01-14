@@ -30,8 +30,9 @@
 ## Описание типов шаблонов
 
 * [Поведенческие шаблоны](src/main/java/org/nikitinia/patterns/behavior/README.md)
+* [Структурные шаблоны](src/main/java/org/nikitinia/patterns/structure/README.md)
 * Порождающие шаблоны
-* Структурные шаблоны
+
 
 ## Про тестироваине
 * Тестирование, так же, как код - ответсвенность разработчика; 
