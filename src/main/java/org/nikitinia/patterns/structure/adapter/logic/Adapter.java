@@ -1,28 +1,32 @@
 package org.nikitinia.patterns.structure.adapter.logic;
 
+import lombok.AllArgsConstructor;
 import org.nikitinia.patterns.structure.adapter.action.DocumentDatabase;
 import org.nikitinia.patterns.structure.adapter.actor.DocumentManager;
 
-public class Adapter extends DocumentManager implements DocumentDatabase {
+@AllArgsConstructor
+public class Adapter implements DocumentDatabase {
+
+    private DocumentManager documentManager;
 
 
     @Override
     public void insert() {
-        saveDocument();
+        documentManager.saveDocument();
     }
 
     @Override
     public void select() {
-        loadDocument();
+        documentManager.loadDocument();
     }
 
     @Override
     public void update() {
-        updateDocument();
+        documentManager.updateDocument();
     }
 
     @Override
     public void remove() {
-        deleteDocument();
+        documentManager.deleteDocument();
     }
 }
