@@ -1,33 +1,48 @@
 package org.nikitinia.patterns.structure.adapter.logic;
 
 import lombok.AllArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
+import org.nikitinia.domain.dictionarys.Status;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.structure.adapter.action.DocumentDatabase;
-import org.nikitinia.patterns.structure.adapter.actor.DocumentManager;
+import org.nikitinia.patterns.structure.adapter.actor.DocumentRepository;
 
+@Slf4j
 @AllArgsConstructor
-public class Adapter extends DocumentManager implements DocumentDatabase {
+public class Adapter extends DocumentRepository implements DocumentDatabase {
 
 
     @Override
     public void insert(Document document) {
-        saveDocument(document);
+        save(document);
     }
 
     @Override
-    public void select(Document document) {
-        loadDocument(document);
+    public Document select(Double number) {
+        return load(number);
     }
 
     @Override
     public void update(Document document) {
-
-        updateDocument(document);
+        Document updateDocument = select(document.getNumber());
+        updateDocument.setStatus(Status.SIGN);
+        remove(document);
+        insert(updateDocument);
     }
 
     @Override
     public void remove(Document document) {
+        delete(document);
+    }
 
-        deleteDocument(document);
+    @Override
+    public void stateDocumentMap() {
+        if (!getDocumentMap().isEmpty()) {
+            getDocumentMap()
+                    .forEach((aDouble, document) -> log.info("documentMap contain document with number: {}", aDouble));
+        } else {
+            log.info("DocumentMap is Empty");
+        }
+
     }
 }
