@@ -29,6 +29,7 @@ dependencies {
     testImplementation group: 'org.mockito', name: 'mockito-core', version: '5.7.0'
     testImplementation group: 'org.powermock', name: 'powermock-module-junit4', version: '2.0.9'
     testImplementation group: 'org.powermock', name: 'powermock-api-mockito2', version: '2.0.9'
+    testImplementation group: 'ch.qos.logback', name: 'logback-classic', version: '1.4.14'
 
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.0'
 
