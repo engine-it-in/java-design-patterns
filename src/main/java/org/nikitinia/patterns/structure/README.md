@@ -1,7 +1,7 @@
 # Структурные шаблоны
 
-* [Команда](/src/main/java/org/nikitinia/patterns/behavior/command/README.md)
-* [...](...)
+* [Адаптер](adapter/README.md)
+* [Мост](bridge/README.md)
 
 ## Назначение
 
