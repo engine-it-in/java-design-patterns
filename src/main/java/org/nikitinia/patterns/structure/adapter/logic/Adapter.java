@@ -7,6 +7,14 @@ import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.structure.adapter.action.DocumentDatabase;
 import org.nikitinia.patterns.structure.adapter.actor.DocumentRepository;
 
+/*
+ * Что -> Класс адаптер, наследующий логику конкретной работы и
+ переопрделяющий требуемый для нас интерфейс;
+ * Для чего -> Класс, наследует компоненты, логику которых надо адаптировать;
+ * Реализация -> Класс, наследующий класс с конкретными действиями и имплементирующий рабочую сигнатуру;
+ * В чем выгода -> Рабочая логика, реализуемая через этот класс позволит просто менять
+ конкретную логику работы над документами и адаптировать ее под требуемые условия;
+ * */
 @Slf4j
 @AllArgsConstructor
 public class Adapter extends DocumentRepository implements DocumentDatabase {

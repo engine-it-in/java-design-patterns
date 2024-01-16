@@ -6,6 +6,12 @@ import org.nikitinia.domain.model.documents.Document;
 
 import java.util.HashMap;
 
+/*
+ * Что -> Временный класс, который является временной альтернативой базе документов;
+ * Для чего -> Класс реализующий конкретную рабочую логику;
+ * Реализация -> Класс;
+ * В чем выгода -> Реализация конкретных действий над документами;
+ * */
 @Getter
 @Slf4j
 public class DocumentRepository {
