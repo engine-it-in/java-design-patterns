@@ -1,34 +1,34 @@
 package org.nikitinia.patterns.structure.adapter.actor;
 
-import ch.qos.logback.classic.Logger;
-import ch.qos.logback.classic.spi.ILoggingEvent;
-import ch.qos.logback.core.Appender;
-import ch.qos.logback.core.read.ListAppender;
+import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.domain.model.documents.Document;
-import org.slf4j.LoggerFactory;
 
+import java.io.ByteArrayOutputStream;
+import java.io.PrintStream;
 import java.util.HashMap;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
+@Slf4j
 class DocumentRepositoryTest {
 
     private final DocumentRepository documentRepository
             = new DocumentRepository();
 
-    private final Document document = DocumentCreator.documentBuildWithNumber(1.0);
+    private final Document document
+            = DocumentCreator.documentBuildWithNumber(1.0);
 
-    private Logger logger = (Logger) LoggerFactory.getLogger(DocumentRepository.class);
+    private final ByteArrayOutputStream outputStream
+            = new ByteArrayOutputStream();
 
     @BeforeEach
     void setUp() {
-        Appender<ILoggingEvent> listAppender = new ListAppender<>();
-        listAppender.start();
-        logger.addAppender(listAppender);
+        System.setOut(new PrintStream(outputStream));
     }
+
 
     @Test
     void checkDocumentRepository() {
@@ -40,8 +40,12 @@ class DocumentRepositoryTest {
     void save_shouldDo() {
         documentRepository.save(document);
 
+        assertThat(outputStream.toString())
+                .contains("Save");
 
-
+        assertThat(documentRepository.getDocumentMap().get(document.getNumber()))
+                .usingRecursiveComparison()
+                .isEqualTo(document);
     }
 
 }
