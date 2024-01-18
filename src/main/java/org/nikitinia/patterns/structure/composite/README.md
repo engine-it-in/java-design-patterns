@@ -1,4 +1,4 @@
-# Компоновщик (Сщьзщышеу)
+# Компоновщик (Composite)
 * [К описанию проекта](https://github.com/engine-it-in/java-design-patterns)
 ## Тип
 * Структурный шаблон;
