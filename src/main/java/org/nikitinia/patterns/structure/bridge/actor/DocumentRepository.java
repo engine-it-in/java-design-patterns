@@ -5,6 +5,12 @@ import org.nikitinia.domain.model.documents.Document;
 
 import java.util.HashMap;
 
+/*
+ * Что -> ;
+ * Для чего -> ;
+ * Реализация -> ;
+ * В чем выгода -> ;
+ * */
 @Getter
 public class DocumentRepository {
 

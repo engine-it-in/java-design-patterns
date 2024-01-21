@@ -3,10 +3,15 @@ package org.nikitinia.patterns.structure.bridge.actor;
 import lombok.extern.slf4j.Slf4j;
 import org.nikitinia.patterns.structure.bridge.action.Interfaze;
 
+/*
+ * Что -> ;
+ * Для чего -> ;
+ * Реализация -> ;
+ * В чем выгода -> ;
+ * */
 @Slf4j
 public class WebDocument extends Document {
     public WebDocument(Interfaze anInterfaze) {
-
         super(anInterfaze);
     }
 

@@ -3,6 +3,12 @@ package org.nikitinia.patterns.structure.bridge.actor;
 import lombok.extern.slf4j.Slf4j;
 import org.nikitinia.patterns.structure.bridge.action.Interfaze;
 
+/*
+ * Что -> ;
+ * Для чего -> ;
+ * Реализация -> ;
+ * В чем выгода -> ;
+ * */
 @Slf4j
 public class MobileDocument extends Document {
     public MobileDocument(Interfaze interfaze) {

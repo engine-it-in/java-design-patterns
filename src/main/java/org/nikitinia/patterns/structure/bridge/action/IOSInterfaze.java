@@ -7,6 +7,12 @@ import org.nikitinia.domain.dictionarys.Type;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.structure.bridge.actor.DocumentRepository;
 
+/*
+ * Что -> ;
+ * Для чего -> ;
+ * Реализация -> ;
+ * В чем выгода -> ;
+ * */
 @Slf4j
 @AllArgsConstructor
 @Getter
