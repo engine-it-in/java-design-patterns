@@ -10,10 +10,12 @@ public class MobileDocument extends Document {
     }
 
     @Override
-    public void createDocument() {
+    public void createDocument(org.nikitinia.domain.model.documents.Document document) {
         log.info("create mobile document");
-        interfaze.loadDocument();
-        interfaze.visualizeDocument();
-        interfaze.closeDocument();
+
+        org.nikitinia.domain.model.documents.Document loadedDocument =
+                interfaze.loadDocument(document.getNumber());
+
+        interfaze.visualizeDocument(loadedDocument.getNumber());
     }
 }

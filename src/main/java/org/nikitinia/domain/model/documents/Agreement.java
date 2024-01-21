@@ -33,12 +33,13 @@ public class Agreement extends Document {
             Date beginDate,
             Date endDate,
             TextField textField) {
-        super(number, signatory, status, textField);
+
+        super(number, signatory, status, type, textField);
         this.number = number;
         this.signatory = signatory;
         this.status = status;
-        this.textField = textField;
         this.type = type;
+        this.textField = textField;
         this.sum = sum;
         this.beginDate = beginDate;
         this.endDate = endDate;

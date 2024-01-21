@@ -7,7 +7,7 @@ import org.nikitinia.domain.model.documents.Bill;
 public class BillCreator {
 
     public static Bill billBuildWithNumberAndStatus(Double number, Status status) {
-        return new Bill(number, null, status, null, null, null);
+        return new Bill(number, null, status, null, null, null, null);
     }
 
 }

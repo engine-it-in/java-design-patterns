@@ -36,7 +36,7 @@ class NotificationTest {
 
         assertEquals(
                 "Отправляем сообщение Document" +
-                        "{number='1.0', status='null, signatory='Signatory, " +
+                        "{number='1.0', status='null, type='null, signatory='Signatory, " +
                         "textField=TextField{line=2', column=2', " +
                         "quantitySymbolLine=123', text='someText', buffer='null'}} " +
                         "в TELEGRAM",

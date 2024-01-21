@@ -2,6 +2,7 @@ package org.nikitinia.domain.model.documents;
 
 import lombok.*;
 import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.domain.dictionarys.Type;
 import org.nikitinia.domain.model.additional.TextField;
 
 import java.util.Date;
@@ -15,15 +16,17 @@ public class Invoice extends Document {
     private Double number;
     private String signatory;
     private Status status;
+    private Type type;
     private TextField textField;
     private String product;
     private Date signDate;
 
-    public Invoice(Double number, String signatory, Status status, TextField textField, String product, Date signDate) {
-        super(number, signatory, status, textField);
+    public Invoice(Double number, String signatory, Status status, Type type, TextField textField, String product, Date signDate) {
+        super(number, signatory, status, type, textField);
         this.number = number;
         this.signatory = signatory;
         this.status = status;
+        this.type = type;
         this.textField = textField;
         this.product = product;
         this.signDate = signDate;

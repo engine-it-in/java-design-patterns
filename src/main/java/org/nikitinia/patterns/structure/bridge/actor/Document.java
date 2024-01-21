@@ -6,8 +6,8 @@ import org.nikitinia.patterns.structure.bridge.action.Interfaze;
 @AllArgsConstructor
 public abstract class Document {
 
-     Interfaze interfaze;
+    Interfaze interfaze;
 
-    public abstract void createDocument();
+    public abstract void createDocument(org.nikitinia.domain.model.documents.Document document);
 
 }
