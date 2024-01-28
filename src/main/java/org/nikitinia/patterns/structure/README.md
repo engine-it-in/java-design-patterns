@@ -4,6 +4,7 @@
 * [Компоновщик](composite/README.md)
 * [Мост](bridge/README.md)
 * [Декоратор](decorator/README.md)
+* [Фасад](facade/README.md)
 * [...](...)
 
 ## Назначение
