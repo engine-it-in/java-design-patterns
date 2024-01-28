@@ -1,7 +1,12 @@
-package org.nikitinia.patterns.structure.decorator;
+package org.nikitinia.patterns.structure.decorator.logic;
 
 import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.domain.model.documents.Document;
+import org.nikitinia.patterns.structure.decorator.action.Sender;
+import org.nikitinia.patterns.structure.decorator.action.Decrypter;
+import org.nikitinia.patterns.structure.decorator.action.Encrypter;
+import org.nikitinia.patterns.structure.decorator.action.SecuritySender;
+import org.nikitinia.patterns.structure.decorator.actor.SecurityDocument;
 
 public class Program {
 

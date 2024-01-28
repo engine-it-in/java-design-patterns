@@ -1,4 +1,4 @@
-package org.nikitinia.patterns.structure.decorator;
+package org.nikitinia.patterns.structure.decorator.actor;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

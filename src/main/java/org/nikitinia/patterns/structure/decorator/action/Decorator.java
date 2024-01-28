@@ -1,7 +1,7 @@
-package org.nikitinia.patterns.structure.decorator;
+package org.nikitinia.patterns.structure.decorator.action;
 
 import lombok.AllArgsConstructor;
-import org.nikitinia.domain.model.documents.Document;
+import org.nikitinia.patterns.structure.decorator.actor.SecurityDocument;
 
 @AllArgsConstructor
 public class Decorator implements Sender {
