@@ -13,7 +13,6 @@ import org.nikitinia.domain.model.documents.Document;
 import java.util.Arrays;
 
 
-@Slf4j
 @Getter
 @Setter
 public class SecurityDocument extends Document {

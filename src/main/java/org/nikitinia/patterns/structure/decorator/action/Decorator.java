@@ -9,6 +9,7 @@ public class Decorator implements Sender {
     private Sender sender;
     @Override
     public String send(SecurityDocument document) {
+
         return sender.send(document);
     }
 }

@@ -15,7 +15,7 @@ public class Encrypter extends Decorator {
         log.info("Start encrypt document number {}", document.getNumber());
         document.setTypeSecurity(TypeSecurity.ENCRYPT.getValue());
         log.info("End encrypt document number {}", document.getNumber());
-        return String.format(" Document number %.0f, %s;", document.getNumber(), document.getTypeSecurity());
+        return String.format(" Document number %.0f - %s;", document.getNumber(), document.getTypeSecurity());
     }
 
     @Override
