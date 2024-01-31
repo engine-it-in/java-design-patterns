@@ -6,12 +6,12 @@ public class FacadeWork {
 
     Workflow workFlow = new Workflow();
 
-    Builder builder = new Builder();
+    MobileDocument mobileDocument = new MobileDocument();
 
     public void canWorking() {
         builderJob.working();
         workFlow.startWork();
-        builder.doingWork(workFlow);
+        mobileDocument.doingWork(workFlow);
     }
 
 }
