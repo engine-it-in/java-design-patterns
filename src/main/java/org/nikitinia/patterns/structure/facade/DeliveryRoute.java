@@ -1,44 +1,36 @@
 package org.nikitinia.patterns.structure.facade;
 
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 
-import java.util.ArrayList;
 import java.util.HashMap;
-import java.util.List;
 import java.util.random.RandomGenerator;
 
 @Slf4j
+@Getter
 public class DeliveryRoute {
 
     private HashMap<Integer, RecipientMobileDocument> recipientMobileDocumentMap;
-    private List<Integer> priorityList;
 
-    public DeliveryRoute(HashMap<Integer, RecipientMobileDocument> recipientMobileDocumentMap, List<Integer> priorityList) {
+    public DeliveryRoute() {
         this.recipientMobileDocumentMap = new HashMap<>();
-        this.priorityList = new ArrayList<>();
     }
 
 
     public void addRecipientToDeliveryRoute(RecipientMobileDocument recipientMobileDocument) {
-        int coefficient = 0;
+        int id = 0;
 
-        while (!priorityList.contains(coefficient)) {
-            coefficient = RandomGenerator.getDefault().nextInt(1, 100);
+        while (recipientMobileDocumentMap.containsKey(id)) {
+            id = RandomGenerator.getDefault().nextInt(1, 100);
         }
-        priorityList.add(coefficient);
-        recipientMobileDocumentMap.put(coefficient, recipientMobileDocument);
+        recipientMobileDocumentMap.put(id, recipientMobileDocument);
 
-        log.info("{} {} {} was added to delivery route with coefficient {}",
+        log.info("{} {} {} was added to delivery route with id {}",
                 recipientMobileDocument.name(),
                 recipientMobileDocument.surname(),
                 recipientMobileDocument.patronymic(),
-                coefficient
+                id
         );
-    }
-
-    public void clearRecipientMobileDocumentMap(RecipientMobileDocument recipientMobileDocument) {
-        recipientMobileDocumentMap.clear();
-        log.info("Delivery route was clear");
     }
 
 }

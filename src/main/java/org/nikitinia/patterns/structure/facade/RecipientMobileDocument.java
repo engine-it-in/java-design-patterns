@@ -1,6 +1,5 @@
 package org.nikitinia.patterns.structure.facade;
 
-import lombok.AllArgsConstructor;
 import lombok.Builder;
 
 @Builder
@@ -9,7 +8,16 @@ public record RecipientMobileDocument(
         String name,
         String surname,
         String patronymic,
-        String address
+        TypeMobile typeMobile
 
 ) {
+    @Override
+    public String toString() {
+        return "RecipientMobileDocument{" +
+                "name='" + name + '\'' +
+                ", surname='" + surname + '\'' +
+                ", patronymic='" + patronymic + '\'' +
+                ", typeMobile=" + typeMobile +
+                '}';
+    }
 }
