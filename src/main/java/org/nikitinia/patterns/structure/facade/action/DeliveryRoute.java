@@ -1,7 +1,8 @@
-package org.nikitinia.patterns.structure.facade;
+package org.nikitinia.patterns.structure.facade.action;
 
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
+import org.nikitinia.patterns.structure.facade.actor.RecipientMobileDocument;
 
 import java.util.HashMap;
 import java.util.random.RandomGenerator;

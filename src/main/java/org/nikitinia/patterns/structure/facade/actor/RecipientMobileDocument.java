@@ -1,6 +1,7 @@
-package org.nikitinia.patterns.structure.facade;
+package org.nikitinia.patterns.structure.facade.actor;
 
 import lombok.Builder;
+import org.nikitinia.patterns.structure.facade.dictionary.TypeMobile;
 
 @Builder
 public record RecipientMobileDocument(

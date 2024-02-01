@@ -1,4 +1,4 @@
-package org.nikitinia.patterns.structure.facade;
+package org.nikitinia.patterns.structure.facade.dictionary;
 
 import lombok.AllArgsConstructor;
 
@@ -15,7 +15,7 @@ public enum TypeMobile {
 
     private final String typeMobile;
 
-    static TypeMobile randomType() {
+    public static TypeMobile randomType() {
         TypeMobile[] typeMobiles = values();
         return typeMobiles[new Random().nextInt(typeMobiles.length)];
     }

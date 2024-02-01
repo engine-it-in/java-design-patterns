@@ -1,9 +1,10 @@
-package org.nikitinia.patterns.structure.facade;
+package org.nikitinia.patterns.structure.facade.action;
 
-import lombok.AllArgsConstructor;
 import lombok.NoArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
 import org.nikitinia.domain.model.documents.Document;
+import org.nikitinia.patterns.structure.facade.actor.MobileDocument;
+import org.nikitinia.patterns.structure.facade.dictionary.TypeMobile;
 
 import java.util.ArrayList;
 import java.util.List;

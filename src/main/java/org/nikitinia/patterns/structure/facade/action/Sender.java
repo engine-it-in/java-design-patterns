@@ -1,10 +1,11 @@
-package org.nikitinia.patterns.structure.facade;
+package org.nikitinia.patterns.structure.facade.action;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
+import org.nikitinia.patterns.structure.facade.actor.MobileDocument;
+import org.nikitinia.patterns.structure.facade.actor.RecipientMobileDocument;
 
-import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.List;
 

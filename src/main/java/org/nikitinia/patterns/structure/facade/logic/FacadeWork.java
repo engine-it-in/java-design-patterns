@@ -1,7 +1,13 @@
-package org.nikitinia.patterns.structure.facade;
+package org.nikitinia.patterns.structure.facade.logic;
 
 import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.domain.model.documents.Document;
+import org.nikitinia.patterns.structure.facade.action.DeliveryRoute;
+import org.nikitinia.patterns.structure.facade.action.PreparatoryMobileDocumentList;
+import org.nikitinia.patterns.structure.facade.action.Sender;
+import org.nikitinia.patterns.structure.facade.actor.MobileDocument;
+import org.nikitinia.patterns.structure.facade.actor.RecipientMobileDocument;
+import org.nikitinia.patterns.structure.facade.dictionary.TypeMobile;
 
 import java.util.ArrayList;
 import java.util.List;
