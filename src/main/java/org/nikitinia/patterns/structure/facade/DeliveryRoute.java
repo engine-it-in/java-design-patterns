@@ -21,23 +21,24 @@ public class DeliveryRoute {
 
     public void addRecipientToDeliveryRoute(RecipientMobileDocument recipientMobileDocument) {
         int coefficient = 0;
+
         while (!priorityList.contains(coefficient)) {
             coefficient = RandomGenerator.getDefault().nextInt(1, 100);
         }
         priorityList.add(coefficient);
         recipientMobileDocumentMap.put(coefficient, recipientMobileDocument);
+
         log.info("{} {} {} was added to delivery route with coefficient {}",
                 recipientMobileDocument.name(),
                 recipientMobileDocument.surname(),
                 recipientMobileDocument.patronymic(),
                 coefficient
-                );
+        );
     }
 
     public void clearRecipientMobileDocumentMap(RecipientMobileDocument recipientMobileDocument) {
         recipientMobileDocumentMap.clear();
-
+        log.info("Delivery route was clear");
     }
-
 
 }
