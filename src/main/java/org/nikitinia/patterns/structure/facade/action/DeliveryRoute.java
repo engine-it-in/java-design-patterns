@@ -11,7 +11,7 @@ import java.util.random.RandomGenerator;
 @Getter
 public class DeliveryRoute {
 
-    private HashMap<Integer, RecipientMobileDocument> recipientMobileDocumentMap;
+    private final HashMap<Integer, RecipientMobileDocument> recipientMobileDocumentMap;
 
     public DeliveryRoute() {
         this.recipientMobileDocumentMap = new HashMap<>();
