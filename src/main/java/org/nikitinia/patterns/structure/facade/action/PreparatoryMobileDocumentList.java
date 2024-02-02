@@ -15,13 +15,9 @@ public class PreparatoryMobileDocumentList {
 
     public List<MobileDocument> getPrepareMobileDocumentList(List<Document> documentList) {
         List<MobileDocument> mobileDocumentList = new ArrayList<>();
-        MobileDocument mobileDocument;
-        for (int i = 0; i < documentList.size(); i++) {
-            if (i % 2 == 0) {
-                mobileDocument = new MobileDocument(documentList.get(i), TypeMobile.randomType());
-            } else {
-                mobileDocument = new MobileDocument(documentList.get(i), TypeMobile.randomType());
-            }
+        MobileDocument mobileDocument = null;
+        for (Document document : documentList) {
+            mobileDocument = new MobileDocument(document, TypeMobile.randomType());
             log.info(
                     "Document with number {} and type {} prepare",
                     mobileDocument.document().getNumber(),
@@ -30,6 +26,4 @@ public class PreparatoryMobileDocumentList {
         }
         return mobileDocumentList;
     }
-
-
 }

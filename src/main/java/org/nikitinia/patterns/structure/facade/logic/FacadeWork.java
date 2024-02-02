@@ -18,13 +18,13 @@ public class FacadeWork {
     public void doWork() {
         /*Создали список документов*/
         List<Document> documentList = new ArrayList<>();
-        for (int i =0 ; i<5; i++) {
+        for (int i = 0; i < 5; i++) {
             documentList.add(DocumentCreator.documentBuildWithNumber(Double.valueOf(String.valueOf(i))));
         }
 
         /*Подготовили мобильные документы*/
-        PreparatoryMobileDocumentList preparatoryMobileDocumentList = new PreparatoryMobileDocumentList();
-        List<MobileDocument> mobileDocumentList = preparatoryMobileDocumentList.getPrepareMobileDocumentList(documentList);
+        List<MobileDocument> mobileDocumentList = new PreparatoryMobileDocumentList()
+                .getPrepareMobileDocumentList(documentList);
 
         /*Подготовили Подготовили получателей мобильный документов*/
         List<RecipientMobileDocument> recipientMobileDocumentList = List.of(
@@ -37,14 +37,13 @@ public class FacadeWork {
 
         /*Готовим маршрут для получателей мобильных документов*/
         DeliveryRoute deliveryRoute = new DeliveryRoute();
-        for (RecipientMobileDocument recipientMobileDocument: recipientMobileDocumentList) {
+        for (RecipientMobileDocument recipientMobileDocument : recipientMobileDocumentList) {
             deliveryRoute.addRecipientToDeliveryRoute(recipientMobileDocument);
         }
 
         /*Отправляем документы*/
         Sender sender = new Sender(deliveryRoute.getRecipientMobileDocumentMap(), mobileDocumentList);
         sender.sendDocumentToRecipient();
-
 
     }
 
