@@ -11,7 +11,6 @@ import org.nikitinia.patterns.structure.facade.dictionary.TypeMobile;
  * Реализация -> В виде нового типа класса - рекорд, который является потокобезопасным и более лаконичным;
  * В чем выгода -> Новая сущность, которая позволяет не изменяя исходного класса работать с новым объектом, часть которого нужный нам класс;
  * */
-@Slf4j
 public record MobileDocument(
         Document document,
         TypeMobile typeMobile) {
