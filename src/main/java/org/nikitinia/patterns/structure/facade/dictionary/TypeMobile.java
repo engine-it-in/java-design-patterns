@@ -1,14 +1,18 @@
 package org.nikitinia.patterns.structure.facade.dictionary;
 
 import lombok.AllArgsConstructor;
+import lombok.ToString;
 
+import java.util.Arrays;
+import java.util.Collections;
+import java.util.List;
 import java.util.Random;
 
 /*
- * Что -> ;
- * Для чего -> ;
- * Реализация -> ;
- * В чем выгода -> ;
+ * Что -> Локальный справочник с данными;
+ * Для чего -> Локальные значения, требуемые только в рамках данного шаблона;
+ * Реализация -> Enum;
+ * В чем выгода -> Локальные значения, требуемые только в конкретном месте;
  * */
 @AllArgsConstructor
 public enum TypeMobile {
@@ -23,5 +27,4 @@ public enum TypeMobile {
         TypeMobile[] typeMobiles = values();
         return typeMobiles[new Random().nextInt(typeMobiles.length)];
     }
-
 }

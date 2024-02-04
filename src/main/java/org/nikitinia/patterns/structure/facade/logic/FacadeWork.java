@@ -1,5 +1,6 @@
 package org.nikitinia.patterns.structure.facade.logic;
 
+import lombok.AllArgsConstructor;
 import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.structure.facade.action.DeliveryRoute;
@@ -10,6 +11,7 @@ import org.nikitinia.patterns.structure.facade.actor.RecipientMobileDocument;
 import org.nikitinia.patterns.structure.facade.dictionary.TypeMobile;
 
 import java.util.ArrayList;
+import java.util.HashMap;
 import java.util.List;
 
 
@@ -19,9 +21,14 @@ import java.util.List;
  * Реализация -> Класс с методом, запускающим работу;
  * В чем выгода -> Исполнение рабочей логики;
  * */
+@AllArgsConstructor
 public class FacadeWork {
 
-    public void doWork() {
+    private PreparatoryMobileDocumentList preparatoryMobileDocumentList;
+
+    private DeliveryRoute deliveryRoute;
+
+    public List<MobileDocument> mobileDocumentList() {
         /*Создали список документов*/
         List<Document> documentList = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
@@ -29,9 +36,12 @@ public class FacadeWork {
         }
 
         /*Подготовили мобильные документы*/
-        List<MobileDocument> mobileDocumentList = new PreparatoryMobileDocumentList()
+        return preparatoryMobileDocumentList
                 .getPrepareMobileDocumentList(documentList);
 
+    }
+
+    public HashMap<Integer, RecipientMobileDocument> prepareSenderRoute() {
         /*Подготовили Подготовили получателей мобильный документов*/
         List<RecipientMobileDocument> recipientMobileDocumentList = List.of(
                 RecipientMobileDocument.builder().name("Иван").surname("Иванов").patronymic("Иванович").typeMobile(TypeMobile.ANDROID).build(),
@@ -42,13 +52,17 @@ public class FacadeWork {
         );
 
         /*Готовим маршрут для получателей мобильных документов*/
-        DeliveryRoute deliveryRoute = new DeliveryRoute();
         for (RecipientMobileDocument recipientMobileDocument : recipientMobileDocumentList) {
             deliveryRoute.addRecipientToDeliveryRoute(recipientMobileDocument);
         }
 
+        return deliveryRoute.getRecipientMobileDocumentMap();
+    }
+
+    public void doWork() {
+
         /*Отправляем документы*/
-        Sender sender = new Sender(deliveryRoute.getRecipientMobileDocumentMap(), mobileDocumentList);
+        Sender sender = new Sender(prepareSenderRoute(), mobileDocumentList());
         sender.sendDocumentToRecipient();
 
     }

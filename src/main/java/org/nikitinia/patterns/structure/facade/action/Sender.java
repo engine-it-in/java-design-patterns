@@ -5,6 +5,7 @@ import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.nikitinia.patterns.structure.facade.actor.MobileDocument;
 import org.nikitinia.patterns.structure.facade.actor.RecipientMobileDocument;
+import org.nikitinia.patterns.structure.facade.exception.FacadeProcessingException;
 
 import java.util.HashMap;
 import java.util.List;
@@ -37,7 +38,7 @@ public class Sender {
                                     .entrySet().stream()
                                     .filter(entry -> entry.getValue().equals(recipientMobileDocument))
                                     .findFirst()
-                                    .get()
+                                    .orElseThrow(FacadeProcessingException::new)
                                     .getKey()
                             );
                 }
