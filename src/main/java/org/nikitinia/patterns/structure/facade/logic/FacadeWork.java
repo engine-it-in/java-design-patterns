@@ -28,7 +28,7 @@ public class FacadeWork {
 
     private DeliveryRoute deliveryRoute;
 
-    public List<MobileDocument> mobileDocumentList() {
+    public List<MobileDocument> prepareMobileDocumentList() {
         /*Создали список документов*/
         List<Document> documentList = new ArrayList<>();
         for (int i = 0; i < 5; i++) {
@@ -62,7 +62,7 @@ public class FacadeWork {
     public void doWork() {
 
         /*Отправляем документы*/
-        Sender sender = new Sender(prepareSenderRoute(), mobileDocumentList());
+        Sender sender = new Sender(prepareSenderRoute(), prepareMobileDocumentList());
         sender.sendDocumentToRecipient();
 
     }
