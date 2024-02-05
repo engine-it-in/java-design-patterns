@@ -28,16 +28,18 @@ public class FacadeWork {
 
     private DeliveryRoute deliveryRoute;
 
+
     public List<MobileDocument> prepareMobileDocumentList() {
         /*Создали список документов*/
         List<Document> documentList = new ArrayList<>();
-        for (int i = 0; i < 5; i++) {
+        for (int i = 1; i < 5; i++) {
             documentList.add(DocumentCreator.documentBuildWithNumber(Double.valueOf(String.valueOf(i))));
         }
 
+        List<MobileDocument> mobileDocumentList = preparatoryMobileDocumentList.getPrepareMobileDocumentList(documentList);
+
         /*Подготовили мобильные документы*/
-        return preparatoryMobileDocumentList
-                .getPrepareMobileDocumentList(documentList);
+        return mobileDocumentList;
 
     }
 

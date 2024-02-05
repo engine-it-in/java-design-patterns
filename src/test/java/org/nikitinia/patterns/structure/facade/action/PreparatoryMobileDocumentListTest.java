@@ -2,27 +2,22 @@ package org.nikitinia.patterns.structure.facade.action;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.structure.facade.actor.MobileDocument;
 import org.nikitinia.patterns.structure.facade.dictionary.TypeMobile;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.util.Arrays;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.anyOf;
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.assertj.core.api.InstanceOfAssertFactories.map;
+import static org.nikitinia.patterns.structure.facade.util.TestBuilder.DOCUMENT;
 
 class PreparatoryMobileDocumentListTest {
 
-    private final Document document =
-            DocumentCreator.documentBuildWithNumber(1.0);
-
     private final List<Document> documentList = List.of(
-            document
+            DOCUMENT
     );
 
     private final PreparatoryMobileDocumentList preparatoryMobileDocumentList =
@@ -52,7 +47,7 @@ class PreparatoryMobileDocumentListTest {
                             .isInstanceOfSatisfying(MobileDocument.class, mobileDocument -> {
 
                                 assertThat(mobileDocument.document().getNumber())
-                                        .isEqualTo(document.getNumber());
+                                        .isEqualTo(DOCUMENT.getNumber());
 
                                 assertThat(mobileDocument.typeMobile())
                                         .isInstanceOf(TypeMobile.class);
@@ -64,7 +59,7 @@ class PreparatoryMobileDocumentListTest {
                 .contains("Document with number")
                 .contains("and type")
                 .contains("prepare")
-                .contains(document.getNumber().toString())
+                .contains(DOCUMENT.getNumber().toString())
                 .containsAnyOf(
                         TypeMobile.ANDROID.toString(),
                         TypeMobile.IOS.toString(),

@@ -2,9 +2,7 @@ package org.nikitinia.patterns.structure.facade.action;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.domain.creator.RecipientMobileDocumentCreator;
-import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.structure.facade.actor.MobileDocument;
 import org.nikitinia.patterns.structure.facade.actor.RecipientMobileDocument;
 import org.nikitinia.patterns.structure.facade.dictionary.TypeMobile;
@@ -12,21 +10,16 @@ import org.nikitinia.patterns.structure.facade.exception.FacadeProcessingExcepti
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
-import java.util.HashMap;
 import java.util.List;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.nikitinia.patterns.structure.facade.util.TestBuilder.DOCUMENT;
+import static org.nikitinia.patterns.structure.facade.util.TestBuilder.RECIPIENT_MOBILE_DOCUMENT_HASH_MAP;
 
 class SenderTest {
 
-    private HashMap<Integer, RecipientMobileDocument> recipientMobileDocumentMap =
-            new HashMap<>();
-
-    private final Document document =
-            DocumentCreator.documentBuildWithNumber(1.0);
-
     private final List<MobileDocument> mobileDocumentList =
-            List.of(new MobileDocument(document, TypeMobile.WINDOWS));
+            List.of(new MobileDocument(DOCUMENT, TypeMobile.WINDOWS));
 
     private final RecipientMobileDocument recipientMobileDocument =
             RecipientMobileDocumentCreator.RecipientMobileDocumentCreatorWithNameTypeMobile("name", TypeMobile.WINDOWS);
@@ -39,16 +32,16 @@ class SenderTest {
         /*Log*/
         System.setOut(new PrintStream(outputStream));
         /*Attribute*/
-        recipientMobileDocumentMap.put(1, recipientMobileDocument);
+        RECIPIENT_MOBILE_DOCUMENT_HASH_MAP.put(1, recipientMobileDocument);
     }
 
     private final Sender sender =
-            new Sender(recipientMobileDocumentMap, mobileDocumentList);
+            new Sender(RECIPIENT_MOBILE_DOCUMENT_HASH_MAP, mobileDocumentList);
 
     @Test
     void checkSender() {
         assertThat(sender)
-                .hasFieldOrPropertyWithValue("recipientMobileDocumentMap", recipientMobileDocumentMap)
+                .hasFieldOrPropertyWithValue("recipientMobileDocumentMap", RECIPIENT_MOBILE_DOCUMENT_HASH_MAP)
                 .hasFieldOrPropertyWithValue("mobileDocumentList", mobileDocumentList);
     }
 
@@ -60,9 +53,9 @@ class SenderTest {
                 .contains("mobile document number")
                 .contains("send to")
                 .contains("with id")
-                .contains(document.getNumber().toString())
+                .contains(DOCUMENT.getNumber().toString())
                 .contains(
-                        recipientMobileDocumentMap
+                        RECIPIENT_MOBILE_DOCUMENT_HASH_MAP
                                 .entrySet().stream()
                                 .filter(entry -> entry.getValue().equals(recipientMobileDocument))
                                 .findFirst()

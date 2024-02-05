@@ -17,7 +17,6 @@ import java.util.List;
  * В чем выгода -> Локализация отдельной части бизнес логики, требуемой от обработки;
  * */
 @Slf4j
-@NoArgsConstructor
 public class PreparatoryMobileDocumentList {
 
     public List<MobileDocument> getPrepareMobileDocumentList(List<Document> documentList) {

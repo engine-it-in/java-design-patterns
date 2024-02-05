@@ -1,6 +1,5 @@
 package org.nikitinia.patterns.structure.facade.action;
 
-import ch.qos.logback.classic.PatternLayout;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.nikitinia.domain.creator.RecipientMobileDocumentCreator;
@@ -13,11 +12,9 @@ import java.util.HashMap;
 import java.util.regex.Pattern;
 
 import static org.assertj.core.api.Assertions.assertThat;
+import static org.nikitinia.patterns.structure.facade.util.TestBuilder.RECIPIENT_MOBILE_DOCUMENT_HASH_MAP;
 
 class DeliveryRouteTest {
-
-    private final HashMap<Integer, RecipientMobileDocument> recipientMobileDocumentMap =
-            new HashMap<>();
 
     private final DeliveryRoute deliveryRoute =
             new DeliveryRoute();
@@ -35,7 +32,7 @@ class DeliveryRouteTest {
     @Test
     void checkDeliveryRoute() {
         assertThat(deliveryRoute)
-                .hasFieldOrPropertyWithValue("recipientMobileDocumentMap", recipientMobileDocumentMap)
+                .hasFieldOrPropertyWithValue("recipientMobileDocumentMap", RECIPIENT_MOBILE_DOCUMENT_HASH_MAP)
                 .hasFieldOrPropertyWithValue("recipientMobileDocumentMap", new HashMap<>())
         ;
     }
