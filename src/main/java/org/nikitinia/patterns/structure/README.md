@@ -5,6 +5,7 @@
 * [Мост](bridge/README.md)
 * [Декоратор](decorator/README.md)
 * [Фасад](facade/README.md)
+* [Легковес](flyweight/README.md)
 * [...](...)
 
 ## Назначение
