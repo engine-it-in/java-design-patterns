@@ -1,4 +1,4 @@
-package org.nikitinia.patterns.structure.flyweight;
+package org.nikitinia.patterns.structure.flyweight.action;
 
 import org.nikitinia.domain.model.documents.Document;
 

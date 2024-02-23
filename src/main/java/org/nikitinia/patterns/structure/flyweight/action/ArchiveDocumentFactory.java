@@ -1,10 +1,13 @@
-package org.nikitinia.patterns.structure.flyweight;
+package org.nikitinia.patterns.structure.flyweight.action;
+
+import org.nikitinia.patterns.structure.flyweight.actor.Note;
+import org.nikitinia.patterns.structure.flyweight.actor.Order;
 
 import java.util.HashMap;
 import java.util.Map;
 
-import static org.nikitinia.patterns.structure.flyweight.Constant.MainValue.NOTE_VALUE;
-import static org.nikitinia.patterns.structure.flyweight.Constant.MainValue.ORDER_VALUE;
+import static org.nikitinia.patterns.structure.flyweight.util.Constant.MainValue.NOTE_VALUE;
+import static org.nikitinia.patterns.structure.flyweight.util.Constant.MainValue.ORDER_VALUE;
 
 public class ArchiveDocumentFactory {
 

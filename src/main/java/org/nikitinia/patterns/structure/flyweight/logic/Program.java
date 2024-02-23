@@ -1,14 +1,16 @@
-package org.nikitinia.patterns.structure.flyweight;
+package org.nikitinia.patterns.structure.flyweight.logic;
 
 import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.domain.model.documents.Document;
+import org.nikitinia.patterns.structure.flyweight.action.Archive;
+import org.nikitinia.patterns.structure.flyweight.action.ArchiveDocumentFactory;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.Random;
 
-import static org.nikitinia.patterns.structure.flyweight.Constant.MainValue.NOTE_VALUE;
-import static org.nikitinia.patterns.structure.flyweight.Constant.MainValue.ORDER_VALUE;
+import static org.nikitinia.patterns.structure.flyweight.util.Constant.MainValue.NOTE_VALUE;
+import static org.nikitinia.patterns.structure.flyweight.util.Constant.MainValue.ORDER_VALUE;
 
 public class Program {
 

@@ -1,4 +1,4 @@
-package org.nikitinia.patterns.structure.flyweight;
+package org.nikitinia.patterns.structure.flyweight.util;
 
 public class Constant {
 
