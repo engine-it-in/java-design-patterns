@@ -9,6 +9,12 @@ import java.util.Map;
 import static org.nikitinia.patterns.structure.flyweight.util.Constant.MainValue.NOTE_VALUE;
 import static org.nikitinia.patterns.structure.flyweight.util.Constant.MainValue.ORDER_VALUE;
 
+/*
+ * Что -> Кэширующая фабрика для создания конкретного объекта при исполнении программы;
+ * Для чего -> Создание и кэширование объекта. Это позволяет экономить на создании однотипных объектов;
+ * Реализация -> Класс с методом создания объектов;
+ * В чем выгода -> Кэширование однотипных элементов во время работы программы;
+ * */
 public class ArchiveDocumentFactory {
 
     private static final Map<String, Archive> archives = new HashMap<>();
