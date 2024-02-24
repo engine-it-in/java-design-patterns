@@ -1,5 +1,6 @@
 package org.nikitinia.patterns.structure.flyweight.action;
 
+import lombok.Getter;
 import org.nikitinia.patterns.structure.flyweight.actor.Note;
 import org.nikitinia.patterns.structure.flyweight.actor.Order;
 
@@ -15,9 +16,10 @@ import static org.nikitinia.patterns.structure.flyweight.util.Constant.MainValue
  * Реализация -> Класс с методом создания объектов;
  * В чем выгода -> Кэширование однотипных элементов во время работы программы;
  * */
+@Getter
 public class ArchiveDocumentFactory {
 
-    private static final Map<String, Archive> archives = new HashMap<>();
+    private final Map<String, Archive> archives = new HashMap<>();
 
     public Archive getArchive(String archiveName) {
 
