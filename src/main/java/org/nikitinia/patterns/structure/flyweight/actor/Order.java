@@ -1,5 +1,6 @@
 package org.nikitinia.patterns.structure.flyweight.actor;
 
+import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import net.bytebuddy.utility.RandomString;
 import org.nikitinia.domain.model.documents.Document;
@@ -14,6 +15,7 @@ import java.util.HashMap;
  * В чем выгода -> Класс с типизацией интерфейса, который может быть использован для работы с документом;
  * */
 @Slf4j
+@Getter
 public class Order implements Archive {
 
     private final String company;

@@ -13,9 +13,9 @@ import java.util.regex.Pattern;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class NoteTest {
+class OrderTest {
 
-    private final Note note = new Note();
+    private final Order order = new Order();
 
     private final ByteArrayOutputStream outputStream = new ByteArrayOutputStream();
 
@@ -27,17 +27,17 @@ class NoteTest {
     }
 
     @Test
-    void checkNote() {
-        assertThat(note)
-                .isInstanceOfSatisfying(Note.class, noteData -> {
+    void checkOrder() {
+        assertThat(order)
+                .isInstanceOfSatisfying(Order.class, orderData -> {
 
-                    assertThat(noteData)
+                    assertThat(orderData)
                             .isInstanceOf(Archive.class);
 
-                    assertThat(noteData.getReceiver())
+                    assertThat(orderData.getCompany())
                             .containsPattern(Pattern.compile("[a-zA-Z0-9]*"));
 
-                    assertThat(noteData.getArchiveBox())
+                    assertThat(orderData.getArchiveBox())
                             .usingRecursiveComparison()
                             .isEqualTo(new HashMap<>());
                 });
@@ -45,16 +45,16 @@ class NoteTest {
 
     @Test
     void archive_shouldReturnResult() {
-        note.archive(document);
+        order.archive(document);
 
-        assertThat(note.getArchiveBox())
+        assertThat(order.getArchiveBox())
                 .containsEntry(document.getNumber().longValue(), document);
 
         assertThat(outputStream.toString().trim())
-                .contains("Note number")
+                .contains("Order number")
                 .contains(document.getNumber().toString())
-                .contains("put in Archive, receiver is")
-                .contains(note.getReceiver());
+                .contains("put in Archive, for company")
+                .contains(order.getCompany());
     }
 
 }
