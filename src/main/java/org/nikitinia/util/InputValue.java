@@ -2,6 +2,8 @@ package org.nikitinia.util;
 
 import org.nikitinia.exception.BusinessException;
 
+import java.util.InputMismatchException;
+import java.util.NoSuchElementException;
 import java.util.Scanner;
 
 
@@ -22,12 +24,10 @@ public class InputValue {
         while (repeat && i <= 2) {
             i++;
             System.out.println("Введите double значение (3 попытки): ");
-            String inputValue = in.nextLine();
-            System.out.println(inputValue);
             try {
                 repeat = false;
-                value = Double.parseDouble(inputValue);
-            } catch (NumberFormatException exception) {
+                value = in.nextDouble();
+            } catch (InputMismatchException | NoSuchElementException exception) {
                 repeat = true;
             }
         }
