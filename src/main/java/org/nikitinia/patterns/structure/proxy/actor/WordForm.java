@@ -1,7 +1,8 @@
-package org.nikitinia.patterns.structure.proxy;
+package org.nikitinia.patterns.structure.proxy.actor;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
+import org.nikitinia.patterns.structure.proxy.action.PrintForm;
 
 @Slf4j
 @AllArgsConstructor
@@ -9,12 +10,8 @@ public class WordForm implements PrintForm {
 
     private Double documentNumber;
 
-    private void loadDocument() {
-        log.info("Loading document");
-    }
-
     @Override
     public void display() {
-        log.info("Display document");
+        log.info("Display document with number {}", documentNumber);
     }
 }
