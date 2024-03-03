@@ -19,24 +19,26 @@ public class InputValue {
     public Double getDoubleValue() {
         Scanner in = new Scanner(System.in);
         boolean repeat = true;
-        Double value = null;
+        String value;
+        Double valueDouble = null;
         int i = 0;
         while (repeat && i <= 2) {
             i++;
             System.out.println("Введите double значение (3 попытки): ");
             try {
                 repeat = false;
-                value = in.nextDouble();
-            } catch (InputMismatchException | NoSuchElementException exception) {
+                value = in.nextLine();
+                valueDouble = Double.valueOf(value);
+            } catch (NumberFormatException | NoSuchElementException exception) {
                 repeat = true;
             }
         }
 
-        if (null == value) {
+        if (null == valueDouble) {
             throw new BusinessException("Input value is not a double");
         }
 
-        return value;
+        return valueDouble;
     }
 
 }
