@@ -44,7 +44,7 @@ public class FacadeWork {
     }
 
     public HashMap<Integer, RecipientMobileDocument> prepareSenderRoute() {
-        /*Подготовили Подготовили получателей мобильный документов*/
+        /*Подготовили получателей мобильный документов*/
         List<RecipientMobileDocument> recipientMobileDocumentList = List.of(
                 RecipientMobileDocument.builder().name("Иван").surname("Иванов").patronymic("Иванович").typeMobile(TypeMobile.ANDROID).build(),
                 RecipientMobileDocument.builder().name("Петр").surname("Петров").patronymic("Петрович").typeMobile(TypeMobile.ANDROID).build(),
