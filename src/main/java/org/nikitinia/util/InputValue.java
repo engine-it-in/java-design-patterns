@@ -2,7 +2,6 @@ package org.nikitinia.util;
 
 import org.nikitinia.exception.BusinessException;
 
-import java.util.InputMismatchException;
 import java.util.NoSuchElementException;
 import java.util.Scanner;
 
