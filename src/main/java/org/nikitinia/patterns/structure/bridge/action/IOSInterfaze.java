@@ -8,10 +8,10 @@ import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.structure.bridge.actor.DocumentRepository;
 
 /*
- * Что -> ;
- * Для чего -> ;
- * Реализация -> ;
- * В чем выгода -> ;
+ * Что -> Реализация логики работы над документами;
+ * Для чего -> Конкретные действия над документами;
+ * Реализация -> Класс, реализующий интерфейс;
+ * В чем выгода -> Реализация рабочей логики;
  * */
 @Slf4j
 @AllArgsConstructor

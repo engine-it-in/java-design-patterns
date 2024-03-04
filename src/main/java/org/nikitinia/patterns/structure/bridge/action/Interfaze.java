@@ -3,10 +3,10 @@ package org.nikitinia.patterns.structure.bridge.action;
 import org.nikitinia.domain.model.documents.Document;
 
 /*
- * Что -> ;
- * Для чего -> ;
- * Реализация -> ;
- * В чем выгода -> ;
+ * Что -> Общий интерфейс, описывающий действия над документами;
+ * Для чего -> Регламентация действий над документами;
+ * Реализация -> Интерфейс;
+ * В чем выгода -> Унификация действий;
  * */
 public interface Interfaze {
 

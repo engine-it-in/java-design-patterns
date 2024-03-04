@@ -1,13 +1,14 @@
 package org.nikitinia.patterns.structure.bridge.actor;
 
 import lombok.extern.slf4j.Slf4j;
+import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.structure.bridge.action.Interfaze;
 
 /*
- * Что -> ;
- * Для чего -> ;
- * Реализация -> ;
- * В чем выгода -> ;
+ * Что -> Реализация работы с мобильным документом;
+ * Для чего -> Реализация конкретных действий;
+ * Реализация -> Конкретный класс;
+ * В чем выгода -> Реализация логики;
  * */
 @Slf4j
 public class MobileDocument extends DocumentAbstract {
@@ -16,11 +17,10 @@ public class MobileDocument extends DocumentAbstract {
     }
 
     @Override
-    public void createDocument(org.nikitinia.domain.model.documents.Document document) {
+    public void createDocument(Document document) {
         log.info("create mobile document");
 
-        org.nikitinia.domain.model.documents.Document loadedDocument =
-                interfaze.loadDocument(document.getNumber());
+        Document loadedDocument = interfaze.loadDocument(document.getNumber());
 
         interfaze.visualizeDocument(loadedDocument.getNumber());
     }
