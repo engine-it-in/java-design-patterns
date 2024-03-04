@@ -10,7 +10,7 @@ import org.nikitinia.patterns.structure.bridge.action.Interfaze;
  * В чем выгода -> ;
  * */
 @Slf4j
-public class WebDocument extends Document {
+public class WebDocument extends DocumentAbstract {
     public WebDocument(Interfaze anInterfaze) {
         super(anInterfaze);
     }

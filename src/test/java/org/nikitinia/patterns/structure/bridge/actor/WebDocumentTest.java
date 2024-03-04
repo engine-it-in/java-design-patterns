@@ -36,7 +36,7 @@ class WebDocumentTest {
     @Test
     void checkMobileDocument() {
         assertThat(webDocument)
-                .isInstanceOf(Document.class)
+                .isInstanceOf(DocumentAbstract.class)
                 .hasFieldOrPropertyWithValue("interfaze", androidInterfaze);
     }
 

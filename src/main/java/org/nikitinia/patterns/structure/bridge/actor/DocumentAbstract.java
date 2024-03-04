@@ -12,7 +12,7 @@ import org.nikitinia.patterns.structure.bridge.action.Interfaze;
  * */
 @Getter
 @AllArgsConstructor
-public abstract class Document {
+public abstract class DocumentAbstract {
 
     Interfaze interfaze;
 

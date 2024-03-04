@@ -1,4 +1,4 @@
-# Композит (Composite)
+# Builder (Строитель)
 * [К описанию проекта](https://github.com/engine-it-in/java-design-patterns)
 ## Тип
 * Порождающий шаблон;
