@@ -3,6 +3,12 @@ package org.nikitinia.patterns.creating.builder.action;
 import lombok.AllArgsConstructor;
 import org.nikitinia.patterns.creating.builder.actor.OfficalDocument;
 
+/*
+ * Что -> ?
+ * Для чего -> ?
+ * Реализация -> ?
+ * В чем выгода -> ?
+ * */
 @AllArgsConstructor
 public class Director {
 
