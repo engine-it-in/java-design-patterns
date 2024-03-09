@@ -5,19 +5,18 @@ import lombok.Getter;
 @Getter
 public abstract class Builder {
 
-    House house;
+    OfficalDocument officalDocument;
 
-    void createHouse() {
-        house = new House();
+    void createOfficialDocument() {
+        officalDocument = new OfficalDocument();
     }
 
-    abstract void buildWalls();
+    abstract void buildName();
 
-    abstract void buildFloor();
+    abstract void buildType();
 
-    abstract void buildRoof();
+    abstract void buildSignatory();
 
-    abstract void buildPrice();
-
+    abstract void buildDocument();
 
 }

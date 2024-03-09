@@ -1,20 +1,20 @@
 package org.nikitinia.patterns.creating.builder;
 
-import lombok.Setter;
+import lombok.AllArgsConstructor;
 
-@Setter
+@AllArgsConstructor
 public class Director {
 
     Builder builder;
 
-    House houseBuilder() {
-        builder.createHouse();
-        builder.buildFloor();
-        builder.buildPrice();
-        builder.buildFloor();
-        builder.buildRoof();
-        builder.buildWalls();
-        return builder.getHouse();
+    OfficalDocument houseBuilder() {
+        builder.createOfficialDocument();
+        builder.buildType();
+        builder.buildDocument();
+        builder.buildType();
+        builder.buildSignatory();
+        builder.buildName();
+        return builder.getOfficalDocument();
     }
 
 }
