@@ -1,4 +1,4 @@
-package org.nikitinia.patterns.creating.builder;
+package org.nikitinia.patterns.creating.builder.actor;
 
 import lombok.Getter;
 import lombok.Setter;
@@ -19,9 +19,9 @@ public class OfficalDocument {
     @Override
     public String toString() {
         return "OfficalDocument{\n" +
-                "name='" + name + '\'' + "\n" +
-                ", type='" + type + '\'' + "\n" +
-                ", signatory='" + signatory + '\'' + "\n" +
+                "name= " + name + "\n" +
+                ", type=" + type + "\n" +
+                ", signatory=" + signatory + "\n" +
                 ", document=" + document + "\n" +
                 '}';
     }

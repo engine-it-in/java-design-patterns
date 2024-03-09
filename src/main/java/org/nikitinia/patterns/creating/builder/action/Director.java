@@ -1,13 +1,14 @@
-package org.nikitinia.patterns.creating.builder;
+package org.nikitinia.patterns.creating.builder.action;
 
 import lombok.AllArgsConstructor;
+import org.nikitinia.patterns.creating.builder.actor.OfficalDocument;
 
 @AllArgsConstructor
 public class Director {
 
     Builder builder;
 
-    OfficalDocument houseBuilder() {
+    public OfficalDocument documentBuilder() {
         builder.createOfficialDocument();
         builder.buildType();
         builder.buildDocument();

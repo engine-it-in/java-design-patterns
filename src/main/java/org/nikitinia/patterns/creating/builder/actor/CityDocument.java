@@ -1,7 +1,8 @@
-package org.nikitinia.patterns.creating.builder;
+package org.nikitinia.patterns.creating.builder.actor;
 
 import lombok.AllArgsConstructor;
 import org.nikitinia.domain.model.documents.Document;
+import org.nikitinia.patterns.creating.builder.action.Builder;
 
 @AllArgsConstructor
 public class CityDocument extends Builder {
@@ -9,22 +10,22 @@ public class CityDocument extends Builder {
     private final Document document;
 
     @Override
-    void buildName() {
+    public void buildName() {
         officalDocument.setName(CityDocument.class.getSimpleName() + " : " + "name");
     }
 
     @Override
-    void buildType() {
+    public void buildType() {
         officalDocument.setType(CityDocument.class.getSimpleName() + " : " + "type");
     }
 
     @Override
-    void buildSignatory() {
+    public void buildSignatory() {
         officalDocument.setSignatory(CityDocument.class.getSimpleName() + " : " + "signatory");
     }
 
     @Override
-    void buildDocument() {
+    public void buildDocument() {
         officalDocument.setDocument(document);
     }
 }
