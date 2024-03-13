@@ -13,6 +13,7 @@ class MediaDocumentCreatorTest {
     @Test
     void checkMediaDocumentCreator() {
         assertThat(mediaDocumentCreator)
+                .hasNoNullFieldsOrProperties()
                 .isInstanceOf(DocumentCreator.class);
     }
 

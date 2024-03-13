@@ -1,7 +1,7 @@
 # Порождающие шаблоны
 
-* [Фабричный метод](abstractfactory/README.md)
-* [Абстрактная фабрика](factorymethod/README.md)
+* [Абстрактная фабрика](abstractfactory/README.md)
+* [Фабричный метод](factorymethod/README.md)
 * [Строитель](builder/README.md)
 * [...](...)
 
