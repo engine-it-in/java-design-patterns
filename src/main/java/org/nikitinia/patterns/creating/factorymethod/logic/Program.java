@@ -5,6 +5,7 @@ import org.nikitinia.patterns.creating.factorymethod.actor.Document;
 import org.nikitinia.patterns.creating.factorymethod.action.MediaDocumentCreator;
 import org.nikitinia.patterns.creating.factorymethod.action.OfficialDocumentCreator;
 import org.nikitinia.patterns.creating.factorymethod.dictionary.TypeNotify;
+import org.nikitinia.patterns.creating.factorymethod.exception.ProcessException;
 
 public class Program {
 
@@ -21,7 +22,7 @@ public class Program {
         else if (typeNotify.equals(TypeNotify.OFFICIAL))
             return new OfficialDocumentCreator();
         else
-            throw new RuntimeException(String.format("Something bad with %s", TypeNotify.OTHER));
+            throw new ProcessException(String.format("Something bad with %s", TypeNotify.OTHER));
     }
 
 }
