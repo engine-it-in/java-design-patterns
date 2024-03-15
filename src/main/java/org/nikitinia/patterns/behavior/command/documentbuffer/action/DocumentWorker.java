@@ -7,17 +7,15 @@ import org.nikitinia.patterns.behavior.command.documentbuffer.actor.Command;
 import org.nikitinia.patterns.behavior.command.documentbuffer.actor.CopyCommand;
 import org.nikitinia.patterns.behavior.command.documentbuffer.actor.PasteCommand;
 
-/*
+/**
  * Что -> Демонстрационный класс, который запускает общую логику взаимодействия классов ;
  * Для чего -> Для запуска логики демонстрации;
  * Реализация -> По сути, такая логика реализации является демонстрацией шаблона - посредник, о котором мы поговорим позднее;
- * */
+ */
 @Slf4j
 public class DocumentWorker {
 
-    /*
-    * Нам будет нужна история.
-    * */
+    /*Нам будет нужна история*/
     @Getter
     private final CommandHistory commandHistory = new CommandHistory();
 

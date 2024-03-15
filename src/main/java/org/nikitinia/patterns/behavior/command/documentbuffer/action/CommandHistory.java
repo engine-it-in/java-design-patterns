@@ -5,12 +5,12 @@ import org.nikitinia.patterns.behavior.command.documentbuffer.actor.Command;
 
 import java.util.Stack;
 
-/*
+/**
  * Что -> Журнал работы с действиями команд;
  * Для чего -> Для записи команд;
  * Реализация -> стек -> История линейна и мы записываем новое поверх старого;
  * В чем выгода -> Мы всегда имеем консистентную историю изменений команды;
- * */
+ */
 
 public class CommandHistory {
 

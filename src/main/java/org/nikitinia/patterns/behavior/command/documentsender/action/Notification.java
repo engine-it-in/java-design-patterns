@@ -5,17 +5,15 @@ import org.nikitinia.patterns.behavior.command.documentsender.actor.Notification
 
 import static org.nikitinia.patterns.behavior.command.util.Constant.CommandMessage.SEND_MESSAGE_TEXT;
 
-/*
+/**
  * Что -> Это основа для "команды";
  * Для чего -> Этот интерфейс, который инкапсулирует корневую логику команды.
  * Тут использована дефолтная реализация интерфейса, то есть он будет использоваться в том, виде, как определен тут;
  * Реализация -> Создана в виде интерфейса. Оставляем систему гибкой для возможных изменений;
- * */
+ */
 public interface Notification {
 
-    /*
-     * Суть отправки - отправляем конкретное сообщение.
-     * */
+    /*Суть отправки - отправляем конкретное сообщение*/
     default void send(NotificationInfo notificationInfo) {
         System.out.println(
                 String.format(
@@ -24,9 +22,7 @@ public interface Notification {
                         getType().toString()));
     }
 
-    /*
-     * Тип оповещения должен быть определен конкретной системой по своему
-     * */
+    /*Тип оповещения должен быть определен конкретной системой по своему*/
     NotificationType getType();
 
 

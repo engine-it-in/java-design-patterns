@@ -7,7 +7,7 @@ import org.nikitinia.patterns.behavior.state.actor.DocumentStart;
 import org.nikitinia.patterns.behavior.state.actor.DocumentStop;
 
 
-/*
+/**
  * Что -> Класс, реализующий работу с состояниями объекта через их общий интерфейс.
  * Для чего -> Посредник, для удобной работы с состояниями;
  * Реализация -> Класс, агрегирующий интерфейс работы с состояниями;

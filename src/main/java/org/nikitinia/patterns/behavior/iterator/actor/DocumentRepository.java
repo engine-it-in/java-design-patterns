@@ -7,12 +7,12 @@ import org.nikitinia.patterns.behavior.iterator.action.Iterator;
 
 import java.util.List;
 
-/*
+/**
  * Что -> Класс реализующий связь между конкретным типом объекта и конкретным итератором;
  * Для чего -> Интерфейс для работы с документами;
  * Реализация -> Класс с инетрфейсом в виде коллекции;
  * В чем выгода -> Публичный класс, который является декларированием того, что может наша программа;
- * */
+ */
 public class DocumentRepository implements Collection {
 
     @Getter

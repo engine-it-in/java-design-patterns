@@ -13,17 +13,15 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-/*
+/**
  * Что -> Общая логика работы с сервисом;
  * Для чего -> Единая точка работы с классами;
  * Реализация -> Класс, направляющий логику работы с данными;
  * В чем выгода -> Единая точка работы с функционалом;
- * */
+ */
 public class NotificationService {
 
-    /*
-    * Создаем справочник типов отправки и самих оповещений
-    * */
+    /*Создаем справочник типов отправки и самих оповещений*/
     @Getter
     private final Map<NotificationType, Notification> notificationMap;
 
