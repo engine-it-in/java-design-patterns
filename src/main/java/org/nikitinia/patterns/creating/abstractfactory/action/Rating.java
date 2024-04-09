@@ -1,7 +1,9 @@
 package org.nikitinia.patterns.creating.abstractfactory.action;
 
+import org.nikitinia.patterns.creating.abstractfactory.action.dictionary.RatingValue;
+
 public interface Rating {
 
-    String getGrade();
+    RatingValue getGrade();
 
 }
