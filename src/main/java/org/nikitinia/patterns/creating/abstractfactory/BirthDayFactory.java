@@ -1,11 +1,14 @@
 package org.nikitinia.patterns.creating.abstractfactory;
 
+import org.nikitinia.patterns.creating.abstractfactory.action.ScientificWork;
+import org.nikitinia.patterns.creating.abstractfactory.action.Diploma;
+
 public interface BirthDayFactory {
 
-    Gift getGift();
+    Diploma getGift();
 
-    Card getCard();
+    Rating getCard();
 
-    Cake getCake();
+    ScientificWork getCake();
 
 }

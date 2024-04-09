@@ -1,6 +1,8 @@
 package org.nikitinia.patterns.creating.abstractfactory;
 
-public class AdultCake implements Cake{
+import org.nikitinia.patterns.creating.abstractfactory.action.ScientificWork;
+
+public class AdultCake implements ScientificWork {
 
     public String getName() {
         return "Adult Pie";

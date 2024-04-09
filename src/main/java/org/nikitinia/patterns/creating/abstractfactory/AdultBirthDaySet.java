@@ -1,16 +1,19 @@
 package org.nikitinia.patterns.creating.abstractfactory;
 
+import org.nikitinia.patterns.creating.abstractfactory.action.ScientificWork;
+import org.nikitinia.patterns.creating.abstractfactory.action.Diploma;
+
 public class AdultBirthDaySet implements BirthDayFactory{
 
-    public Gift getGift() {
-        return new AdultGift();
+    public Diploma getGift() {
+        return new AdultDiploma();
     }
 
-    public Card getCard() {
-        return new AdultCard();
+    public Rating getCard() {
+        return new AdultRating();
     }
 
-    public Cake getCake() {
+    public ScientificWork getCake() {
         return new AdultCake();
     }
 

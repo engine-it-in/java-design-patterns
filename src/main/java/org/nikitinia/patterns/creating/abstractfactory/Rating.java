@@ -1,6 +1,6 @@
 package org.nikitinia.patterns.creating.abstractfactory;
 
-public interface Card {
+public interface Rating {
 
     String getName();
 
