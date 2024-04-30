@@ -10,14 +10,12 @@ import org.nikitinia.patterns.creating.prototype.action.Copy;
 @Getter
 @Setter
 @ToString
-public class Shape implements Copy {
+public class PatternDocument implements Copy {
 
     private String name;
-    private String color;
-
 
     @Override
-    public Shape copy() {
-        return new Shape(name, color);
+    public PatternDocument copy() {
+        return new PatternDocument(name);
     }
 }

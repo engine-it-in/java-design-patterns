@@ -5,10 +5,10 @@ import lombok.AllArgsConstructor;
 @AllArgsConstructor
 public class ShapeFactory {
 
-    Shape shape;
+    PatternDocument patternDocument;
 
-    public Shape cloneShape() {
-        return shape.copy();
+    public PatternDocument cloneShape() {
+        return patternDocument.copy();
     }
 
 }

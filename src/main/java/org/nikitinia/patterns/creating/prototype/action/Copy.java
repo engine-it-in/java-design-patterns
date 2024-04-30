@@ -1,9 +1,9 @@
 package org.nikitinia.patterns.creating.prototype.action;
 
-import org.nikitinia.patterns.creating.prototype.actor.Shape;
+import org.nikitinia.patterns.creating.prototype.actor.PatternDocument;
 
 public interface Copy {
 
-    public Shape copy();
+    public PatternDocument copy();
 
 }
