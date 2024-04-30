@@ -1,16 +1,16 @@
 package org.nikitinia.patterns.creating.abstractfactory.action.factory;
 
 
-import org.nikitinia.patterns.creating.abstractfactory.action.Diploma;
+import org.nikitinia.patterns.creating.abstractfactory.action.Certify;
 import org.nikitinia.patterns.creating.abstractfactory.action.Rating;
-import org.nikitinia.patterns.creating.abstractfactory.action.ScientificWork;
+import org.nikitinia.patterns.creating.abstractfactory.action.ScienceResearch;
 
 public interface EducationAttributeFactory {
 
-    Diploma getDiploma();
+    Certify getDiploma();
 
     Rating getRating();
 
-    ScientificWork getScientificWork();
+    ScienceResearch getScientificWork();
 
 }

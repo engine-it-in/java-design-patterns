@@ -1,4 +1,17 @@
 package org.nikitinia.domain.model.documents;
 
-public class Diploma {
+import lombok.Builder;
+
+import java.util.List;
+
+@Builder
+public record Diploma(
+
+        Integer number,
+
+        Integer averageRate,
+
+        List<String> subjects
+
+) {
 }

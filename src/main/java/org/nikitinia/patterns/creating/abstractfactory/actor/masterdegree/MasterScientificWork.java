@@ -1,10 +1,17 @@
 package org.nikitinia.patterns.creating.abstractfactory.actor.masterdegree;
 
-import org.nikitinia.patterns.creating.abstractfactory.action.ScientificWork;
+import org.nikitinia.domain.model.documents.ScientificWork;
+import org.nikitinia.patterns.creating.abstractfactory.action.ScienceResearch;
 
-public class MasterScientificWork implements ScientificWork {
+public class MasterScientificWork implements ScienceResearch {
 
-    public String getWork() {
-        return "Master scientific work";
+    @Override
+    public ScientificWork getWork() {
+        return ScientificWork.builder()
+                .number(1)
+                .name("Master work")
+                .subject("Math research")
+                .typeScience("Math")
+                .build();
     }
 }

@@ -1,21 +1,21 @@
 package org.nikitinia.patterns.creating.abstractfactory.actor.masterdegree;
 
-import org.nikitinia.patterns.creating.abstractfactory.action.factory.EducationAttributeFactory;
+import org.nikitinia.patterns.creating.abstractfactory.action.Certify;
 import org.nikitinia.patterns.creating.abstractfactory.action.Rating;
-import org.nikitinia.patterns.creating.abstractfactory.action.ScientificWork;
-import org.nikitinia.patterns.creating.abstractfactory.action.Diploma;
+import org.nikitinia.patterns.creating.abstractfactory.action.ScienceResearch;
+import org.nikitinia.patterns.creating.abstractfactory.action.factory.EducationAttributeFactory;
 
 public class MasterAttributeSet implements EducationAttributeFactory {
 
-    public Diploma getDiploma() {
-        return new MasterDiploma();
+    public Certify getDiploma() {
+        return new MasterCertify();
     }
 
     public Rating getRating() {
         return new MasterRating();
     }
 
-    public ScientificWork getScientificWork() {
+    public ScienceResearch getScientificWork() {
         return new MasterScientificWork();
     }
 

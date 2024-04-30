@@ -7,13 +7,13 @@ import org.nikitinia.patterns.creating.abstractfactory.actor.bachelor.BachelorAt
 public class Program {
 
     public static void main(String[] args) {
-        MasterAttributeSet birthDaySetAdult = new MasterAttributeSet();
-        BachelorAttributeSet birthDaySetKid = new BachelorAttributeSet();
-        System.out.println(doParty(birthDaySetAdult));
-        System.out.println(doParty(birthDaySetKid));
+        MasterAttributeSet masterAttributeSet = new MasterAttributeSet();
+        BachelorAttributeSet bachelorAttributeSet = new BachelorAttributeSet();
+        System.out.println(doEducation(masterAttributeSet));
+        System.out.println(doEducation(bachelorAttributeSet));
     }
 
-    public static String doParty (EducationAttributeFactory educationAttributeFactory) {
+    public static String doEducation(EducationAttributeFactory educationAttributeFactory) {
         return educationAttributeFactory.getRating().getGrade() + " and " +
                 educationAttributeFactory.getDiploma().getDocument() + " and " +
                 educationAttributeFactory.getScientificWork().getWork();
