@@ -4,7 +4,6 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.nikitinia.domain.creator.DocumentCreator;
-import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.structure.decorator.actor.SecurityDocument;
 import org.nikitinia.patterns.structure.decorator.dictionary.TypeSecurity;
 

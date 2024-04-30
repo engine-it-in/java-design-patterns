@@ -7,7 +7,6 @@ import static org.nikitinia.patterns.creating.abstractfactory.util.DataBuilder.g
 
 public class MasterCertify implements Certify {
 
-
     @Override
     public Diploma getDocument() {
         return Diploma.builder()

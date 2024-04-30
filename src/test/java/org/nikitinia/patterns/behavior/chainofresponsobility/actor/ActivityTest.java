@@ -4,16 +4,15 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.nikitinia.domain.creator.DocumentCreator;
-import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.Priority;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.chainofresponsobility.action.PublicDocument;
+import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.Priority;
 import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.TypeSystem;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
-import static org.junit.Assert.assertEquals;
 
 class ActivityTest {
 
