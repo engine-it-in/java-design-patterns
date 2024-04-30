@@ -3,6 +3,7 @@
 * [Абстрактная фабрика](abstractfactory/README.md)
 * [Фабричный метод](factorymethod/README.md)
 * [Строитель](builder/README.md)
+* [Прототип](prototype/README.md)
 * [...](...)
 
 ## Назначение
