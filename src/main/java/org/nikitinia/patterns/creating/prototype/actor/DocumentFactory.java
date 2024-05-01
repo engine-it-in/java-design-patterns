@@ -3,7 +3,7 @@ package org.nikitinia.patterns.creating.prototype.actor;
 import lombok.AllArgsConstructor;
 
 @AllArgsConstructor
-public class ShapeFactory {
+public class DocumentFactory {
 
     PatternDocument patternDocument;
 
