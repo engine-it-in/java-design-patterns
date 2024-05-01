@@ -7,11 +7,13 @@ public class Program {
 
     public static void main(String[] args) {
 
-        PatternDocument patternDocumentFirst = new PatternDocument("triangle");
-        System.out.print(patternDocumentFirst);
+        // Создаем шаблон документа
+        PatternDocument patternDocumentFirst = new PatternDocument("document");
+        System.out.println(patternDocumentFirst);
 
+        //Создаем прототип документа
         DocumentFactory documentFactory = new DocumentFactory(patternDocumentFirst);
-        System.out.print(documentFactory.cloneShape());
+        System.out.println(documentFactory.cloneShape());
     }
 
 }

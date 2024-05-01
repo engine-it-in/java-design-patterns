@@ -4,7 +4,7 @@
 * [Фабричный метод](factorymethod/README.md)
 * [Строитель](builder/README.md)
 * [Прототип](prototype/README.md)
-* [...](...)
+* [Одиночка](singleton/README.md)
 
 ## Назначение
 
