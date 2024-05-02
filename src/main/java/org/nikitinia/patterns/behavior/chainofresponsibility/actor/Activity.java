@@ -1,10 +1,10 @@
-package org.nikitinia.patterns.behavior.chainofresponsobility.actor;
+package org.nikitinia.patterns.behavior.chainofresponsibility.actor;
 
 import lombok.Getter;
 import lombok.Setter;
-import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.Priority;
+import org.nikitinia.patterns.behavior.chainofresponsibility.dictionary.Priority;
 import org.nikitinia.domain.model.documents.Document;
-import org.nikitinia.patterns.behavior.chainofresponsobility.action.PublicDocument;
+import org.nikitinia.patterns.behavior.chainofresponsibility.action.PublicDocument;
 
 
 /**

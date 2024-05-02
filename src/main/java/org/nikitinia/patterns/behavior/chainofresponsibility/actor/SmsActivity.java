@@ -1,9 +1,8 @@
-package org.nikitinia.patterns.behavior.chainofresponsobility.actor;
+package org.nikitinia.patterns.behavior.chainofresponsibility.actor;
 
-import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.Priority;
+import org.nikitinia.patterns.behavior.chainofresponsibility.dictionary.Priority;
 import org.nikitinia.domain.model.documents.Document;
-import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.TypeSystem;
-
+import org.nikitinia.patterns.behavior.chainofresponsibility.dictionary.TypeSystem;
 
 /**
  * Что -> Класс, звено в последовательности цепочки обязанности;
@@ -12,14 +11,14 @@ import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.TypeSyst
  * Ценность -> Реализация общего поведения за счет абстрактного класса,
  реализация конкретной ответсвенности в конкретном месте;
  */
-public class TelegramActivity extends Activity {
+public class SmsActivity extends Activity {
 
-    public TelegramActivity(Priority priority) {
+    public SmsActivity(Priority priority) {
         super(priority);
     }
 
     @Override
     public void writeDocument(Document document) {
-        System.out.println(TypeSystem.TELEGRAM.getSystem() + " : " + document);
+        System.out.println(TypeSystem.SMS.getSystem() + " : " + document);
     }
 }

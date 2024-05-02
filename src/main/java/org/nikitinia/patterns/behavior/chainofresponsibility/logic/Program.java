@@ -1,12 +1,12 @@
-package org.nikitinia.patterns.behavior.chainofresponsobility.logic;
+package org.nikitinia.patterns.behavior.chainofresponsibility.logic;
 
 import org.nikitinia.domain.creator.DocumentCreator;
-import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.Priority;
+import org.nikitinia.patterns.behavior.chainofresponsibility.dictionary.Priority;
 import org.nikitinia.domain.model.documents.Document;
-import org.nikitinia.patterns.behavior.chainofresponsobility.actor.Activity;
-import org.nikitinia.patterns.behavior.chainofresponsobility.actor.EmailActivity;
-import org.nikitinia.patterns.behavior.chainofresponsobility.actor.SmsActivity;
-import org.nikitinia.patterns.behavior.chainofresponsobility.actor.TelegramActivity;
+import org.nikitinia.patterns.behavior.chainofresponsibility.actor.Activity;
+import org.nikitinia.patterns.behavior.chainofresponsibility.actor.EmailActivity;
+import org.nikitinia.patterns.behavior.chainofresponsibility.actor.SmsActivity;
+import org.nikitinia.patterns.behavior.chainofresponsibility.actor.TelegramActivity;
 
 public class Program {
 

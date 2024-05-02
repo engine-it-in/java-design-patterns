@@ -1,7 +1,7 @@
-package org.nikitinia.patterns.behavior.chainofresponsobility.action;
+package org.nikitinia.patterns.behavior.chainofresponsibility.action;
 
 import org.nikitinia.domain.model.documents.Document;
-import org.nikitinia.patterns.behavior.chainofresponsobility.actor.Activity;
+import org.nikitinia.patterns.behavior.chainofresponsibility.actor.Activity;
 
 /**
  * Что -> Действие, выполняемое для каждого звена цепочки;

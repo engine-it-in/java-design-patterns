@@ -1,13 +1,13 @@
-package org.nikitinia.patterns.behavior.chainofresponsobility.actor;
+package org.nikitinia.patterns.behavior.chainofresponsibility.actor;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.nikitinia.domain.creator.DocumentCreator;
 import org.nikitinia.domain.model.documents.Document;
-import org.nikitinia.patterns.behavior.chainofresponsobility.action.PublicDocument;
-import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.Priority;
-import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.TypeSystem;
+import org.nikitinia.patterns.behavior.chainofresponsibility.action.PublicDocument;
+import org.nikitinia.patterns.behavior.chainofresponsibility.dictionary.Priority;
+import org.nikitinia.patterns.behavior.chainofresponsibility.dictionary.TypeSystem;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;

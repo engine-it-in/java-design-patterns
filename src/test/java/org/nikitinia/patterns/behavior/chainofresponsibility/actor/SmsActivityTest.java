@@ -1,21 +1,21 @@
-package org.nikitinia.patterns.behavior.chainofresponsobility.actor;
+package org.nikitinia.patterns.behavior.chainofresponsibility.actor;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.nikitinia.domain.creator.DocumentCreator;
-import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.Priority;
+import org.nikitinia.patterns.behavior.chainofresponsibility.dictionary.Priority;
 import org.nikitinia.domain.model.documents.Document;
-import org.nikitinia.patterns.behavior.chainofresponsobility.dictionary.TypeSystem;
+import org.nikitinia.patterns.behavior.chainofresponsibility.dictionary.TypeSystem;
 
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 
-class TelegramActivityTest {
+class SmsActivityTest {
 
-    TelegramActivity telegramActivity
-            = new TelegramActivity(Priority.CRITICAL);
+    SmsActivity smsActivity
+            = new SmsActivity(Priority.CRITICAL);
 
     private final ByteArrayOutputStream byteArrayOutputStream =
             new ByteArrayOutputStream();
@@ -28,18 +28,18 @@ class TelegramActivityTest {
     }
 
     @Test
-    void telegramActivityCheck() {
-        assertThat(telegramActivity)
-                .hasFieldOrPropertyWithValue("priority", telegramActivity.getPriority())
+    void smsActivityCheck() {
+        assertThat(smsActivity)
+                .hasFieldOrPropertyWithValue("priority", smsActivity.getPriority())
                 .isInstanceOf(Activity.class);
     }
 
     @Test
     void writeDocument_shouldReturnResult() {
-        telegramActivity.writeDocument(document);
+        smsActivity.writeDocument(document);
 
         assertThat(byteArrayOutputStream.toString().trim())
-                .isEqualTo(TypeSystem.TELEGRAM.getSystem() + " : " + document);
+                .isEqualTo(TypeSystem.SMS.getSystem() + " : " + document);
     }
 
 }

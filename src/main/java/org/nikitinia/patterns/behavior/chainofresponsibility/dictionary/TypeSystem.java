@@ -1,4 +1,4 @@
-package org.nikitinia.patterns.behavior.chainofresponsobility.dictionary;
+package org.nikitinia.patterns.behavior.chainofresponsibility.dictionary;
 
 import lombok.AllArgsConstructor;
 import lombok.Getter;

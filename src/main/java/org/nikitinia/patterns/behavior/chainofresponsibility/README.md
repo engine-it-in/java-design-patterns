@@ -1,5 +1,7 @@
 # Цепочка обязанностей (Chain of Responsibility)
-* [К описанию проекта](https://github.com/engine-it-in/java-design-patterns)
+****
+* [К описанию поведенческих шаблонов](../README.md)
+****
 ## Тип
 * Поведенческий шаблон;
 ## Назначение

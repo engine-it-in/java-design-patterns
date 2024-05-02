@@ -1,4 +1,4 @@
-package org.nikitinia.patterns.behavior.chainofresponsobility.dictionary;
+package org.nikitinia.patterns.behavior.chainofresponsibility.dictionary;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
