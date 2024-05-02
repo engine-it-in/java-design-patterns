@@ -4,16 +4,16 @@
 [К описанию шаблонов проектирования](README.md)
 **** 
 
-* [Команда](command/README.md)
-* [Итератор](iterator/README.md)
-* [Посредник](mediator/README.md)
-* [Снимок](memento/README.md)
-* [Наблюдатель](observer/README.md)
-* [Состояние](state/README.md)
-* [Стратегия](strategy/README.md)
-* [Цепочка обязанностей](chainofresponsibility/README.md)
-* [Шаблонный метод](templatemethod/README.md)
-* [Посетитель](visitor/README.md)
+* [Команда](command/README.md);
+* [Итератор](iterator/README.md);
+* [Посредник](mediator/README.md);
+* [Снимок](memento/README.md);
+* [Наблюдатель](observer/README.md);
+* [Состояние](state/README.md);
+* [Стратегия](strategy/README.md);
+* [Цепочка обязанностей](chainofresponsibility/README.md);
+* [Шаблонный метод](templatemethod/README.md);
+* [Посетитель](visitor/README.md);
 
 ## Назначение
 
