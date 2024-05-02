@@ -1,5 +1,9 @@
 # Поведенческие шаблоны
 
+****
+[К описанию шаблонов проектирования](README.md)
+**** 
+
 * [Команда](/src/main/java/org/nikitinia/patterns/behavior/command/README.md)
 * [Итератор](/src/main/java/org/nikitinia/patterns/behavior/iterator/README.md)
 * [Посредник](/src/main/java/org/nikitinia/patterns/behavior/mediator/README.md)
