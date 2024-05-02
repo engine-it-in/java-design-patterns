@@ -4,13 +4,13 @@
 [К описанию шаблонов проектирования](../../../../../../../README.md)
 ****  
 
-* [Адаптер](adapter/README.md)
-* [Компоновщик](composite/README.md)
-* [Мост](bridge/README.md)
-* [Декоратор](decorator/README.md)
-* [Фасад](facade/README.md)
-* [Легковес](flyweight/README.md)
-* [Заместитель](proxy/README.md)
+* [Адаптер](adapter/README.md);
+* [Компоновщик](composite/README.md);
+* [Мост](bridge/README.md);
+* [Декоратор](decorator/README.md);
+* [Фасад](facade/README.md);
+* [Легковес](flyweight/README.md);
+* [Заместитель](proxy/README.md);
 
 ## Назначение
 

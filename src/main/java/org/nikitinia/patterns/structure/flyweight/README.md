@@ -1,5 +1,7 @@
 # Легковес (Flyweight)
-* [К описанию проекта](https://github.com/engine-it-in/java-design-patterns)
+****
+* [К описанию структурных шаблонов](../README.md)
+****
 
 ## Тип
 * Структурный шаблон;
