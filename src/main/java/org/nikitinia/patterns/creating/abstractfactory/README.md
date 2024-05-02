@@ -1,5 +1,7 @@
 # Абстрактная фабрика (Abstract factory)
-* [К описанию проекта](https://github.com/engine-it-in/java-design-patterns)
+****
+* [К описанию порождающих шаблонов](../README.md)
+****
 ## Тип
 * Порождающий шаблон;
 ## Назначение
