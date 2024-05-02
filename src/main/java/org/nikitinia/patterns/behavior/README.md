@@ -4,16 +4,16 @@
 [К описанию шаблонов проектирования](README.md)
 **** 
 
-* [Команда](/src/main/java/org/nikitinia/patterns/behavior/command/README.md)
-* [Итератор](/src/main/java/org/nikitinia/patterns/behavior/iterator/README.md)
-* [Посредник](/src/main/java/org/nikitinia/patterns/behavior/mediator/README.md)
-* [Снимок](/src/main/java/org/nikitinia/patterns/behavior/memento/README.md)
-* [Наблюдатель](/src/main/java/org/nikitinia/patterns/behavior/observer/README.md)
-* [Состояние](/src/main/java/org/nikitinia/patterns/behavior/state/README.md)
-* [Стратегия](/src/main/java/org/nikitinia/patterns/behavior/strategy/README.md)
-* [Цепочка обязанностей](/src/main/java/org/nikitinia/patterns/behavior/chainofresponsobility/README.md)
-* [Шаблонный метод](/src/main/java/org/nikitinia/patterns/behavior/templatemethod/README.md)
-* [Посетитель](/src/main/java/org/nikitinia/patterns/behavior/visitor/README.md)
+* [Команда](command/README.md)
+* [Итератор](iterator/README.md)
+* [Посредник](mediator/README.md)
+* [Снимок](memento/README.md)
+* [Наблюдатель](observer/README.md)
+* [Состояние](state/README.md)
+* [Стратегия](strategy/README.md)
+* [Цепочка обязанностей](chainofresponsibility/README.md)
+* [Шаблонный метод](templatemethod/README.md)
+* [Посетитель](visitor/README.md)
 
 ## Назначение
 
