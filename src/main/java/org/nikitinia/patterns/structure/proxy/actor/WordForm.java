@@ -5,12 +5,12 @@ import lombok.Getter;
 import lombok.extern.slf4j.Slf4j;
 import org.nikitinia.patterns.structure.proxy.action.PrintForm;
 
-/*
+/**
  * Что -> Основной класс задания - форма документа;
  * Для чего -> Реализация логики;
  * Реализация -> Класс с имплементацией интерфейса;
- * В чем выгода -> Реализация логики;
- * */
+ * Ценность -> Реализация логики;
+ */
 @Slf4j
 @AllArgsConstructor
 @Getter

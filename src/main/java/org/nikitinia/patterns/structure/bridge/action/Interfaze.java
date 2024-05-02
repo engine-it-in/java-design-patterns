@@ -2,12 +2,12 @@ package org.nikitinia.patterns.structure.bridge.action;
 
 import org.nikitinia.domain.model.documents.Document;
 
-/*
+/**
  * Что -> Общий интерфейс, описывающий действия над документами;
  * Для чего -> Регламентация действий над документами;
  * Реализация -> Интерфейс;
- * В чем выгода -> Унификация действий;
- * */
+ * Ценность -> Унификация действий;
+ */
 public interface Interfaze {
 
     Document loadDocument(Double id);

@@ -5,12 +5,12 @@ import org.nikitinia.domain.model.documents.Document;
 
 import java.util.HashMap;
 
-/*
+/**
  * Что -> Класс, реализующий работу с документами через репозиторий;
  * Для чего -> Реализация конкретной логики;
  * Реализация -> Класс с методами;
- * В чем выгода -> Реализация логики;
- * */
+ * Ценность -> Реализация бизнес логики;
+ */
 @Getter
 public class DocumentRepository {
 

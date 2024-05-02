@@ -4,12 +4,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.nikitinia.patterns.structure.decorator.dictionary.TypeSecurity;
 import org.nikitinia.patterns.structure.decorator.actor.SecurityDocument;
 
-/*
+/**
  * Что -> Класс, реализующий декорируемое поведение. Логика шифрования;
  * Для чего -> Выполнение конкретных действий;
  * Реализация -> Класс, наследующий базовое поведение декоратора;
- * В чем выгода -> Добавление функциональности декорируемому объекту;
- * */
+ * Ценность -> Добавление функциональности декорируемому объекту;
+ */
 @Slf4j
 public class Decrypter extends Decorator {
 

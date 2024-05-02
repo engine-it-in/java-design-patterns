@@ -10,7 +10,7 @@ import java.util.List;
  * Что -> Справочник типов отправки сообщений;
  * Для чего -> Типы отправки, сосредоточены в одном месте;
  * Реализация -> Enum, внутренний справочник;
- * В чем выгода -> Единая точка работы с данными;
+ * Ценность -> Единая точка работы с данными;
  */
 @AllArgsConstructor
 public enum NotificationType {
@@ -33,6 +33,5 @@ public enum NotificationType {
         return Arrays.asList(NotificationType.values());
 
     }
-
 
 }

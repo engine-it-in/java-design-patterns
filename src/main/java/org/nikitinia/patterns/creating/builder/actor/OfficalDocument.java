@@ -4,12 +4,12 @@ import lombok.Getter;
 import lombok.Setter;
 import org.nikitinia.domain.model.documents.Document;
 
-/*
+/**
  * Что -> ?
  * Для чего -> ?
  * Реализация -> ?
- * В чем выгода -> ?
- * */
+ * Ценность -> ?
+ */
 @Getter
 @Setter
 public class OfficalDocument {

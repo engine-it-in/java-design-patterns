@@ -4,12 +4,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.nikitinia.patterns.structure.proxy.action.PrintForm;
 
 
-/*
+/**
  * Что -> Класс прокси;
  * Для чего -> Имплементация интерфейса, агрегирование основного класса в виде атрибута и реализация метода по рабочей логике;
  * Реализация -> Класс с имплементацией интерфейса;
- * В чем выгода -> Реализация логики;
- * */
+ * Ценность -> Реализация логики;
+ */
 @Slf4j
 public class ProxyDocument implements PrintForm {
 

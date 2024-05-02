@@ -4,12 +4,12 @@ import lombok.extern.slf4j.Slf4j;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.structure.bridge.action.Interfaze;
 
-/*
+/**
  * Что -> Реализация работы с мобильным документом;
  * Для чего -> Реализация конкретных действий;
  * Реализация -> Конкретный класс;
- * В чем выгода -> Реализация логики;
- * */
+ * Ценность -> Реализация бизнес логики;
+ */
 @Slf4j
 public class WebDocument extends DocumentAbstract {
     public WebDocument(Interfaze interfaze) {

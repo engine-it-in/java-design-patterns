@@ -3,12 +3,12 @@ package org.nikitinia.patterns.creating.builder.action;
 import lombok.Getter;
 import org.nikitinia.patterns.creating.builder.actor.OfficalDocument;
 
-/*
+/**
  * Что -> ?
  * Для чего -> ?
  * Реализация -> ?
- * В чем выгода -> ?
- * */
+ * Ценность -> ?
+ */
 @Getter
 public abstract class Builder {
 
