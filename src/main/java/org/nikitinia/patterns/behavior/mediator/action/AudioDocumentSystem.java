@@ -9,10 +9,10 @@ import java.util.ArrayList;
 import java.util.List;
 
 /**
- * Что -> Конкретный класс, который реализует отправку документов, реализует логику медиатора;
- * Для чего -> Определяет общую ответсвенность системы;
- * Реализация -> Аудио система отправки документов показана для примера. Тут мы специфицируем, как именно отправляются документы;
- * Ценность -> Это класс посредник mediator, в котором установлены связи между нашими участника и совершаемыми действиями;
+ * Что -> Отправка документов;
+ * Для чего -> Определяет ответсвенность системы;
+ * Реализация -> Реализация логики работы;
+ * Ценность -> Mediator. Установлены связи между участника и действиями;
  */
 
 public class AudioDocumentSystem implements DocumentSystem {
@@ -20,7 +20,6 @@ public class AudioDocumentSystem implements DocumentSystem {
     User admin;
 
     List<User> users = new ArrayList<>();
-
 
     public void setAdmin(User admin) {
         if (admin instanceof Admin) {
@@ -39,7 +38,6 @@ public class AudioDocumentSystem implements DocumentSystem {
         } else {
             throw new RuntimeException("Admin can not do in another system");
         }
-
     }
 
 
