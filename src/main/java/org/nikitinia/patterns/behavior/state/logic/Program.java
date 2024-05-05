@@ -12,13 +12,9 @@ public class Program {
     public static void main(String[] args) {
 
         Document document = DocumentCreator.documentBuildWithNumberAndStatus(1.0, Status.DRAFT);
-
         DocumentActivity documentActivity = new DocumentStart(document);
-
         DocumentContext documentContext = new DocumentContext(document);
-
         documentContext.setDocumentActivity(documentActivity);
-
 
         for (int i = 0; i < 10; i++) {
             documentContext.doAction();

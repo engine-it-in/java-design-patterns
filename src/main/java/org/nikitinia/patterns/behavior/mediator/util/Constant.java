@@ -2,6 +2,12 @@ package org.nikitinia.patterns.behavior.mediator.util;
 
 import lombok.experimental.UtilityClass;
 
+/**
+ * Что -> Класс с приватным конструктором;
+ * Для чего -> Репозиторий констант;
+ * Реализация -> Утилитарный класс;
+ * Ценность -> Инкапсуляция констант в едином месте;
+ */
 @UtilityClass
 public class Constant {
 
