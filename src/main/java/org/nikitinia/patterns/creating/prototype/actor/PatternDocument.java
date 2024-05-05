@@ -3,6 +3,12 @@ package org.nikitinia.patterns.creating.prototype.actor;
 import lombok.*;
 import org.nikitinia.patterns.creating.prototype.action.Copy;
 
+/**
+ * Что -> ?
+ * Для чего -> ?
+ * Реализация -> ?
+ * Ценность -> ?
+ */
 @Getter
 @Setter
 @ToString

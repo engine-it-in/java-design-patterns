@@ -8,7 +8,7 @@ import org.nikitinia.patterns.behavior.command.documentbuffer.actor.CopyCommand;
 import org.nikitinia.patterns.behavior.command.documentbuffer.actor.PasteCommand;
 
 /**
- * Что -> Запуск логики взаимодействия классов ;
+ * Что -> Запуск логики взаимодействия классов;
  * Для чего -> Демонстрация;
  * Реализация -> Логика реализации является демонстрацией шаблона - посредник;
  * Ценность -> Реализация в едином месте общей логики взаимодействия;

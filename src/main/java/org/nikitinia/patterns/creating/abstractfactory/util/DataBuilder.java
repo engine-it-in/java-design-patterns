@@ -4,6 +4,12 @@ import lombok.experimental.UtilityClass;
 
 import java.util.List;
 
+/**
+ * Что -> ?
+ * Для чего -> ?
+ * Реализация -> ?
+ * Ценность -> ?
+ */
 @UtilityClass
 public class DataBuilder {
 

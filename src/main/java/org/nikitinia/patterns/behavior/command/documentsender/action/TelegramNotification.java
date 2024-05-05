@@ -4,8 +4,9 @@ import org.nikitinia.patterns.behavior.command.documentsender.actor.Notification
 
 /**
  * Что -> Конкретный тип оповещения;
- * Для чего -> Маркер для конкреного типа telegram оповещения, который будет направлять логику работы шаблона;
+ * Для чего -> Маркер для конкретного типа telegram оповещения, который будет направлять логику работы шаблона;
  * Реализация -> Класс, реализующий интерфейс;
+ * Ценность -> Реализация конкретной логики;
  */
 public class TelegramNotification implements Notification {
 

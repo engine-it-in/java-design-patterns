@@ -5,6 +5,12 @@ import org.nikitinia.patterns.creating.abstractfactory.action.Certify;
 import org.nikitinia.patterns.creating.abstractfactory.action.Rating;
 import org.nikitinia.patterns.creating.abstractfactory.action.ScienceResearch;
 
+/**
+ * Что -> ?
+ * Для чего -> ?
+ * Реализация -> ?
+ * Ценность -> ?
+ */
 public interface EducationAttributeFactory {
 
     Certify getDiploma();

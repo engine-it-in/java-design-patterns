@@ -5,6 +5,12 @@ import org.nikitinia.patterns.creating.abstractfactory.action.Rating;
 import org.nikitinia.patterns.creating.abstractfactory.action.ScienceResearch;
 import org.nikitinia.patterns.creating.abstractfactory.action.factory.EducationAttributeFactory;
 
+/**
+ * Что -> ?
+ * Для чего -> ?
+ * Реализация -> ?
+ * Ценность -> ?
+ */
 public class MasterAttributeSet implements EducationAttributeFactory {
 
     public Certify getDiploma() {

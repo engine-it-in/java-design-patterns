@@ -9,13 +9,12 @@ public class Program {
 
     public static void main(String[] args) {
 
-        /*Запускаем нашу логику*/
         NotificationService notificationService =
                 new NotificationService();
-        /*Связываем документ и телеграм рассылку*/
+
         NotificationInfo notificationInfo =
                 new NotificationInfo(DocumentCreator.documentBuild(), NotificationType.TELEGRAM);
-        /*Отправляем документ*/
+
         notificationService.send(notificationInfo);
     }
 

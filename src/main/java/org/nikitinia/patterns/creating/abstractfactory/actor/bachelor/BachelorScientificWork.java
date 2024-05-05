@@ -3,6 +3,12 @@ package org.nikitinia.patterns.creating.abstractfactory.actor.bachelor;
 import org.nikitinia.domain.model.documents.ScientificWork;
 import org.nikitinia.patterns.creating.abstractfactory.action.ScienceResearch;
 
+/**
+ * Что -> ?
+ * Для чего -> ?
+ * Реализация -> ?
+ * Ценность -> ?
+ */
 public class BachelorScientificWork implements ScienceResearch {
 
     @Override

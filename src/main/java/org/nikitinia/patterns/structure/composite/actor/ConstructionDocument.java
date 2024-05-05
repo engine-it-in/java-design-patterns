@@ -8,7 +8,7 @@ import org.nikitinia.patterns.structure.composite.action.Processor;
  * Что -> Конкретный класс, наследник общего абстрактного класса;
  * Для чего -> Выполнение конкретных действий;
  * Реализация -> Класс наследует общий компонент и реализует требуемое поведения;
- * Ценность -> Исполнение логики програмы;
+ * Ценность -> Исполнение логики программы;
  */
 @Slf4j
 public class ConstructionDocument extends MainDocument implements Processor {

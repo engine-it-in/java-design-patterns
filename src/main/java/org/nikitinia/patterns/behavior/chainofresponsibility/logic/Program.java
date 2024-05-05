@@ -25,9 +25,6 @@ public class Program {
         activity.publicity(documentSign, activity);
         activity.publicity(documentPresign, activityNext);
         activity.publicity(documentDraft, activityNextNext);
-
-
-
     }
 
 }

@@ -5,6 +5,12 @@ import org.nikitinia.patterns.creating.abstractfactory.action.Certify;
 
 import static org.nikitinia.patterns.creating.abstractfactory.util.DataBuilder.getSubjectForMaster;
 
+/**
+ * Что -> ?
+ * Для чего -> ?
+ * Реализация -> ?
+ * Ценность -> ?
+ */
 public class MasterCertify implements Certify {
 
     @Override
