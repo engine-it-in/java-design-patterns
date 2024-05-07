@@ -4,10 +4,10 @@ import org.nikitinia.patterns.creating.abstractfactory.action.Rating;
 import org.nikitinia.patterns.creating.abstractfactory.action.dictionary.RatingValue;
 
 /**
- * Что -> ?
- * Для чего -> ?
- * Реализация -> ?
- * Ценность -> ?
+ * Что -> Реализация рейтингования;
+ * Для чего -> Формирования результатов рейтингования;
+ * Реализация -> Класс;
+ * Ценность -> Реализация бизнес логики;
  */
 public class MasterRating implements Rating {
 

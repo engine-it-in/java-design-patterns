@@ -6,10 +6,10 @@ import org.nikitinia.patterns.creating.abstractfactory.action.Certify;
 import static org.nikitinia.patterns.creating.abstractfactory.util.DataBuilder.getSubjectForMaster;
 
 /**
- * Что -> ?
- * Для чего -> ?
- * Реализация -> ?
- * Ценность -> ?
+ * Что -> Реализация сертификации;
+ * Для чего -> Формирования результатов сертификации;
+ * Реализация -> Класс;
+ * Ценность -> Реализация бизнес логики;
  */
 public class MasterCertify implements Certify {
 

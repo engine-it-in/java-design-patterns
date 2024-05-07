@@ -6,10 +6,10 @@ import org.nikitinia.patterns.creating.abstractfactory.action.Rating;
 import org.nikitinia.patterns.creating.abstractfactory.action.ScienceResearch;
 
 /**
- * Что -> ?
- * Для чего -> ?
- * Реализация -> ?
- * Ценность -> ?
+ * Что -> Контракт абстрактной фабрики;
+ * Для чего -> Регламентация набора значений, которые являются результатом работы абстрактной фабрики;
+ * Реализация -> Интерфейс;
+ * Ценность -> Регламентация набора параметров, которые могут быть возвращены абстрактной фабрикой;
  */
 public interface EducationAttributeFactory {
 

@@ -6,10 +6,10 @@ import org.nikitinia.patterns.creating.abstractfactory.action.ScienceResearch;
 import org.nikitinia.patterns.creating.abstractfactory.action.factory.EducationAttributeFactory;
 
 /**
- * Что -> ?
- * Для чего -> ?
- * Реализация -> ?
- * Ценность -> ?
+ * Что -> Реализация абстрактной фабрики для бакалавриата;
+ * Для чего -> Формирования результата бакалавриата;
+ * Реализация -> Класс;
+ * Ценность -> Реализация бизнес логики;
  */
 public class BachelorAttributeSet implements EducationAttributeFactory {
 

@@ -4,10 +4,10 @@ import org.nikitinia.domain.model.documents.ScientificWork;
 import org.nikitinia.patterns.creating.abstractfactory.action.ScienceResearch;
 
 /**
- * Что -> ?
- * Для чего -> ?
- * Реализация -> ?
- * Ценность -> ?
+ * Что -> Реализация научной работы;
+ * Для чего -> Формирования результатов научной работы;
+ * Реализация -> Класс;
+ * Ценность -> Реализация бизнес логики;
  */
 public class BachelorScientificWork implements ScienceResearch {
 
