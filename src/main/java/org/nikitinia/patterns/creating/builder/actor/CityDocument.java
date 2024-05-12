@@ -5,10 +5,10 @@ import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.creating.builder.action.Builder;
 
 /**
- * Что -> ?;
- * Для чего -> ?;
- * Реализация -> ?;
- * Ценность -> ?;
+ * Что -> Класс, реализующий конкретную логику;
+ * Для чего -> Реализация требуемого поведения;
+ * Реализация -> Класс, наследующий алгоритм создания объекта;
+ * Ценность -> Реализация необходимых шагов, требуемых для создания объекта;
  */
 @AllArgsConstructor
 public class CityDocument extends Builder {
