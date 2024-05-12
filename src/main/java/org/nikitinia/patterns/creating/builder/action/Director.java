@@ -4,10 +4,10 @@ import lombok.AllArgsConstructor;
 import org.nikitinia.patterns.creating.builder.actor.OfficalDocument;
 
 /**
- * Что -> ?
- * Для чего -> ?
- * Реализация -> ?
- * Ценность -> ?
+ * Что -> ?;
+ * Для чего -> ?;
+ * Реализация -> ?;
+ * Ценность -> ?;
  */
 @AllArgsConstructor
 public class Director {

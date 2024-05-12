@@ -5,10 +5,10 @@ import lombok.Setter;
 import org.nikitinia.domain.model.documents.Document;
 
 /**
- * Что -> ?
- * Для чего -> ?
- * Реализация -> ?
- * Ценность -> ?
+ * Что -> ?;
+ * Для чего -> ?;
+ * Реализация -> ?;
+ * Ценность -> ?;
  */
 @Getter
 @Setter

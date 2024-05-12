@@ -4,10 +4,10 @@ import lombok.Getter;
 import org.nikitinia.patterns.creating.builder.actor.OfficalDocument;
 
 /**
- * Что -> ?
- * Для чего -> ?
- * Реализация -> ?
- * Ценность -> ?
+ * Что -> ?;
+ * Для чего -> ?;
+ * Реализация -> ?;
+ * Ценность -> ?;
  */
 @Getter
 public abstract class Builder {

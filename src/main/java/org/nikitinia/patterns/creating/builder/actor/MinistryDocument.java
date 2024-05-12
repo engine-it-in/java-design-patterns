@@ -5,10 +5,10 @@ import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.creating.builder.action.Builder;
 
 /**
- * Что -> ?
- * Для чего -> ?
- * Реализация -> ?
- * Ценность -> ?
+ * Что -> ?;
+ * Для чего -> ?;
+ * Реализация -> ?;
+ * Ценность -> ?;
  */
 @AllArgsConstructor
 public class MinistryDocument extends Builder {
