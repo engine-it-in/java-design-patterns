@@ -3,7 +3,7 @@ package org.nikitinia.patterns.structure.bridge.actor;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.nikitinia.domain.creator.DocumentCreator;
-import org.nikitinia.domain.dictionarys.Type;
+import org.nikitinia.domain.dictionaries.Type;
 import org.nikitinia.patterns.structure.bridge.action.AndroidInterfaze;
 
 import java.io.ByteArrayOutputStream;

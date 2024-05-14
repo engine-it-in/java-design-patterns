@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.nikitinia.domain.creator.DocumentCreator;
-import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.domain.dictionaries.Status;
 import org.nikitinia.domain.model.documents.Document;
 
 import java.io.ByteArrayOutputStream;

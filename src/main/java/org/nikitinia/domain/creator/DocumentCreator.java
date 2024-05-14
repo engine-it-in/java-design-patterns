@@ -1,6 +1,6 @@
 package org.nikitinia.domain.creator;
 
-import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.domain.dictionaries.Status;
 import org.nikitinia.domain.model.additional.TextField;
 import org.nikitinia.domain.model.documents.Document;
 

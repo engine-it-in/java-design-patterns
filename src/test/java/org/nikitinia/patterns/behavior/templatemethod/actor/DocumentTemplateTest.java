@@ -4,7 +4,7 @@ import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
 import org.mockito.Mockito;
 import org.nikitinia.domain.creator.AgreementCreator;
-import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.domain.dictionaries.Status;
 import org.nikitinia.domain.model.documents.Agreement;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.templatemethod.action.Creator;

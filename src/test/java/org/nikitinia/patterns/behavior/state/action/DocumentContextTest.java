@@ -6,7 +6,7 @@ import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.Arguments;
 import org.junit.jupiter.params.provider.MethodSource;
 import org.nikitinia.domain.creator.DocumentCreator;
-import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.domain.dictionaries.Status;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.state.actor.DocumentStart;
 import org.nikitinia.patterns.behavior.state.actor.DocumentStop;

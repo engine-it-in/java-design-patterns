@@ -3,7 +3,7 @@ package org.nikitinia.patterns.behavior.templatemethod.logic;
 import org.nikitinia.domain.creator.AgreementCreator;
 import org.nikitinia.domain.creator.BillCreator;
 import org.nikitinia.domain.creator.InvoiceCreator;
-import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.domain.dictionaries.Status;
 import org.nikitinia.domain.model.documents.Agreement;
 import org.nikitinia.domain.model.documents.Bill;
 import org.nikitinia.domain.model.documents.Document;

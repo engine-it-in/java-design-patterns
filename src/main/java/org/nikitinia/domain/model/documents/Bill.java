@@ -1,8 +1,8 @@
 package org.nikitinia.domain.model.documents;
 
 import lombok.*;
-import org.nikitinia.domain.dictionarys.Status;
-import org.nikitinia.domain.dictionarys.Type;
+import org.nikitinia.domain.dictionaries.Status;
+import org.nikitinia.domain.dictionaries.Type;
 import org.nikitinia.domain.model.additional.TextField;
 
 import java.math.BigDecimal;

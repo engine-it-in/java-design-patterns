@@ -1,7 +1,7 @@
 package org.nikitinia.patterns.behavior.visitor.logic;
 
 import org.nikitinia.domain.creator.DocumentCreator;
-import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.domain.dictionaries.Status;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.visitor.actor.FinanceDocument;
 import org.nikitinia.patterns.behavior.visitor.actor.ManagementDocument;

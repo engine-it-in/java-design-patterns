@@ -2,7 +2,7 @@ package org.nikitinia.patterns.structure.adapter.logic;
 
 import lombok.AllArgsConstructor;
 import lombok.extern.slf4j.Slf4j;
-import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.domain.dictionaries.Status;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.structure.adapter.action.DocumentDatabase;
 import org.nikitinia.patterns.structure.adapter.actor.DocumentRepository;

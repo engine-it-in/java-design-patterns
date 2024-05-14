@@ -2,12 +2,8 @@ package org.nikitinia.patterns.behavior.strategy.action;
 
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
-import org.junit.jupiter.api.TestInstance;
-import org.junit.jupiter.params.ParameterizedTest;
-import org.junit.jupiter.params.provider.Arguments;
-import org.junit.jupiter.params.provider.MethodSource;
 import org.nikitinia.domain.creator.DocumentCreator;
-import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.domain.dictionaries.Status;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.strategy.actor.FinanceDocument;
 import org.nikitinia.patterns.behavior.strategy.actor.ManagementDocument;
@@ -15,7 +11,6 @@ import org.nikitinia.patterns.behavior.strategy.actor.ManagementDocument;
 import java.io.ByteArrayOutputStream;
 import java.io.PrintStream;
 import java.util.List;
-import java.util.stream.Stream;
 
 import static org.assertj.core.api.Assertions.assertThat;
 

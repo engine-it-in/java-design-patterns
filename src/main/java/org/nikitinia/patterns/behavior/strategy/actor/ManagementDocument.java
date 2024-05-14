@@ -1,6 +1,6 @@
 package org.nikitinia.patterns.behavior.strategy.actor;
 
-import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.domain.dictionaries.Status;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.strategy.action.Sorting;
 import org.nikitinia.patterns.behavior.strategy.exception.FindException;

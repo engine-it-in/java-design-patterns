@@ -1,7 +1,6 @@
 package org.nikitinia.domain.creator;
 
-import org.nikitinia.domain.dictionarys.Status;
-import org.nikitinia.domain.model.documents.Agreement;
+import org.nikitinia.domain.dictionaries.Status;
 import org.nikitinia.domain.model.documents.Invoice;
 
 public class InvoiceCreator {

@@ -1,7 +1,7 @@
 package org.nikitinia.patterns.behavior.state.actor;
 
 import lombok.Getter;
-import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.domain.dictionaries.Status;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.patterns.behavior.state.action.DocumentActivity;
 

@@ -1,4 +1,4 @@
-package org.nikitinia.domain.dictionarys;
+package org.nikitinia.domain.dictionaries;
 
 public enum Status {
 

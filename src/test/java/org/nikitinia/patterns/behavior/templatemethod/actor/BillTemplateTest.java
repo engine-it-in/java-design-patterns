@@ -2,7 +2,7 @@ package org.nikitinia.patterns.behavior.templatemethod.actor;
 
 import org.junit.jupiter.api.Test;
 import org.nikitinia.domain.creator.BillCreator;
-import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.domain.dictionaries.Status;
 import org.nikitinia.domain.model.documents.Bill;
 import org.nikitinia.domain.model.documents.Document;
 

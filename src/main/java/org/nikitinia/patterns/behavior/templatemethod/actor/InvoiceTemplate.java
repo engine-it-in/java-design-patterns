@@ -1,6 +1,6 @@
 package org.nikitinia.patterns.behavior.templatemethod.actor;
 
-import org.nikitinia.domain.dictionarys.Status;
+import org.nikitinia.domain.dictionaries.Status;
 import org.nikitinia.domain.model.documents.Document;
 import org.nikitinia.domain.model.documents.Invoice;
 

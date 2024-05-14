@@ -23,7 +23,8 @@ class InputValueTest {
     @Test
     void getDoubleValue_shouldReturnResult() {
         provideInput("1.0");
-        inputValue.getDoubleValue();
+        assertThat(inputValue.getDoubleValue())
+                .isEqualTo(1.0);
     }
 
     @Test

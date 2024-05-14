@@ -1,4 +1,4 @@
-package org.nikitinia.domain.dictionarys;
+package org.nikitinia.domain.dictionaries;
 
 import org.junit.jupiter.params.ParameterizedTest;
 import org.junit.jupiter.params.provider.EnumSource;
