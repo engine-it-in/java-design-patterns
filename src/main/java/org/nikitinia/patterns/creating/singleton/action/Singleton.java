@@ -1,6 +1,7 @@
 package org.nikitinia.patterns.creating.singleton.action;
 
 import lombok.ToString;
+import org.nikitinia.domain.model.documents.Document;
 
 /**
  * Что -> Реализация логики одиночки;
@@ -12,15 +13,15 @@ import lombok.ToString;
 public final class Singleton {
 
     private static Singleton singleton;
-    public String value;
+    public Document document;
 
-    private Singleton(String value) {
-        this.value = value;
+    private Singleton(Document document) {
+        this.document = document;
     }
 
-    public static Singleton getInstance(String value) {
+    public static Singleton getInstance(Document document) {
         if (singleton == null) {
-            singleton = new Singleton(value);
+            singleton = new Singleton(document);
 
         }
         return singleton;
