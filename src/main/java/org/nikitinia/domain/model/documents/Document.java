@@ -14,18 +14,12 @@ import org.nikitinia.domain.model.additional.TextField;
 @Setter
 public class Document implements Comparable<Document> {
 
-    /*Номер документа*/
     private Double number;
-    /*Подпись на документе*/
     private String signatory;
-    /*Статус документа*/
     private Status status;
-    /*Тип документа для представления*/
     private Type type;
-    /*Блок с текстовой информацией на документе*/
     private TextField textField;
 
-    /*Переопределенный метод для демонстрации содержимого*/
     @Override
     public String toString() {
         return "Document{" +
