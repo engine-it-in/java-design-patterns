@@ -46,10 +46,10 @@
 
 ## Описание типов шаблонов
 
-* [Общая памятка]()
-* [Поведенческие шаблоны](src/main/java/org/nikitinia/patterns/behavior/README.md);
-* [Структурные шаблоны](src/main/java/org/nikitinia/patterns/structure/README.md);
-* [Порождающие шаблоны](src/main/java/org/nikitinia/patterns/creating/README.md);
+* [Общая памятка](src/main/description/PatterMM.md)
+  * [Поведенческие шаблоны](src/main/java/org/nikitinia/patterns/behavior/README.md);
+  * [Структурные шаблоны](src/main/java/org/nikitinia/patterns/structure/README.md);
+  * [Порождающие шаблоны](src/main/java/org/nikitinia/patterns/creating/README.md);
 
 ## Об этом проекте
 * Небольшое теоретическое описание о том, что под [капотом](src/main/README.md) этого проекта;
