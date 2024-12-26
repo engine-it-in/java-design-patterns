@@ -6,7 +6,7 @@
 
 ### Основные компоненты, библиотеки, зависимости;
 
-* Lombok ->
+* [Lombok](https://github.com/engine-it-in/different-level-task/blob/main/common/lombok/README.md) ->
     * Что это?
         * Библиотека, которая генерирует типовой код;
         * Основана на использовании аннотаций, которые могут применяться к классам или методам;
@@ -18,7 +18,7 @@
           определенными [нюансами](https://habr.com/ru/companies/haulmont/articles/564682/) использования;
     * Ссылки на описание добавляемой в
       проект [зависимости](https://mvnrepository.com/artifact/org.projectlombok/lombok);
-* Mockito ->
+* [Mockito](https://github.com/engine-it-in/different-level-task/blob/main/common/ut/README.md) ->
     * Что это?
         * Библиотека используемая для создания объектов-заглушек;
     * Как это используется?
@@ -36,7 +36,7 @@
           типов [значений](https://www.baeldung.com/mockito-series);
     * Ссылки на описание добавляемой в
       проект [зависимости](https://mvnrepository.com/artifact/org.mockito/mockito-core);
-* JUNIT ->
+* [JUNIT](https://github.com/engine-it-in/different-level-task/blob/main/common/ut/README.md) ->
     * Что это?
         * Библиотека-платформа для написания тестов;
         * Дает возможность тестировать все JVM технологии;
@@ -46,7 +46,7 @@
         * Актуальность;
             * Самый актуальный и овстребованный инструмент для проведения Юнит тестов;
         * Ссылки на описание добавляемой в проект [зависимости](https://mvnrepository.com/artifact/junit/junit);
-* SL4J ->
+* [SL4J](https://github.com/engine-it-in/different-level-task/blob/main/first%20level/logging/README.md) ->
     * Что это?
         * Один из популярных фасадов
           над [используемыми библиотеками логирования](https://github.com/engine-it-in/different-level-task/blob/main/first%20level/logging/README.md);
