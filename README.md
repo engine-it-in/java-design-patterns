@@ -2,6 +2,8 @@
 [Сюда](src/main/description/PatterMM.md)
 ***
 # Java-design-patterns
+### План курса
+* [План занятий по курсу](src/main/description/Plan.md)
 ### Содержание
 ***
 * [Что такое шаблоны проектирования?](#о-шаблонах-проектирования)
