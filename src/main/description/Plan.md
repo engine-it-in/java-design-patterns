@@ -23,13 +23,13 @@
 * Подготовить новый пустой проект, аналогичный существующему
   * Постепенное добавление тем, по плану занятий -> [TBD]
 
-### Занятие 1. Погружение в курс (Подготовка к записи)
+### Занятие 1. Погружение в курс
 * Материалы курса
 * Парадигмы программирования
 * О шаблонах проектирования
 * Актуальность шаблонов проектирования
 * Материалы
-  * [Презентация урока](https://docs.google.com/presentation/d/1doHg_CFw0NpPcugRSv-kSMVIqW-N6M0kNdHlQAXv7Ik/edit?usp=sharing)
+  * [Материалы урока](https://drive.google.com/drive/folders/1U68m6h7TlGx-BZTQ5qPHeqpnP75w2yb9?usp=sharing)
   * [Ссылка на материалы](../../../README.md)
 
 ### Занятие 2. Как работать над этим курсом (Подготовка к записи)
@@ -40,12 +40,12 @@
 * Что делать Вам
 * Источники литературы
 * Материалы:
-  * [Презентация урока](https://docs.google.com/presentation/d/1sgPgW2OTDjg8Aq8laMoa9SJ-YyQS5pYSvLOFXxnx3f4/edit?usp=drive_link)
+  * [Материалы урока](https://docs.google.com/presentation/d/1sgPgW2OTDjg8Aq8laMoa9SJ-YyQS5pYSvLOFXxnx3f4/edit?usp=drive_link)
   * Ссылка на материалы:
     * [Общие принципы работы над проектом](../../../README.md)
     * [Конкретные аспекты работы над проектом](../README.md)
 
-### Занятие 3. Используемые технологии
+### Занятие 3. Используемые технологии (Работа не начата)
 * Что потребуется для выполнения заданий
 * Компоненты разработки
   * Основные
@@ -56,13 +56,13 @@
     * Mockito
     * Junit
 * Материалы:
-    * [Презентация урока](https://docs.google.com/presentation/d/1IpcBe6_gvkk6DKBLZmb0IJ1F6rVMqR0y2WvU3Rn5mfM/edit?usp=sharing)
+    * [Материалы урока](https://docs.google.com/presentation/d/1IpcBe6_gvkk6DKBLZmb0IJ1F6rVMqR0y2WvU3Rn5mfM/edit?usp=sharing)
     * Материалы
       * [Общая подготовка](Instruction.md)
       * [Сборщик проекта](ProjectCollector.md)
       * [Компоненты разработки](Component.md)
 
-### Занятие 4. Предметная область
+### Занятие 4. Предметная область (Работа не начата)
 * Предметная область
 * Контекст выполнения заданий
 * Рабочие модели
@@ -73,10 +73,10 @@
   * Диплом
   * Научная работа
 * Материалы:
-    * [Презентация урока](https://docs.google.com/presentation/d/1He2z-LQgnGv_Kg-4nodsRWXoSyneF-3Lz57bzJd7rTE/edit?usp=sharing)
+    * [Материалы урока](https://docs.google.com/presentation/d/1He2z-LQgnGv_Kg-4nodsRWXoSyneF-3Lz57bzJd7rTE/edit?usp=sharing)
     * [Ссылка на материалы](../java/org/nikitinia/domain/README.md)
 
-### Занятие 5. Тестирование
+### Занятие 5. Тестирование (Работа не начата)
 * Описание
 * Виды тестирования
   * Модульное тестирование
@@ -88,19 +88,19 @@
 * Покрытие
 * Как подходить к тестированию
 * Материалы:
-    * [Презентация урока](https://docs.google.com/presentation/d/1ZH0-xFksbNUlc_te2DnhJjcfCx1cD2y-r7KOEH6Lalc/edit?usp=sharing)
+    * [Материалы урока](https://docs.google.com/presentation/d/1ZH0-xFksbNUlc_te2DnhJjcfCx1cD2y-r7KOEH6Lalc/edit?usp=sharing)
     * [Ссылка на материалы](../../test/java/org/nikitinia/README.md)
 
-### Занятие 6. Шаблоны проектирования
+### Занятие 6. Шаблоны проектирования (Работа не начата)
 * Введение
 * GOF
 * Применимость
 * SOLID
 * Материалы:
-    * [Презентация урока](https://docs.google.com/presentation/d/1WMt8Ub_ImoU4Mn-uSDWrmbjFMx2IWX3pxiWmm_mNPe0/edit?usp=sharing)
+    * [Материалы урока](https://docs.google.com/presentation/d/1WMt8Ub_ImoU4Mn-uSDWrmbjFMx2IWX3pxiWmm_mNPe0/edit?usp=sharing)
     * [Ссылка на материалы](PatterMM.md)
 
-### Занятие 7. Поведенческие шаблоны
+### Занятие 7. Поведенческие шаблоны (Работа не начата)
 * Введение
 * Назначение
 * Задачи:
@@ -111,11 +111,11 @@
   * Разделение ответсвенности
   * Реализация действий
 * Материалы:
-    * [Презентация урока](https://docs.google.com/presentation/d/1VgVFBDiKXIKgSugxX82Kovh5d2YLoxrQdwNrspI5g0A/edit?usp=sharing)
+    * [Материалы урока](https://docs.google.com/presentation/d/1VgVFBDiKXIKgSugxX82Kovh5d2YLoxrQdwNrspI5g0A/edit?usp=sharing)
     * [Ссылка на материалы](../java/org/nikitinia/patterns/behavior/README.md)
 
-#### Занятие 7.1 Поведенческие шаблоны. Команда
+#### Занятие 7.1 Поведенческие шаблоны. Команда (Работа не начата)
 * [Описание](../java/org/nikitinia/patterns/behavior/command/README.md)
 
-#### Занятие 7.2 Поведенческие шаблоны. ?
+#### Занятие 7.2 Поведенческие шаблоны. ? (Работа не начата)
 * [Описание]()
