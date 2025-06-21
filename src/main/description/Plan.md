@@ -73,7 +73,7 @@
     * [Материалы урока](https://drive.google.com/drive/folders/1J5iBYgghD2EUqxc3YvlNUBHTe2FO-K-o?usp=sharing)
     * [Ссылка на материалы](../java/org/nikitinia/domain/README.md)
 
-### Занятие 5. Тестирование (Работа не начата)
+### Занятие 5. Тестирование (Подготовка материала)
 * Описание
 * Виды тестирования
   * Модульное тестирование
