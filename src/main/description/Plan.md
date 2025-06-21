@@ -59,7 +59,7 @@
       * [Сборщик проекта](ProjectCollector.md)
       * [Компоненты разработки](Component.md)
 
-### Занятие 4. Предметная область (Подготовка материала)
+### Занятие 4. Предметная область (Записать)
 * Предметная область
 * Контекст выполнения заданий
 * Рабочие модели
@@ -70,7 +70,7 @@
   * Диплом
   * Научная работа
 * Материалы:
-    * [Материалы урока](https://docs.google.com/presentation/d/1He2z-LQgnGv_Kg-4nodsRWXoSyneF-3Lz57bzJd7rTE/edit?usp=sharing)
+    * [Материалы урока](https://drive.google.com/drive/folders/1J5iBYgghD2EUqxc3YvlNUBHTe2FO-K-o?usp=sharing)
     * [Ссылка на материалы](../java/org/nikitinia/domain/README.md)
 
 ### Занятие 5. Тестирование (Работа не начата)
