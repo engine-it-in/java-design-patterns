@@ -85,10 +85,10 @@
 * Покрытие
 * Как подходить к тестированию
 * Материалы:
-    * [Материалы урока](https://docs.google.com/presentation/d/1ZH0-xFksbNUlc_te2DnhJjcfCx1cD2y-r7KOEH6Lalc/edit?usp=sharing)
+    * [Материалы урока](https://drive.google.com/drive/folders/1EXWBJqfaxKcnIwe6B_m6djnEtjYH20wn?usp=sharing)
     * [Ссылка на материалы](../../test/java/org/nikitinia/README.md)
 
-### Занятие 6. Шаблоны проектирования (Работа не начата)
+### Занятие 6. Шаблоны проектирования (В процессе подготовки)
 * Введение
 * GOF
 * Применимость
