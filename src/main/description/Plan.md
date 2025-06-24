@@ -73,7 +73,7 @@
     * [Материалы урока](https://drive.google.com/drive/folders/1J5iBYgghD2EUqxc3YvlNUBHTe2FO-K-o?usp=sharing)
     * [Ссылка на материалы](../java/org/nikitinia/domain/README.md)
 
-### Занятие 5. Тестирование (Подготовка материала)
+### Занятие 5. Тестирование (Записать)
 * Описание
 * Виды тестирования
   * Модульное тестирование
@@ -88,13 +88,13 @@
     * [Материалы урока](https://drive.google.com/drive/folders/1EXWBJqfaxKcnIwe6B_m6djnEtjYH20wn?usp=sharing)
     * [Ссылка на материалы](../../test/java/org/nikitinia/README.md)
 
-### Занятие 6. Шаблоны проектирования (В процессе подготовки)
+### Занятие 6. Шаблоны проектирования (Записать)
 * Введение
 * GOF
 * Применимость
 * SOLID
 * Материалы:
-    * [Материалы урока](https://docs.google.com/presentation/d/1WMt8Ub_ImoU4Mn-uSDWrmbjFMx2IWX3pxiWmm_mNPe0/edit?usp=sharing)
+    * [Материалы урока](https://drive.google.com/drive/folders/1Jgd_P39OvXgIAG8_cny1W5-VBvn_uWwQ?usp=sharing)
     * [Ссылка на материалы](PatterMM.md)
 
 ### Занятие 7. Поведенческие шаблоны (Работа не начата)
