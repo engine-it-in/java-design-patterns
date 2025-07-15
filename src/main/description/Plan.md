@@ -108,7 +108,7 @@
   * Создание семейств объектов
 * Материалы:
   * [Материалы урока]()
-  * [Ссылка на материалы](../java/org/nikitinia/patterns/creating/README.md)
+  * [Ссылка на описание](../java/org/nikitinia/patterns/creating/README.md)
 
 ### Занятие 7.1 Шаблон одиночка (Singleton) (Работа не начата)
 * [Материалы урока](../java/org/nikitinia/patterns/creating/singleton/README.md)
@@ -134,7 +134,7 @@
   * Оптимизация структуры
 * Материалы:
   * [Материалы урока]()
-  * [Ссылка на материалы](../java/org/nikitinia/patterns/structure/README.md)
+  * [Ссылка на описание](../java/org/nikitinia/patterns/structure/README.md)
 
 ### Занятие 8.1 Шаблон фасад (Facade) (Работа не начата)
 * [Материалы урока](../java/org/nikitinia/patterns/structure/facade/README.md)
@@ -165,7 +165,7 @@
   * Реализация действий
 * Материалы:
     * [Материалы урока]()
-    * [Ссылка на материалы](../java/org/nikitinia/patterns/behavior/README.md)
+    * [Ссылка на описание](../java/org/nikitinia/patterns/behavior/README.md)
 
 ### Занятие 9.1 Шаблон команда (Command) (Работа не начата)
 * [Материалы урока](../java/org/nikitinia/patterns/behavior/command/README.md)
@@ -182,4 +182,3 @@
   * Тест
 #### Этапы решения задачи и добавление теста
 * [Тактика работы](../java/org/nikitinia/patterns/behavior/command/Text.md)
-
