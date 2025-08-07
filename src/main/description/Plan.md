@@ -169,4 +169,4 @@
     * Формулировка задачи
   * Тест
 #### Этапы решения задачи и добавление теста
-* [Тактика работы](../java/org/nikitinia/patterns/behavior/command/Text.md)
+* [Тактика работы](../java/org/nikitinia/patterns/behavior/command/Algo)
