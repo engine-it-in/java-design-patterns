@@ -112,7 +112,7 @@
     * Формулировка задачи
   * Тест
 #### Этапы решения задачи и добавление теста
-* [Тактика работы](../java/org/nikitinia/patterns/creating/singleton/Text.md)
+* [Тактика работы](../java/org/nikitinia/patterns/creating/singleton/Algo)
 
 ### Занятие 8. Структурные шаблоны проектирования (Работа не начата)
 * Введение
@@ -139,7 +139,7 @@
     * Формулировка задачи
   * Тест
 #### Этапы решения задачи и добавление теста
-* [Тактика работы](../java/org/nikitinia/patterns/structure/facade/Text.md)
+* [Тактика работы](../java/org/nikitinia/patterns/structure/facade/Algo)
 
 ### Занятие 9. Поведенческие шаблоны (Работа не начата)
 * Введение
