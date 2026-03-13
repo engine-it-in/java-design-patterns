@@ -58,3 +58,5 @@
 # Формулировка задачи
 * [Первый вариант](documentbuffer/README.md)
 * [Второй вариант](documentsender/README.md)
+
+#### [Алгоритм реализации](Algo.md)
