@@ -5,23 +5,46 @@
 
 ### Содержание
 ***
-  * [Занятие 1. Погружение в предметную область курса](#занятие-1-погружение-в-курс)
-  * [Занятие 2. Как работать над этим курсом](#занятие-2-как-работать-над-этим-курсом)
-  * [Занятие 3. Используемые технологии](#занятие-3-используемые-технологии)
-  * [Занятие 4. ?]()
-  * [Занятие 5. ?]()
-  * [Занятие 6. ?]()
-  * [Занятие 7. ?]()
-  * [Занятие 8. ?]()
-  * [Занятие 9. ?]()
+  * [1. Занятие 1. Погружение в предметную область курса](#занятие-1-погружение-в-курс)
+  * [2. Занятие 2. Как работать над этим курсом](#занятие-2-как-работать-над-этим-курсом)
+  * [3. Занятие 3. Используемые технологии](#занятие-3-используемые-технологии)
+  * [4. Занятие 4. Предметная область](#занятие-4-предметная-область)
+  * [5. Занятие 5. О тестировании](#занятие-5-тестирование)
+  * [6. Занятие 6. Шаблоны проектирования](#занятие-6-шаблоны-проектирования)
+  * [7. Занятие 7. Порождающие шаблоны проектирования](#занятие-7-порождающие-шаблоны-проектирования)
+  * [8. Занятие 7.1. Шаблон одиночка (singleton)](#занятие-71-шаблон-одиночка-singleton)
+  * [9. Занятие 7.2. Шаблон прототип (prototype)](#занятие-72-шаблон-прототип-prototype)
+  * [10. Занятие 7.3. Шаблон строитель (builder)](#занятие-73-шаблон-строитель-builder)
+  * [11. Занятие 7.4. Шаблон фабричный метод (factory method)](#занятие-74-шаблон-фабричный-метод-factory-method)
+  * [12. Занятие 7.5. Шаблон абстрактная фабрика (abstract factory)](#занятие-75-шаблон-абстрактная-фабрика-abstract-factory)
+  * [13. Занятие 8. Структурные шаблоны проектирования](#занятие-8-структурные-шаблоны-проектирования)
+  * [14. Занятие 8.1. Шаблон фасад (facade)](#занятие-81-шаблон-фасад-facade)
+  * [15. Занятие 8.2. Шаблон адаптер (adapter)](#занятие-82-шаблон-адаптер-adapter)
+  * [16. Занятие 8.3. Шаблон компоновщик (composite)](#занятие-83-шаблон-компоновщик-composite)
+  * [17. Занятие 8.4. Шаблон мост (bridge)](#занятие-84-шаблон-мост-bridge)
+  * [18. Занятие 8.5. Шаблон декоратор (decorator)](#занятие-85-шаблон-декоратор-decorator)
+  * [19. Занятие 8.6. Шаблон легковес (flyweight)](#занятие-86-шаблон-легковес-flyweight)
+  * [20. Занятие 8.7. Шаблон заместитель (proxy)](#занятие-87-шаблон-заместитель-proxy)
+  * [21. Занятие 9. Поведенческие шаблоны проектирования](#занятие-9-поведенческие-шаблоны-проектирования)
+  * [22. Занятие 9.1 Шаблон команда (command)](#занятие-91-шаблон-команда-command)
+  * [23. Занятие 9.2 Шаблон итератор (iterator)](#занятие-92-шаблон-итератор-iterator)
+  * [24. Занятие 9.3 Шаблон посредник (mediator)](#занятие-93-шаблон-посредник-mediator)
+  * [25. Занятие 9.4 Шаблон снимок (memento)](#занятие-94-шаблон-снимок-memento)
+  * [26. Занятие 9.5 Шаблон наблюдатель (observer)](#занятие-95-шаблон-наблюдатель-observer)
+  * [27. Занятие 9.6 Шаблон состояние (state)](#занятие-96-шаблон-состояние-state)
+  * [28. Занятие 9.7 Шаблон стратегия (strategy)](#занятие-97-шаблон-стратегия-strategy)
+  * [29. Занятие 9.8 Шаблон цепочка обязанностей (chain of responsibility)](#занятие-98-шаблон-цепочка-обязанностей-chain-of-responsibility)
+  * [30. Занятие 9.9 Шаблон шаблонный метод (template method)](#занятие-99-шаблон-шаблонный-метод-template-method)
+  * [31. Занятие 9.10 Шаблон посетитель (visitor)](#занятие-910-шаблон-посетитель-visitor)
+  * [32. Занятие 10 Итоги](#занятие-10-итоги)
 ***
 
 ### Занятие 1. Погружение в курс
 * Парадигмы программирования
 * О шаблонах проектирования
 * Актуальность шаблонов проектирования
-* [Источник](../README.md)
 * Материалы
+  * [Источник информации](../README.md)
   * [Материалы урока](https://drive.google.com/drive/folders/1U68m6h7TlGx-BZTQ5qPHeqpnP75w2yb9?usp=sharing)
   * [Ссылка на материалы](../../../README.md)
 
@@ -30,14 +53,13 @@
 * Тестирование
 * Предметная область и примеры
 * Что делать Вам
-* [Источник]()
 * Материалы:
+  * [Источник информации](Instruction.md)
   * [Материалы урока](https://drive.google.com/drive/folders/1JvF6fExRhLpyYZ0Y0gtnnV6RzWF2hE1V?usp=sharing)
   * Ссылка на материалы:
     * [Общие принципы работы над проектом](../../../README.md)
     * [Конкретные аспекты работы над проектом](../README.md)
 
-(Записать видео, отредактировать stepik)
 ### Занятие 3. Используемые технологии
 * Что потребуется для выполнения заданий
 * Компоненты разработки
@@ -48,8 +70,8 @@
   * Тестирование
     * Mockito
     * Junit
-* [Источник]()
 * Материалы:
+    * [Источник информации](Component.md)
     * [Материалы урока](https://drive.google.com/drive/folders/1136At9I-Pe6vrLgQJYc4sEUHRPrmznM1?usp=sharing)
     * Материалы
       * [Общая подготовка](Instruction.md)
@@ -68,8 +90,8 @@
   * Диплом
   * Научная работа
 * Материалы:
+    * [Источник информации](../java/org/nikitinia/domain/README.md)
     * [Материалы урока](https://drive.google.com/drive/folders/1J5iBYgghD2EUqxc3YvlNUBHTe2FO-K-o?usp=sharing)
-    * [Ссылка на материалы](../java/org/nikitinia/domain/README.md)
 
 (Записать видео, отредактировать stepik)
 ### Занятие 5. Тестирование
@@ -84,8 +106,8 @@
 * Покрытие
 * Как подходить к тестированию
 * Материалы:
+    * [Источник информации](../../test/java/org/nikitinia/README.md)
     * [Материалы урока](https://drive.google.com/drive/folders/1EXWBJqfaxKcnIwe6B_m6djnEtjYH20wn?usp=sharing)
-    * [Ссылка на материалы](../../test/java/org/nikitinia/README.md)
 
 (Записать видео, отредактировать stepik)
 ### Занятие 6. Шаблоны проектирования
@@ -94,8 +116,8 @@
 * Применимость
 * SOLID
 * Материалы:
+    * [Источник информации](../description/PatterMM.md)
     * [Материалы урока](https://drive.google.com/drive/folders/1Jgd_P39OvXgIAG8_cny1W5-VBvn_uWwQ?usp=sharing)
-    * [Ссылка на материалы](PatterMM.md)
 
 (Записать видео, отредактировать stepik)
 ### Занятие 7. Порождающие шаблоны проектирования
@@ -108,8 +130,8 @@
   * Создание набора объектов
   * Создание семейств объектов
 * Материалы:
+  * [Источник информации](../java/org/nikitinia/patterns/creating/README.md)
   * [Материалы урока](https://drive.google.com/drive/folders/16rmwgyddjdoY9uu5o8cQlIPp_FwLtLdE?usp=sharing)
-  * [Ссылка на описание](../java/org/nikitinia/patterns/creating/README.md)
 
 (Записать видео, отредактировать stepik)
 ### Занятие 7.1 Шаблон одиночка (Singleton)
@@ -117,8 +139,8 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/creating/singleton/README.md)
-  * [Ссылка на контент](?)
+  * [Источник информации](../java/org/nikitinia/patterns/creating/singleton/README.md)
+  * [Материалы урока](?)
 
 (Записать видео, создать stepik)
 ### Занятие 7.2 Шаблон прототип (Prototype)
@@ -126,8 +148,8 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/creating/prototype/README.md)
-  * [Ссылка на контент](?)
+  * [Источник информации](../java/org/nikitinia/patterns/creating/prototype/README.md)
+  * [Материалы урока](?)
 
 (Записать видео, создать stepik)
 ### Занятие 7.3 Шаблон строитель (Builder)
@@ -135,7 +157,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/creating/builder/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/creating/builder/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -144,7 +166,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/creating/factorymethod/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/creating/factorymethod/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -153,7 +175,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/creating/abstractfactory/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/creating/abstractfactory/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, отредактировать stepik)
@@ -164,7 +186,7 @@
   * Механизм взаимодействия компонентов
   * Оптимизация структуры
 * Материалы:
-  * [Материалы урока](https://drive.google.com/drive/folders/1Ln_h__IGT4SpfFxjQ_zJbcTUhRj_cbyK?usp=sharing)
+  * [Источник информации](https://drive.google.com/drive/folders/1Ln_h__IGT4SpfFxjQ_zJbcTUhRj_cbyK?usp=sharing)
   * [Ссылка на описание](../java/org/nikitinia/patterns/structure/README.md)
 
 (Записать видео, отредактировать stepik)
@@ -173,7 +195,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/structure/facade/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/structure/facade/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -182,7 +204,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/structure/adapter/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/structure/adapter/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -191,7 +213,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/structure/composite/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/structure/composite/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -200,7 +222,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/structure/bridge/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/structure/bridge/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -209,7 +231,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/structure/decorator/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/structure/decorator/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -218,7 +240,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/structure/flyweight/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/structure/flyweight/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -227,11 +249,11 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/structure/proxy/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/structure/proxy/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, отредактировать stepik)
-### Занятие 9. Поведенческие шаблоны
+### Занятие 9. Поведенческие шаблоны проектирования
 * Введение
 * Назначение
 * Задачи:
@@ -242,7 +264,7 @@
   * Разделение ответственности
   * Реализация действий
 * Материалы:
-    * [Материалы урока](https://drive.google.com/drive/folders/1l0-e23VBZxpel8PQGRKAtVfSLPO_bdI9?usp=sharing)
+    * [Источник информации](https://drive.google.com/drive/folders/1l0-e23VBZxpel8PQGRKAtVfSLPO_bdI9?usp=sharing)
     * [Ссылка на описание](../java/org/nikitinia/patterns/behavior/README.md)
 
 (Записать видео, отредактировать stepik)
@@ -251,7 +273,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/behavior/command/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/behavior/command/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -260,7 +282,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/behavior/iterator/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/behavior/iterator/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -269,7 +291,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/behavior/mediator/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/behavior/mediator/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -278,7 +300,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/behavior/memento/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/behavior/memento/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -287,7 +309,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/behavior/observer/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/behavior/observer/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -296,7 +318,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/behavior/state/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/behavior/state/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -305,7 +327,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/behavior/strategy/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/behavior/strategy/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -314,7 +336,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/behavior/chainofresponsibility/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/behavior/chainofresponsibility/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -323,7 +345,7 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/behavior/templatemethod/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/behavior/templatemethod/README.md)
   * [Ссылка на контент](?)
 
 (Записать видео, создать stepik)
@@ -332,5 +354,10 @@
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
-  * [Материалы урока](../java/org/nikitinia/patterns/behavior/visitor/README.md)
+  * [Источник информации](../java/org/nikitinia/patterns/behavior/visitor/README.md)
   * [Ссылка на контент](?)
+
+(Записать видео, создать stepik)
+### Занятие 10 Итоги
+* Введение
+* Итоги
