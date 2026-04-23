@@ -22,7 +22,14 @@ public class Bill extends Document {
     private BigDecimal sum;
     private Date signDate;
 
-    public Bill(Double number, String signatory, Status status, Type type,  TextField textField, BigDecimal sum, Date signDate) {
+    public Bill(
+            Double number,
+            String signatory,
+            Status status,
+            Type type,
+            TextField textField,
+            BigDecimal sum,
+            Date signDate) {
         super(number, signatory, status, type, textField);
         this.number = number;
         this.signatory = signatory;
