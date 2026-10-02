@@ -6,15 +6,7 @@ group 'org.nikitinia.patterns'
 version '1.0-SNAPSHOT'
 
 repositories {
-//     mavenCentral()
-    maven {
-            url "https://nx.alfastrah.ru/repository/maven-public/"
-            credentials {
-                username "ps-nexus"
-                password "P7427huph01ujw4ji0@@@@"
-            }
-        }
-
+     mavenCentral()
 }
 
 dependencies {
