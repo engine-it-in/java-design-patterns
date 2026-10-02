@@ -136,20 +136,15 @@
 * Видео
 * Материалы:
   * [Источник информации](../java/org/nikitinia/patterns/creating/singleton/README.md)
-  * [Материалы урока - нет](Гугл диск)
+  * [Материалы урока](https://drive.google.com/drive/folders/1zgZYITEbemqHCbBAOLLDXum8DXPHzuj3?usp=sharing)
 
 ### Занятие 7.2 Шаблон прототип (Prototype)
-#### Статус
-##### -> Подготовиться
-##### -> Записать видео
-##### -> Отредактировать stepik
-##### -> Отредактировать контент урока
 * Обзор
 * Формулировка и алгоритм решения задачи
 * Видео
 * Материалы:
   * [Источник информации](../java/org/nikitinia/patterns/creating/prototype/README.md)
-  * [Материалы урока - нет](Гугл диск)
+  * [Материалы урока](https://drive.google.com/drive/folders/1E5y7FUlRvwkb7bYfJFw3aXaLiayT6_Ha?usp=sharing)
 
 ### Занятие 7.3 Шаблон строитель (Builder)
 #### Статус
